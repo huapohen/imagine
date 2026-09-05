@@ -1,0 +1,48 @@
+[
+  {
+    "role": "assistant",
+    "model": "gpt-6-astra",
+    "effort": "low",
+    "pid": 46656,
+    "started_at": "2026-09-06T00:51:53.194271+08:00",
+    "state": "completed",
+    "thread_id": "01a0727b-d519-7843-bf7c-d9bed7e1b18b",
+    "attempt": 1,
+    "child_pid": 46658,
+    "exit_code": 0,
+    "updated_at": "2026-09-06T00:56:07.125624+08:00"
+  },
+  {
+    "role": "hardware",
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "pid": 46306,
+    "started_at": "2026-09-06T00:51:50.843651+08:00",
+    "state": "running",
+    "thread_id": "01a0727b-cbe3-7931-8d31-374ce90a032f",
+    "attempt": 1,
+    "child_pid": 46308
+  },
+  {
+    "role": "pitch",
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "pid": 46481,
+    "started_at": "2026-09-06T00:51:52.023630+08:00",
+    "state": "running",
+    "thread_id": "01a0727b-d084-79c1-8074-8b08c55c0373",
+    "attempt": 1,
+    "child_pid": 46483
+  },
+  {
+    "role": "software",
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "pid": 46144,
+    "started_at": "2026-09-06T00:51:49.689792+08:00",
+    "state": "running",
+    "thread_id": "01a0727b-c769-70e0-81e9-ea5e04341f48",
+    "attempt": 1,
+    "child_pid": 46146
+  }
+]

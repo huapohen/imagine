@@ -1,0 +1,6 @@
+﻿sku,price_incl_tax,manufacturing_cost,vat_reserve_no_input_credit,refund_reserve,channel_fee,fulfillment,warranty_reserve,support_cost,cac,return_logistics_reserve,contribution_per_unit,contribution_rate_on_gross_sales,units_to_cover_monthly_fixed_opex
+S99,99.0,32.0,11.39,3.96,2.97,10.0,0.64,3.0,20.0,2.0,13.04,0.1317,4218
+S199,199.0,72.0,22.89,7.96,5.97,12.0,1.44,6.0,35.0,2.0,33.74,0.1695,1631
+S299,299.0,108.0,34.4,11.96,8.97,12.0,2.16,8.0,45.0,2.0,66.51,0.2224,827
+S499,499.0,158.0,57.41,19.96,14.97,15.0,3.16,25.0,65.0,3.0,137.5,0.2756,400
+S899,899.0,255.0,103.42,35.96,26.97,18.0,5.1,100.0,90.0,5.0,259.55,0.2887,212

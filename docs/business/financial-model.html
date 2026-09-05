@@ -1,0 +1,169 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>定价、BOM和财务模型使用说明 · 灵伴资料</title><style>:root{--ink:#142a32;--muted:#63777b;--mint:#007e78;--paper:#f4f5ef;--line:#dce2d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft Yahei',sans-serif}a{color:var(--mint);text-decoration:none}a:hover{text-decoration:underline}nav{background:#142a32;color:white;padding:18px 5%;display:flex;justify-content:space-between;gap:20px}nav a{color:#b2e3d4}main{max-width:1180px;margin:auto;padding:46px 26px 80px}h1,h2,h3{line-height:1.2;letter-spacing:-.035em}h1{font-size:clamp(36px,5vw,68px);margin:14px 0 24px}h2{font-size:30px;margin:60px 0 22px}h3{font-size:21px}p{max-width:75ch}small,.muted{color:var(--muted)}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:650;color:var(--mint)}.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:42px;align-items:center;min-height:410px}.hero-art{min-height:340px;background:linear-gradient(140deg,#dce6e3,#fff 55%,#e1ded4);border-radius:38px;overflow:hidden;display:grid;place-items:center;position:relative}.hero-art img{width:100%;height:100%;max-height:410px;object-fit:contain}.badge{display:inline-block;border:1px solid #b5cbc4;border-radius:100px;padding:5px 12px;font-size:12px;line-height:1.5;color:#31544f;background:#f7faf6}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.button{padding:12px 20px;border-radius:10px;background:var(--mint);color:white;display:inline-block;font-weight:600}.button.secondary{color:var(--ink);background:#e1e8df}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;min-width:0}.card h3{margin:12px 0}.card p{font-size:14px;color:var(--muted)}.card ul{list-style:none;padding:0;font-size:14px}.card li{border-top:1px solid #e9ece6;padding:9px 0}.number{font:600 12px/1 monospace;color:var(--mint)}.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:42px 0}.strip>div{background:white;padding:22px}.strip b{display:block;font-size:26px;line-height:1.2}.strip small{font-size:12px}.flow{display:flex;gap:12px;align-items:stretch;flex-wrap:wrap}.flow>div{flex:1;min-width:145px;background:#e5eee6;padding:19px;border-radius:14px;font-size:14px}.flow b{display:block;margin:5px 0}.flow span{font-size:12px;color:var(--muted)}details{border:1px solid var(--line);padding:14px 20px;border-radius:12px;margin:10px 0;background:#fff}summary{cursor:pointer;font-weight:600}.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.gallery video,.gallery img{width:100%;border-radius:14px;background:#142a32}.gallery figcaption{font-size:13px;margin-top:8px}.note{padding:16px 20px;border-left:3px solid var(--mint);background:#e7ede6;font-size:14px}.document{max-width:940px;background:white;padding:45px 55px;border-radius:20px;margin:0 auto}.document h1{font-size:36px}.document h2{font-size:25px;margin-top:40px}.document h3{font-size:21px;margin-top:30px}table{border-collapse:collapse;width:100%;font-size:13px;display:block;overflow:auto}th,td{padding:10px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf2eb}pre{overflow:auto;background:#132c31;color:#e6f3ee;padding:18px;border-radius:12px;font-size:12px}code{font-size:.86em}blockquote{border-left:3px solid #9ecabd;padding-left:20px;color:var(--muted)}footer{border-top:1px solid var(--line);padding-top:25px;margin-top:55px;font-size:12px;color:var(--muted)}@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-art{min-height:250px}.grid{grid-template-columns:1fr}.strip{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr}.document{padding:24px 18px}main{padding:24px 18px}.hero h1{font-size:42px}}@media print{nav,.actions{display:none}body{background:white}main{padding:0}.document{padding:0}h2,h3{break-after:avoid}table,pre{break-inside:avoid}}</style><nav><a href="../../index.html">← 灵伴资料中心</a><a href="financial-model.md">Markdown 源文件</a></nav><main><article class="document"><h1>定价、BOM和财务模型使用说明</h1>
+<p>币种：人民币。口径：全部成本和销量是估算，非供应商报价、销售实绩或融资到账。计算脚本实际运行并生成CSV，模型真实可改可算，不意味着假设是真实成交数据。美元竞品价格不参与换算定价。</p>
+<h2>文件与重算</h2>
+<p>输入：<a href="financial-inputs-skus.csv">SKU参数</a>、<a href="financial-assumptions.csv">公共假设</a>、<a href="financial-scenarios.csv">月度情景销量</a>。输出：<a href="financial-sku-economics.csv">单台经济</a>、<a href="financial-monthly.csv">月度利润及现金</a>、<a href="financial-summary.csv">情景汇总</a>。脚本：<a href="calculate_financials.py">calculate_financials.py</a>。</p>
+<p>在项目根目录运行：<code>python3 docs/business/calculate_financials.py</code>。仅Python标准库、无网络/凭据，CSV使用UTF-8 BOM方便表格软件打开。修改输入后重算；不要手改生成输出。现金勾稽自动检查：期末现金=起始现金＋累计损益－应收款－期末库存。模型以未四舍五入值计算、输出保留两位，汇总可能有分位差异。</p>
+<h2>主推299版BOM：1000台规模设计目标</h2>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th align="right">估算元/台</th>
+<th>待验证</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>成熟有线鼠标OEM底座（不含定制上壳）</td>
+<td align="right">19</td>
+<td>传感器/微动、合法USB身份、供货稳定性</td>
+</tr>
+<tr>
+<td>透明壳/底结构件</td>
+<td align="right">11</td>
+<td>材料、是否可用公模；不含新开模费</td>
+</tr>
+<tr>
+<td>ESP32-S3模块</td>
+<td align="right">16</td>
+<td>内存版本、授权渠道、可获得性</td>
+</tr>
+<tr>
+<td>小屏及排线</td>
+<td align="right">15</td>
+<td>尺寸分辨率、坏点/供货、非定制屏</td>
+</tr>
+<tr>
+<td>灯及导光、触摸件</td>
+<td align="right">5</td>
+<td>电极一致性、误触、透明反光</td>
+</tr>
+<tr>
+<td>PCB/电源/连接器/线材或hub分摊</td>
+<td align="right">14</td>
+<td>单线化可能大幅加价，先用双线</td>
+</tr>
+<tr>
+<td>装配与100%功能测试</td>
+<td align="right">12</td>
+<td>工时与产测治具，不含NRE</td>
+</tr>
+<tr>
+<td>包装/标签/说明书</td>
+<td align="right">6</td>
+<td>实际运输保护</td>
+</tr>
+<tr>
+<td>制造损耗/返工预留</td>
+<td align="right">10</td>
+<td>不再重复加同口径损耗</td>
+</tr>
+<tr>
+<td><strong>完整制造成本设计目标</strong></td>
+<td align="right"><strong>108</strong></td>
+<td>无书面报价，不是采购承诺</td>
+</tr>
+</tbody></table>
+<p>5台手工原型每台预计260—480元（不含工程工时/NRE），50—100台预计145—190元，1000台设计目标90—130元；模型统一用108元适用于规模情景，因此前3个月低估真实小批成本，见下方敏感性。切换小批真实成本时修改SKU成本会应用全部月份，如需精细批次模型应进一步加入分月成本；当前现金结论不能据此直接批准采购。屏、hub和壳体空间如冲突，先改外置模块而非假装目标成本已达成。</p>
+<p>99/199/499/899档制造完整成本估算分别32/72/158/255元。499/899包含套装物料/包装的额外成本，实施支持另计到单台支持费；所有模具/NRE在月0独立列示，避免重复摊销。1499/3999不进财务表，因为尚无可报价规格。</p>
+<h2>单台经济（已运行模型）</h2>
+<table>
+<thead>
+<tr>
+<th align="right">售价</th>
+<th align="right">完整制造成本</th>
+<th align="right">扣除全部列示变动费用后贡献</th>
+<th align="right">贡献/含税流水</th>
+<th align="right">仅该SKU覆盖5.5万元月固定支出的销量</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">99</td>
+<td align="right">32</td>
+<td align="right">13.04</td>
+<td align="right">13.17%</td>
+<td align="right">4218</td>
+</tr>
+<tr>
+<td align="right">199</td>
+<td align="right">72</td>
+<td align="right">33.74</td>
+<td align="right">16.95%</td>
+<td align="right">1631</td>
+</tr>
+<tr>
+<td align="right">299</td>
+<td align="right">108</td>
+<td align="right">66.51</td>
+<td align="right">22.24%</td>
+<td align="right">827</td>
+</tr>
+<tr>
+<td align="right">499</td>
+<td align="right">158</td>
+<td align="right">137.50</td>
+<td align="right">27.56%</td>
+<td align="right">400</td>
+</tr>
+<tr>
+<td align="right">899</td>
+<td align="right">255</td>
+<td align="right">259.55</td>
+<td align="right">28.87%</td>
+<td align="right">212</td>
+</tr>
+</tbody></table>
+<p>“贡献”不是毛利，也不是净利润。299元逐项：销项税现金预留34.40、渠道8.97、退款11.96、制造108、履约12、质保2.16、支持8、获客45、退货逆向物流2，剩66.51。退款按销售额4%全额预留且假设退货不能回收价值，质保按制造成本2%；两者分属退货退款与未退货保修，实际发生时需避免重复归类。税按13%含税价销项预留、不抵进项，退款也不减销项预留，偏保守；实际税率、纳税身份和抵扣必须由会计按真实业务替换。</p>
+<h2>10个月情景（非预测承诺）</h2>
+<p>假设起始现金60万元（不是已获投资）；月0投入12万元NRE；固定开支5.5万元/月；上行情景M4起固定开支6.6万元。M1—M3只卖299主推版；M4以后才假设其他概念SKU获准上线，不能据表提前备货。下行/基准/上行为基准销量的0.35/1/1.7倍。企业899全额延后1个月回款，其他当月；采购假设提前1个月全额付现＋10%缓冲库存。M10仍按M11预计增长15%备货，不用期末清仓制造好看现金。</p>
+<table>
+<thead>
+<tr>
+<th>情景</th>
+<th align="right">10个月台数</th>
+<th align="right">含税流水</th>
+<th align="right">累计贡献</th>
+<th align="right">含NRE累计损益</th>
+<th align="right">期末现金</th>
+<th align="right">最低现金</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>下行</td>
+<td align="right">1613</td>
+<td align="right">553287</td>
+<td align="right">132936</td>
+<td align="right">-537064</td>
+<td align="right">-24820</td>
+<td align="right">-24820</td>
+</tr>
+<tr>
+<td>基准</td>
+<td align="right">4610</td>
+<td align="right">1580890</td>
+<td align="right">379789</td>
+<td align="right">-290211</td>
+<td align="right">60494</td>
+<td align="right">45908</td>
+</tr>
+<tr>
+<td>上行</td>
+<td align="right">7837</td>
+<td align="right">2687263</td>
+<td align="right">645556</td>
+<td align="right">-101444</td>
+<td align="right">75107</td>
+<td align="right">23002</td>
+</tr>
+</tbody></table>
+<p>基准仍亏损，上行销售更多却经历更低现金谷底，因为提前采购和企业回款。下行第10个月现金转负，模型显示缺口，不假定自动融资填平。基准期末库存190860元、应收58435元，并非现金。所有情景都未形成3个月固定费用缓冲（至少16.5万元），应更早缩减采购/开支或明确增加已确认资金。禁止靠“计划融资”继续透支。模型不含利息、所得税、订阅、汇兑、资产残值、潜在强制认证新增费和模具费；有任何此类承诺须纳入后再决定。</p>
+<h2>敏感性与行动</h2>
+<ul>
+<li>299制造成本每增加10元，贡献下降约10.20元（质保联动）；从108升至170元，贡献仅约3.27元。首批不可能自然有规模毛利，须作为限额验证投入。</li>
+<li>获客成本45升至75元，299贡献减为36.51元，覆盖月固定开支约1507台；渠道扩张前先验证退款后获客成本。</li>
+<li>退款率4%升至10%，299贡献少17.94元，还可能增加逆向运费/不可销售库存，实际更差。</li>
+<li>三个月前110台若实际制造170而非108，直接差额6820元，加质保约136元；演示原型与NRE另算，不可从账上消失。</li>
+<li>固定支出每月增加1万元，10个月少10万元现金；供应商要求更早/更多预付款同样恶化资金峰值。</li>
+<li>提价到399不是免费改善：要重新验证转化和退货，不能保持销量假设不变只改售价。</li>
+</ul>
+<p>下一步优先取得3家同口径报价、实测20人使用与真实价格选择、记录每个售后工单分钟数、测量10种任务的模型成本。完成前，现金模型仅用于决定验证预算，不用于保证投资收益或估值。</p>
+</article></main></html>

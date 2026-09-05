@@ -1,0 +1,159 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Imagine 可执行商业计划 · 灵伴资料</title><style>:root{--ink:#142a32;--muted:#63777b;--mint:#007e78;--paper:#f4f5ef;--line:#dce2d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft Yahei',sans-serif}a{color:var(--mint);text-decoration:none}a:hover{text-decoration:underline}nav{background:#142a32;color:white;padding:18px 5%;display:flex;justify-content:space-between;gap:20px}nav a{color:#b2e3d4}main{max-width:1180px;margin:auto;padding:46px 26px 80px}h1,h2,h3{line-height:1.2;letter-spacing:-.035em}h1{font-size:clamp(36px,5vw,68px);margin:14px 0 24px}h2{font-size:30px;margin:60px 0 22px}h3{font-size:21px}p{max-width:75ch}small,.muted{color:var(--muted)}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:650;color:var(--mint)}.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:42px;align-items:center;min-height:410px}.hero-art{min-height:340px;background:linear-gradient(140deg,#dce6e3,#fff 55%,#e1ded4);border-radius:38px;overflow:hidden;display:grid;place-items:center;position:relative}.hero-art img{width:100%;height:100%;max-height:410px;object-fit:contain}.badge{display:inline-block;border:1px solid #b5cbc4;border-radius:100px;padding:5px 12px;font-size:12px;line-height:1.5;color:#31544f;background:#f7faf6}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.button{padding:12px 20px;border-radius:10px;background:var(--mint);color:white;display:inline-block;font-weight:600}.button.secondary{color:var(--ink);background:#e1e8df}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;min-width:0}.card h3{margin:12px 0}.card p{font-size:14px;color:var(--muted)}.card ul{list-style:none;padding:0;font-size:14px}.card li{border-top:1px solid #e9ece6;padding:9px 0}.number{font:600 12px/1 monospace;color:var(--mint)}.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:42px 0}.strip>div{background:white;padding:22px}.strip b{display:block;font-size:26px;line-height:1.2}.strip small{font-size:12px}.flow{display:flex;gap:12px;align-items:stretch;flex-wrap:wrap}.flow>div{flex:1;min-width:145px;background:#e5eee6;padding:19px;border-radius:14px;font-size:14px}.flow b{display:block;margin:5px 0}.flow span{font-size:12px;color:var(--muted)}details{border:1px solid var(--line);padding:14px 20px;border-radius:12px;margin:10px 0;background:#fff}summary{cursor:pointer;font-weight:600}.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.gallery video,.gallery img{width:100%;border-radius:14px;background:#142a32}.gallery figcaption{font-size:13px;margin-top:8px}.note{padding:16px 20px;border-left:3px solid var(--mint);background:#e7ede6;font-size:14px}.document{max-width:940px;background:white;padding:45px 55px;border-radius:20px;margin:0 auto}.document h1{font-size:36px}.document h2{font-size:25px;margin-top:40px}.document h3{font-size:21px;margin-top:30px}table{border-collapse:collapse;width:100%;font-size:13px;display:block;overflow:auto}th,td{padding:10px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf2eb}pre{overflow:auto;background:#132c31;color:#e6f3ee;padding:18px;border-radius:12px;font-size:12px}code{font-size:.86em}blockquote{border-left:3px solid #9ecabd;padding-left:20px;color:var(--muted)}footer{border-top:1px solid var(--line);padding-top:25px;margin-top:55px;font-size:12px;color:var(--muted)}@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-art{min-height:250px}.grid{grid-template-columns:1fr}.strip{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr}.document{padding:24px 18px}main{padding:24px 18px}.hero h1{font-size:42px}}@media print{nav,.actions{display:none}body{background:white}main{padding:0}.document{padding:0}h2,h3{break-after:avoid}table,pre{break-inside:avoid}}</style><nav><a href="../../index.html">← 灵伴资料中心</a><a href="business-plan.md">Markdown 源文件</a></nav><main><article class="document"><h1>Imagine 可执行商业计划</h1>
+<p>2026-09-06｜内部决策版｜创始前验证阶段。成本、销量、留存、收入及估值均无实绩；本文件给出可证伪假设和执行门槛。研究事实见 <a href="../research/findings.html">findings.md</a>，模型见 <a href="financial-model.html">financial-model.md</a>。</p>
+<h2>1. 决定先做什么</h2>
+<p>首款是透明有线鼠标，加一个独立的ESP32-S3灯光/触摸/小屏模块，连接电脑本地agent。鼠标运动、按键和滚轮沿用成熟OEM标准USB HID，AI故障时仍能正常办公。用户看到的是一个会安静等候、遇到有用线索才轻轻提示的伙伴。AI能力在电脑运行，不是ESP32运行大模型；云模型仅接收用户选择并明确授权的必要内容。</p>
+<p>首批只制造299元目标售价的单一核心版，其他99/199/499/899元是定价验证卡和后续包装方案，不同时采购五套模具。99元普通透明鼠标不承诺AI硬件能力；199元无屏版在299元留存成立后考虑。499元是核心鼠标、桌面底座和受限服务的套装；899元是核心硬件、企业试点配置和明确额度支持包，不是永久无限AI。</p>
+<p>成立条件：用户因为减少一次真实遗漏、顺利完成一次交接而继续启用，而不是仅因为透明外壳第一次很漂亮。若相同软件配普通鼠标的效果接近，就转向软件＋可选配件，停止为差异不足的硬件压库存。</p>
+<h2>2. 客户、场景和付费者</h2>
+<p>首批选择有自主软件安装权、每天处理多个文档/任务、愿意授权单一任务来源的知识工作者：产品经理、项目协调者、独立开发者和小型服务团队负责人。暂不进入金融交易、医疗、涉密办公或严禁外围设备的企业；暂不让HR成为采购与指标定义者。</p>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>用户提供的最少证据</th>
+<th>主动介入时机</th>
+<th>最终动作</th>
+<th>成功证据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>下班前交接</td>
+<td>手动任务、截止时间、本人更新</td>
+<td>出现未交接的新状态且接近截止</td>
+<td>显示交接草稿，用户批准后复制/导出</td>
+<td>用户确认完成交接，草稿采纳</td>
+</tr>
+<tr>
+<td>等待同事反馈</td>
+<td>用户明确标记的任务与授权消息增量</td>
+<td>相关新回复解决阻塞，安静窗口结束</td>
+<td>灯提示→解释证据→建议下一步</td>
+<td>提醒“有帮助”，无重复提醒</td>
+</tr>
+<tr>
+<td>长程任务</td>
+<td>用户自建目标与选择的资料</td>
+<td>新证据足以改变下一步</td>
+<td>更新私人任务卡、请求必要批准</td>
+<td>中断后可恢复，步骤可解释</td>
+</tr>
+<tr>
+<td>专注陪伴</td>
+<td>用户手动设定专注时段</td>
+<td>用户允许的休息/结束节点</td>
+<td>低亮度灯与简短陪伴文字</td>
+<td>用户愿保留且不觉得被评判</td>
+</tr>
+</tbody></table>
+<p>“陪伴”是可关闭的语气和可见状态，不是假装有情感需求，不用内疚、连续签到或“老板正在看”等手段驱动使用。休息提醒仅依据用户选择的时间，不推断疲劳、抑郁或身体健康。</p>
+<p>企业买的是本人批准的业务交付物和流程阻塞汇总。个人任务原文、浏览轨迹、私聊、录音、键鼠频次、情绪和生理信息不上企业看板。团队统计至少5名不同授权参与者、固定统计周期、禁止个人钻取；不足5人不显示。还必须抑制极端值、小切片、相邻窗口差分推断，并明确撤回/删除流程。人数阈值不是匿名化证明。</p>
+<h2>3. 产品边界与首期实现</h2>
+<p>从Active Agent已有思路复用事件、长期任务、证据、安静窗口、决策、审批和outbox等概念，实际代码兼容性、测试与许可需工程检查。首期只承诺手动任务和本地演示事件源；飞书/企微/钉钉是待接入的单独里程碑，不能把模拟数据说成已上线连接器。</p>
+<p>本地端保存任务和偏好；默认不常驻抓屏、不读全盘、不录音。选择屏幕/文档内容时先展示具体范围。设备端仅显示简化状态，不缓存任务原文。USB串口/伴随协议和鼠标HID分离；原型双线或小型合规USB hub是可接受取舍，单线化必须通过供电、兼容与EMC评估。触摸事件只触发本地待审批界面，不能作为“不可绕过的硬件安全隔离”宣传。</p>
+<p>不做：员工评分、考勤推断、老板隐身模式、环境监听、键盘记录、医疗诊断、生物识别、情绪识别、自动对外发送、远程控制锁屏电脑、首期电池与无线认证、机器人关节或复杂运动。</p>
+<h2>4. 为什么可能需要鼠标</h2>
+<p>鼠标是办公中高频接触、自然可触达的物体，有机会在屏幕通知之外提供低强度提示和一键查看的仪式感。透明结构让电子状态可见，有传播辨识度。但这些都是假设：高端鼠标用户可能拒绝更换设备，左手用户/手型差异和有线方式会缩小市场；灯光也可能被视为干扰。</p>
+<p>实验必须把硬件增量从AI本身剥离：20人随机交叉体验一周软件通知、一周灯/触摸通知，保持相同任务和内容，记录“有帮助”比例、处理延迟、关闭频次和主观打扰。提前定义成功：硬件确认率绝对提升&gt;=15个百分点，打扰评分不劣于软件，且至少8人愿在299元真实价格选择购买或付明确可退订金。小样本只作方向性证据，不宣称统计显著或普适效率提升。</p>
+<h2>5. 市场规模：先用可到达客户算账</h2>
+<p>本次没有抓取可用于中国AI鼠标细分市场的可靠官方销量，不引用泛AI万亿市场。用自下而上验证替代伪精确TAM：第一阶段可触达名单目标200名个人＋30个小团队；预计试用转化20%和10%都只是销售假设，需要逐周更新。1000台×299元=29.9万元含税商品流水，不能称ARR；100名愿付19元/月的服务用户才对应2.28万元年化订阅毛额，且留存未验证。模型未计入订阅，以免硬件补贴依赖尚不存在的经常性收入。</p>
+<p>可服务人群的下一层估计应来自：目标城市/行业公司数×每家公司适配工位数×允许本地agent比例×预算接受度。每一个乘数必须有调查出处。得到20名稳定活跃用户之前不花钱购买宏观市场报告，也不把鼠标存量设备总量当成交付潜力。</p>
+<h2>6. 定价、服务和渠道</h2>
+<table>
+<thead>
+<tr>
+<th>档位（人民币，目标含税）</th>
+<th>交付边界</th>
+<th>推出条件</th>
+<th>核心风险</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>99</td>
+<td>普通透明有线鼠标，软件基础任务可自行安装；无伴随AI模块承诺</td>
+<td>OEM稳定且有独立需求</td>
+<td>售后/CAC吃掉毛利，容易成为低价比较入口</td>
+</tr>
+<tr>
+<td>199</td>
+<td>灯＋触摸，无屏；本地基础任务</td>
+<td>共板设计降本成立</td>
+<td>价格带拥挤、视觉反馈不足</td>
+</tr>
+<tr>
+<td>299</td>
+<td>灯＋触摸＋小屏主推；规则模式离线可用</td>
+<td>首批唯一制造SKU</td>
+<td>人体工学与可用性决定留存</td>
+</tr>
+<tr>
+<td>499</td>
+<td>299版＋桌面底座/外观套件＋3个月限定服务额度</td>
+<td>299复购/推荐成立</td>
+<td>套件增加库存，服务不能无限承诺</td>
+</tr>
+<tr>
+<td>899</td>
+<td>核心设备＋单席企业试点配置/培训/3个月限定支持</td>
+<td>企业授权与安全验收通过</td>
+<td>实施工时、采购账期侵蚀收益</td>
+</tr>
+<tr>
+<td>1499/3999</td>
+<td>未来桌面计算底座/团队任务终端的生态概念</td>
+<td>半年后独立立项</td>
+<td>未定规格/成本，不收预售，不计收入</td>
+</tr>
+</tbody></table>
+<p>服务探索价格19元/月个人、39元/席/月团队，仅作访谈卡；供应商模型单价、调用量、上下文与退款未实测前不得上线无限额度。个人可以只用离线规则和自有模型凭据；本项目不接收或记录他人完整API key。企业采购最初采用标准试点协议、验收后明确账期，尽量不要先垫资给长账期大客户。</p>
+<p>渠道顺序：创始人展示真实使用案例→自愿用户研究→小批直销→少量企业设计伙伴。前100台不铺经销，不做高额信息流广告。后续每个渠道按退款后贡献和售后时间核算，不仅看GMV。财务模型已保守计入获客成本，不把创始人时间当作永久免费流量。</p>
+<h2>7. 分阶段预算和负责人</h2>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>责任角色</th>
+<th>预算上限（估算，不是批准支出）</th>
+<th>交付证据</th>
+<th>下一阶段触发</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>D1—D7</td>
+<td>硬件负责人＋本地agent工程师</td>
+<td>1.5万元</td>
+<td>5台可重复演示原型、BOM、装配记录</td>
+<td>核心鼠标不受模块崩溃影响，授权链完整</td>
+</tr>
+<tr>
+<td>D8—D30</td>
+<td>工程＋质量＋创始人</td>
+<td>累计12万元NRE内分批释放</td>
+<td>20人试用、10台EVT、小批报价/合规适用性确认</td>
+<td>无重大隐私/电气缺陷；需求门槛达标</td>
+</tr>
+<tr>
+<td>M2—M3</td>
+<td>产品/供应链</td>
+<td>不超过下一批100台所需现金＋缓冲</td>
+<td>50—100台受控试产、售后记录</td>
+<td>一次合格率&gt;=95%、7天留存目标达标</td>
+</tr>
+<tr>
+<td>M4—M6</td>
+<td>3人核心团队＋按次外包</td>
+<td>月固定支出5.5万元模型假设</td>
+<td>分批累计1000台、两个供应源评估</td>
+<td>退货率&lt;=5%、每台贡献为正、现金覆盖3个月</td>
+</tr>
+</tbody></table>
+<p>12万元NRE估算分项：结构/电气设计3万、打样与小批治具2.5万、合规评估与预扫2万、软件发布/权限安全评审2万、外观与包装0.5万、预备金2万。不能把这笔钱同时再计入单台BOM；正式模具未包含，只有通过需求门槛后另立项。</p>
+<h2>8. 关键指标与停止条件</h2>
+<p>北极星指标：每周至少一次被本人确认“有帮助”的主动介入用户数。配套指标：激活率、D7/D30仍启用比例、每用户提醒数/忽略率、每次被采纳动作的模型成本、退款、售后分钟数、单位现金贡献、库存周转和审批拒绝率。数据默认个人可见；产品研究上传最少匿名事件必须自愿授权。</p>
+<p>D7原型不工作：缩小到灯/触摸外置模块，不追加定制结构。20人中D7仍启用&lt;40%，两轮内容/打扰改进后仍不提升：停止备货并改为软件研究。连续两个小批退款&gt;10%或制造一次良率&lt;90%：冻结新批采购。发现未经授权外传/外部动作：立即停用相关功能并按流程修复、通知受影响者；不以增长目标压过边界。现金预测未来90天转负：停止非必要NRE和营销，先完成已承诺交付/退款。</p>
+<h2>9. 壁垒与竞争</h2>
+<p>短期不存在专利式护城河。可累积资产是可信的授权交互、任务证据质量、低打扰策略、设备可靠性数据、可复用工厂工装和愿意推荐的用户群；它们必须用结果证明。开源同类和操作系统助手能复制单个提醒功能，大厂鼠标可快速添加灯/屏，因此更应跑通具体任务与分发，而非讲“硬件入口垄断”。</p>
+<p>Microduck启发可见人格和可维护架构；其运动复杂度是本项目应避免的第一期风险。Violoop展示独立算力/屏幕理解/实体审批的另一种路线，我们以电脑已有算力换更低硬件复杂度，代价是依赖本地安装、系统权限与电脑在线。不得复用其商标、网页素材、性能结论或未明确许可的硬件设计。</p>
+<h2>10. 半年生态与第10个月选择</h2>
+<p>M1只证明任务闭环；M2受控交付；M3用真实使用数据决定是否继续鼠标；M4开放灯/触摸/状态协议和一个参考配件；M5招募少量开发者制作经人工审核的只读插件；M6决定是否立项199无屏版或桌面灯，1499/3999仅概念研究。每件新硬件要有独立需求、完整BOM、售后责任与现金门槛，禁止一次铺八类产品。</p>
+<p>第10个月不是承诺退出日，而是董事/创始人战略检查点。若留存和单位贡献成立且现金允许，可以继续经营或讨论融资；若有产业方提出合适条件，可评估分销、技术授权或股权/资产交易；若需求不成立，优先退款、保修安排、员工与供应商义务及数据删除，剩余资产可出售但不能按理想售价估值。没有投资人承诺，没有保证收购方，不把融资计为营业收入。</p>
+</article></main></html>

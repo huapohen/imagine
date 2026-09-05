@@ -1,0 +1,312 @@
+{
+  "updated_at": "2026-09-05T17:12:51.639Z",
+  "groups": [
+    {
+      "name": "融资与比赛",
+      "files": [
+        {
+          "path": "pitch/deliverables/v3/lingban-vc-deck.pdf",
+          "bytes": 603987
+        },
+        {
+          "path": "pitch/deliverables/v3/lingban-vc-deck.pptx",
+          "bytes": 960086
+        },
+        {
+          "path": "pitch/deliverables/v3/speaker-notes.html",
+          "bytes": 17214
+        },
+        {
+          "path": "pitch/deliverables/v5/lingban-vc-deck.pdf",
+          "bytes": 1183189
+        },
+        {
+          "path": "pitch/deliverables/v5/lingban-vc-deck.pptx",
+          "bytes": 960168
+        },
+        {
+          "path": "pitch/deliverables/v5/speaker-notes.html",
+          "bytes": 17395
+        },
+        {
+          "path": "docs/business/README.html",
+          "bytes": 6199
+        },
+        {
+          "path": "docs/business/business-plan.html",
+          "bytes": 17123
+        },
+        {
+          "path": "docs/business/ecosystem-and-exit.html",
+          "bytes": 12588
+        },
+        {
+          "path": "docs/business/financial-assumptions.csv",
+          "bytes": 645
+        },
+        {
+          "path": "docs/business/financial-inputs-skus.csv",
+          "bytes": 492
+        },
+        {
+          "path": "docs/business/financial-model.html",
+          "bytes": 12716
+        },
+        {
+          "path": "docs/business/financial-monthly.csv",
+          "bytes": 4686
+        },
+        {
+          "path": "docs/business/financial-scenarios.csv",
+          "bytes": 876
+        },
+        {
+          "path": "docs/business/financial-sku-economics.csv",
+          "bytes": 633
+        },
+        {
+          "path": "docs/business/financial-summary.csv",
+          "bytes": 451
+        },
+        {
+          "path": "docs/business/investor-qa-60.html",
+          "bytes": 20211
+        },
+        {
+          "path": "docs/business/outline.html",
+          "bytes": 7256
+        },
+        {
+          "path": "docs/business/pitch-scripts.html",
+          "bytes": 13065
+        }
+      ]
+    },
+    {
+      "name": "鼠标与制造",
+      "files": [
+        {
+          "path": "hardware/cad/exports/01_base.step",
+          "bytes": 501267
+        },
+        {
+          "path": "hardware/cad/exports/01_base.stl",
+          "bytes": 856484
+        },
+        {
+          "path": "hardware/cad/exports/02_clear_canopy.step",
+          "bytes": 284817
+        },
+        {
+          "path": "hardware/cad/exports/02_clear_canopy.stl",
+          "bytes": 656584
+        },
+        {
+          "path": "hardware/cad/exports/03_button_left.step",
+          "bytes": 31885
+        },
+        {
+          "path": "hardware/cad/exports/03_button_left.stl",
+          "bytes": 32684
+        },
+        {
+          "path": "hardware/cad/exports/03_button_right.step",
+          "bytes": 31827
+        },
+        {
+          "path": "hardware/cad/exports/03_button_right.stl",
+          "bytes": 32684
+        },
+        {
+          "path": "hardware/cad/exports/04_oem_wheel_placeholder.step",
+          "bytes": 5708
+        },
+        {
+          "path": "hardware/cad/exports/04_oem_wheel_placeholder.stl",
+          "bytes": 31484
+        },
+        {
+          "path": "hardware/cad/exports/05_carrier_placeholder.step",
+          "bytes": 34574
+        },
+        {
+          "path": "hardware/cad/exports/05_carrier_placeholder.stl",
+          "bytes": 127884
+        },
+        {
+          "path": "hardware/cad/exports/06_devkit_placeholder.step",
+          "bytes": 15586
+        },
+        {
+          "path": "hardware/cad/exports/06_devkit_placeholder.stl",
+          "bytes": 684
+        },
+        {
+          "path": "hardware/cad/exports/07_socket_-26.43.step",
+          "bytes": 15630
+        },
+        {
+          "path": "hardware/cad/exports/07_socket_-26.43.stl",
+          "bytes": 684
+        },
+        {
+          "path": "hardware/cad/exports/07_socket_-3.57.step",
+          "bytes": 15604
+        },
+        {
+          "path": "hardware/cad/exports/07_socket_-3.57.stl",
+          "bytes": 684
+        },
+        {
+          "path": "hardware/cad/exports/08_esp_module_placeholder.step",
+          "bytes": 15537
+        },
+        {
+          "path": "hardware/cad/exports/08_esp_module_placeholder.stl",
+          "bytes": 684
+        },
+        {
+          "path": "hardware/cad/exports/09_usb_uart_placeholder.step",
+          "bytes": 15521
+        },
+        {
+          "path": "hardware/cad/exports/09_usb_uart_placeholder.stl",
+          "bytes": 684
+        },
+        {
+          "path": "hardware/cad/exports/10_oem_placeholder.step",
+          "bytes": 29970
+        },
+        {
+          "path": "hardware/cad/exports/10_oem_placeholder.stl",
+          "bytes": 1484
+        },
+        {
+          "path": "hardware/cad/exports/11_cloud_stair_castle.step",
+          "bytes": 254576
+        },
+        {
+          "path": "hardware/cad/exports/11_cloud_stair_castle.stl",
+          "bytes": 107484
+        },
+        {
+          "path": "hardware/cad/exports/12_snowflake.step",
+          "bytes": 335512
+        },
+        {
+          "path": "hardware/cad/exports/12_snowflake.stl",
+          "bytes": 60284
+        },
+        {
+          "path": "hardware/cad/exports/13_screen_frame.step",
+          "bytes": 44749
+        },
+        {
+          "path": "hardware/cad/exports/13_screen_frame.stl",
+          "bytes": 2484
+        },
+        {
+          "path": "hardware/cad/exports/14_display_placeholder.step",
+          "bytes": 15503
+        },
+        {
+          "path": "hardware/cad/exports/14_display_placeholder.stl",
+          "bytes": 684
+        },
+        {
+          "path": "hardware/cad/exports/15_display_glass.step",
+          "bytes": 15602
+        },
+        {
+          "path": "hardware/cad/exports/15_display_glass.stl",
+          "bytes": 684
+        },
+        {
+          "path": "hardware/cad/exports/16_castle_socket_sled.step",
+          "bytes": 41374
+        },
+        {
+          "path": "hardware/cad/exports/16_castle_socket_sled.stl",
+          "bytes": 96284
+        },
+        {
+          "path": "hardware/cad/exports/17_usb_cable_-7.step",
+          "bytes": 5677
+        },
+        {
+          "path": "hardware/cad/exports/17_usb_cable_-7.stl",
+          "bytes": 31484
+        },
+        {
+          "path": "hardware/cad/exports/17_usb_cable_7.step",
+          "bytes": 5703
+        },
+        {
+          "path": "hardware/cad/exports/17_usb_cable_7.stl",
+          "bytes": 31484
+        },
+        {
+          "path": "hardware/cad/exports/lingban_assembly.step",
+          "bytes": 1796796
+        },
+        {
+          "path": "hardware/specs/architecture.html",
+          "bytes": 8568
+        },
+        {
+          "path": "hardware/specs/pin-map.html",
+          "bytes": 6530
+        },
+        {
+          "path": "docs/manufacturing-commercial/acceptance-and-schedule.html",
+          "bytes": 11901
+        },
+        {
+          "path": "docs/manufacturing-commercial/bom-cost-estimate.csv",
+          "bytes": 881
+        },
+        {
+          "path": "docs/manufacturing-commercial/procurement-schedule.csv",
+          "bytes": 1470
+        },
+        {
+          "path": "docs/manufacturing-commercial/rfq-template.html",
+          "bytes": 10972
+        }
+      ]
+    },
+    {
+      "name": "软件与证据",
+      "files": [
+        {
+          "path": "docs/verification/REVIEW_FINDINGS.html",
+          "bytes": 12455
+        },
+        {
+          "path": "docs/operations/ASSISTANT_STATUS.html",
+          "bytes": 9618
+        },
+        {
+          "path": "docs/operations/PROGRESS.html",
+          "bytes": 5577
+        },
+        {
+          "path": "docs/operations/SESSIONS.html",
+          "bytes": 5308
+        },
+        {
+          "path": "docs/operations/USAGE_CHECK.html",
+          "bytes": 4920
+        },
+        {
+          "path": "docs/product/DECISIONS.html",
+          "bytes": 8631
+        },
+        {
+          "path": "docs/research/findings.html",
+          "bytes": 9584
+        }
+      ]
+    }
+  ]
+}

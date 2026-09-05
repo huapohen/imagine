@@ -13,3 +13,15 @@ __pycache__/
 .playwright-cli/
 .tmp/
 *.log
+pitch/.build/
+hardware/downloads/
+hardware/.venv/
+hardware/tools/vendor/
+release/
+**/.pytest_cache/
+**/.pio/
+media/video_ledger.json
+media/video_ledger.lock
+media/*.response.json
+media/task-list-private.json
+media/*.part

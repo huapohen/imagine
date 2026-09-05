@@ -1,0 +1,171 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>工厂 RFQ / 询价模板（草案，尚未发送） · 灵伴资料</title><style>:root{--ink:#142a32;--muted:#63777b;--mint:#007e78;--paper:#f4f5ef;--line:#dce2d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft Yahei',sans-serif}a{color:var(--mint);text-decoration:none}a:hover{text-decoration:underline}nav{background:#142a32;color:white;padding:18px 5%;display:flex;justify-content:space-between;gap:20px}nav a{color:#b2e3d4}main{max-width:1180px;margin:auto;padding:46px 26px 80px}h1,h2,h3{line-height:1.2;letter-spacing:-.035em}h1{font-size:clamp(36px,5vw,68px);margin:14px 0 24px}h2{font-size:30px;margin:60px 0 22px}h3{font-size:21px}p{max-width:75ch}small,.muted{color:var(--muted)}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:650;color:var(--mint)}.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:42px;align-items:center;min-height:410px}.hero-art{min-height:340px;background:linear-gradient(140deg,#dce6e3,#fff 55%,#e1ded4);border-radius:38px;overflow:hidden;display:grid;place-items:center;position:relative}.hero-art img{width:100%;height:100%;max-height:410px;object-fit:contain}.badge{display:inline-block;border:1px solid #b5cbc4;border-radius:100px;padding:5px 12px;font-size:12px;line-height:1.5;color:#31544f;background:#f7faf6}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.button{padding:12px 20px;border-radius:10px;background:var(--mint);color:white;display:inline-block;font-weight:600}.button.secondary{color:var(--ink);background:#e1e8df}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;min-width:0}.card h3{margin:12px 0}.card p{font-size:14px;color:var(--muted)}.card ul{list-style:none;padding:0;font-size:14px}.card li{border-top:1px solid #e9ece6;padding:9px 0}.number{font:600 12px/1 monospace;color:var(--mint)}.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:42px 0}.strip>div{background:white;padding:22px}.strip b{display:block;font-size:26px;line-height:1.2}.strip small{font-size:12px}.flow{display:flex;gap:12px;align-items:stretch;flex-wrap:wrap}.flow>div{flex:1;min-width:145px;background:#e5eee6;padding:19px;border-radius:14px;font-size:14px}.flow b{display:block;margin:5px 0}.flow span{font-size:12px;color:var(--muted)}details{border:1px solid var(--line);padding:14px 20px;border-radius:12px;margin:10px 0;background:#fff}summary{cursor:pointer;font-weight:600}.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.gallery video,.gallery img{width:100%;border-radius:14px;background:#142a32}.gallery figcaption{font-size:13px;margin-top:8px}.note{padding:16px 20px;border-left:3px solid var(--mint);background:#e7ede6;font-size:14px}.document{max-width:940px;background:white;padding:45px 55px;border-radius:20px;margin:0 auto}.document h1{font-size:36px}.document h2{font-size:25px;margin-top:40px}.document h3{font-size:21px;margin-top:30px}table{border-collapse:collapse;width:100%;font-size:13px;display:block;overflow:auto}th,td{padding:10px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf2eb}pre{overflow:auto;background:#132c31;color:#e6f3ee;padding:18px;border-radius:12px;font-size:12px}code{font-size:.86em}blockquote{border-left:3px solid #9ecabd;padding-left:20px;color:var(--muted)}footer{border-top:1px solid var(--line);padding-top:25px;margin-top:55px;font-size:12px;color:var(--muted)}@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-art{min-height:250px}.grid{grid-template-columns:1fr}.strip{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr}.document{padding:24px 18px}main{padding:24px 18px}.hero h1{font-size:42px}}@media print{nav,.actions{display:none}body{background:white}main{padding:0}.document{padding:0}h2,h3{break-after:avoid}table,pre{break-inside:avoid}}</style><nav><a href="../../index.html">← 灵伴资料中心</a><a href="rfq-template.md">Markdown 源文件</a></nav><main><article class="document"><h1>工厂 RFQ / 询价模板（草案，尚未发送）</h1>
+<p>项目：Imagine透明有线鼠标及独立伴随模块。联系人/公司/地址由采购负责人填写；本文件不构成采购订单、付款承诺或授权外发。请分别报价，不以“整机包干”隐藏关键物料。</p>
+<h2>1. 样机需求与设计边界</h2>
+<p>第一期标准USB有线鼠标OEM底座，原鼠标主控、光学传感、按键滚轮保持成熟方案；透明/半透明上壳可先用可购买外壳或打印展示壳。另置ESP32-S3模块驱动离散共阳RGB灯（GPIO4/5/6 PWM，最终以hardware/specs/pin-map为准）、触摸键、小屏，通过电脑伴随协议通信。首样接受双USB线或评估通过的内部hub，不要求7天定制单线PCB/模具。无电池、无无线产品宣传、无麦克风、无摄像头、无生理传感器。模块失效不得导致鼠标运动/点击失效。壳体不允许割手、电路可触裸露或遮挡传感器光路。</p>
+<p>要求回传：可复用OEM型号、外形尺寸/重量、传感器/主控/微动/线材品牌与型号、USB描述符与授权VID/PID来源、可追溯批次、现有合规报告的主体/型号/有效性。禁止套用不对应本产品的证书，禁止借用他人VID/PID或替换物料不通知。</p>
+<h2>2. 分档报价表（供应商填写）</h2>
+<table>
+<thead>
+<tr>
+<th>条目</th>
+<th align="right">5套样机</th>
+<th align="right">50套</th>
+<th align="right">100套</th>
+<th align="right">500套</th>
+<th align="right">1000套</th>
+<th>MOQ/MPQ</th>
+<th>交期</th>
+<th>品牌/料号/替代料</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>USB鼠标OEM底座</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>透明上壳/底壳</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ESP32-S3主模块</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>RGB灯/导光件</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>触摸电极/触摸板</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>小屏/排线</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>小PCB/连接器/被动器件</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>USB分线或hub方案</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>组装与100%功能测试</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>包装/说明书/标识</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>损耗与复测（单列比例）</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>运输（单列）</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>报价请标注人民币、含/不含税与税率、发票类型、贸易条款、报价有效期、收款账户主体、样品费用可否抵扣、NRE/治具/模具一次性费用及所有权。分开报告首次良率、最终良率、返工率和报废率，不以补料后100%掩盖返工成本。</p>
+<h2>3. 商务与质量回复</h2>
+<ol>
+<li>DFM反馈：透明材质候选PC/PMMA/其他、应力开裂、手汗/酒精兼容、透光与磨损、卡扣寿命、装配公差、线缆应力释放、屏幕贴装和热管理；每项写风险与建议。</li>
+<li>单线USB供电预算、hub功耗、枚举顺序、挂起/恢复、ESD/EMC预检方案；默认先保证鼠标独立功能。</li>
+<li>交期拆分：采购料、PCB、结构件、组装、老化、终检、包装与发货；列出最长物料和备选。</li>
+<li>工程变更ECN：任何主控/传感器/屏/线材/塑料替代必须书面确认后实施，并重新评估测试。</li>
+<li>来料、制程、出货记录能否按序列号追溯；不良样品保留和8D时效建议为48小时围堵、5个工作日根因分析（待合同确认）。</li>
+<li>售后：DOA、质保期、返修运费、备件比例、停产通知、数据擦除、不可维修件处置；报价须明确包含与排除项。</li>
+<li>付款提案：样机按明确里程碑；试产目标30%订金/70%验收后出货，量产账期另议。均待书面谈判，不假设工厂已接受。</li>
+<li>设计文件/治具/模具的归属、保管、移交、备份、使用限制；禁止未经授权把完整设计用于其他客户。</li>
+<li>合规适用性由具资质实验室依据最终结构、供电、无线能力、销售地区确认；报价分列中国适用标准/强制目录判定、EMC/安规/RoHS相关评估；出口CE/FCC等另立项，不笼统宣称“USB产品无需认证”。</li>
+</ol>
+<h2>4. 评标及红线</h2>
+<p>合格先决条件：可追溯法人和收款主体、合法USB身份、完整BOM、无未经授权替代、接受首件/变更留样。通过后按质量与可靠性30%、可复用方案/交付25%、完整成本25%、变更/售后15%、沟通5%评分。最低价不能覆盖资料缺失。至少取得3份同口径书面报价后再定供应商；尚未联系任何工厂。</p>
+<h2>5. RFQ附带资料清单</h2>
+<p>需求版本、结构包络草图、接口协议版本、目标功耗预算、功能测试步骤、外观缺陷样例、序列号格式、包装草案、隐私边界及禁装器件表。生产固件使用不含任何个人凭据的离线测试模式；最终用户自行配置本地agent。</p>
+</article></main></html>

@@ -1,0 +1,7 @@
+parameter,value,unit,status,notes
+starting_cash,600000,CNY,assumption,假设可支配起始现金不是已到账融资
+upfront_nre,120000,CNY,assumption,月0一次性投入且费用化不摊入BOM
+monthly_fixed_opex,55000,CNY_per_month,assumption,人员42000场地3000工具云基础3000行政2000弹性预备5000
+vat_rate,0.13,ratio,conservative_assumption,按含税销售额预留销项税不抵扣进项不构成税务意见
+inventory_buffer_rate,0.10,ratio,assumption,上月预付100%采购下月预计出货加10%库存缓冲
+terminal_next_month_growth,0.15,ratio,assumption,月10仍为月11按15%增长备货避免终点清仓虚增现金

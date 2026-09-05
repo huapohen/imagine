@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>USB Device Stack - ESP32-S3 -  &mdash; ESP-USB Programming Guide latest documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=a60756f2" />
+      <link rel="stylesheet" type="text/css" href="_static/theme_overrides.css?v=851bd809" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=becddca3"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+
+    
+        
+
+    <script type="text/javascript">
+        DOCUMENTATION_OPTIONS.PAGENAME = 'usb_device';
+        DOCUMENTATION_OPTIONS.PROJECT_SLUG = 'esp-usb';
+        DOCUMENTATION_OPTIONS.LATEST_BRANCH_NAME = 'master';
+        DOCUMENTATION_OPTIONS.VERSIONS_URL = '_static/docs_version.js';
+        DOCUMENTATION_OPTIONS.LANGUAGES = ["en"];
+        DOCUMENTATION_OPTIONS.IDF_TARGET = 'esp32s3';
+        DOCUMENTATION_OPTIONS.HAS_IDF_TARGETS = ["esp32s2", "esp32s3", "esp32s31", "esp32p4", "esp32h4"]
+        DOCUMENTATION_OPTIONS.RELEASE = 'latest';
+        DOCUMENTATION_OPTIONS.LANGUAGE_URL = 'en';
+
+    </script>
+
+    <script type="text/javascript" src="_static/docs_version.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Vulnerabilities" href="vulnerabilities.html" />
+    <link rel="prev" title="USB Host External Port Driver (Ext Port)" href="usb_host/usb_host_notes_ext_port.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            ESP-USB Programming Guide
+              <img src="_static/espressif-logo.svg" class="logo" alt="Logo"/>
+          </a>
+
+          
+            <div class="selectors">
+              <select id="target-select" style="width: 150px;" hidden>
+                <option value="" disabled selected>Choose target...</option>
+              </select>
+            </div>
+          
+
+          <div class="selectors">
+            <select id="version-select" style="width: 150px;" hidden>
+              <option value="" disabled selected>Choose version...</option>
+            </select>
+          </div>
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="usb_host.html">USB Host</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">USB Device Stack</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hardware-connection">Hardware Connection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#external-phy-configuration">External PHY Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#device-stack-structure">Device Stack Structure</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#component-dependency">Component Dependency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configuration-options">Configuration Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#descriptor-configuration">Descriptor Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#self-powered-device">Self-Powered Device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#power-management">Power Management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#suspend-and-resume-events">Suspend and Resume Events</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remote-wakeup">Remote Wakeup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#automatic-light-sleep-via-pm-locks">Automatic Light Sleep via PM Locks</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#kconfig-prerequisites">Kconfig prerequisites</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#runtime-settings">Runtime settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lock-behavior">Lock behavior</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#light-sleep-with-usb-wakeup">Light Sleep with USB Wakeup</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#usb-serial-device-cdc-acm">USB Serial Device (CDC-ACM)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#usb-serial-console">USB Serial Console</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#usb-mass-storage-device-msc">USB Mass Storage Device (MSC)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#msc-performance-optimization">MSC Performance Optimization</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#application-examples">Application Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#api-reference">API Reference</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#header-file">Header File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#functions">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#structures">Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#macros">Macros</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#type-definitions">Type Definitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enumerations">Enumerations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Header File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Macros</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Header File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Type Definitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Enumerations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Header File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">Header File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id12">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14">Type Definitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">Enumerations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id16">Header File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id17">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id18">Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id19">Type Definitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id20">Header File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id21">Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">Macros</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#kconfig-reference">Kconfig Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tinyusb-stack">TinyUSB Stack</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#config-tinyusb-debug-level">CONFIG_TINYUSB_DEBUG_LEVEL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tinyusb-dcd">TinyUSB DCD</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-mode">CONFIG_TINYUSB_MODE</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tinyusb-callbacks">TinyUSB callbacks</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-suspend-callback">CONFIG_TINYUSB_SUSPEND_CALLBACK</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-resume-callback">CONFIG_TINYUSB_RESUME_CALLBACK</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tinyusb-stack-power-management">Power management</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-usb-otg-wakeup">CONFIG_TINYUSB_USB_OTG_WAKEUP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-pm">CONFIG_TINYUSB_PM</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tinyusb-stack-descriptor-configuration">Descriptor configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-desc-use-espressif-vid">CONFIG_TINYUSB_DESC_USE_ESPRESSIF_VID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-desc-custom-vid">CONFIG_TINYUSB_DESC_CUSTOM_VID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-desc-use-default-pid">CONFIG_TINYUSB_DESC_USE_DEFAULT_PID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-desc-custom-pid">CONFIG_TINYUSB_DESC_CUSTOM_PID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-desc-bcd-device">CONFIG_TINYUSB_DESC_BCD_DEVICE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-desc-manufacturer-string">CONFIG_TINYUSB_DESC_MANUFACTURER_STRING</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-desc-product-string">CONFIG_TINYUSB_DESC_PRODUCT_STRING</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-desc-serial-string">CONFIG_TINYUSB_DESC_SERIAL_STRING</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-desc-cdc-string">CONFIG_TINYUSB_DESC_CDC_STRING</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-desc-msc-string">CONFIG_TINYUSB_DESC_MSC_STRING</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-desc-mtp-string">CONFIG_TINYUSB_DESC_MTP_STRING</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#mass-storage-class-msc">Mass Storage Class (MSC)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-msc-enabled">CONFIG_TINYUSB_MSC_ENABLED</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#media-transfer-protocol-mtp">Media Transfer Protocol (MTP)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-mtp-enabled">CONFIG_TINYUSB_MTP_ENABLED</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#communication-device-class-cdc">Communication Device Class (CDC)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-cdc-enabled">CONFIG_TINYUSB_CDC_ENABLED</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#musical-instrument-digital-interface-midi">Musical Instrument Digital Interface (MIDI)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-midi-count">CONFIG_TINYUSB_MIDI_COUNT</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#human-interface-device-class-hid">Human Interface Device Class (HID)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-hid-count">CONFIG_TINYUSB_HID_COUNT</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#device-firmware-upgrade-dfu">Device Firmware Upgrade (DFU)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-dfu-mode">CONFIG_TINYUSB_DFU_MODE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-dfu-bufsize">CONFIG_TINYUSB_DFU_BUFSIZE</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#bluetooth-host-class-bth">Bluetooth Host Class (BTH)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-bth-enabled">CONFIG_TINYUSB_BTH_ENABLED</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#network-driver-ecm-ncm-rndis">Network driver (ECM/NCM/RNDIS)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-net-mode">CONFIG_TINYUSB_NET_MODE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-ncm-out-ntb-buffs-count">CONFIG_TINYUSB_NCM_OUT_NTB_BUFFS_COUNT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-ncm-in-ntb-buffs-count">CONFIG_TINYUSB_NCM_IN_NTB_BUFFS_COUNT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-ncm-out-ntb-buff-max-size">CONFIG_TINYUSB_NCM_OUT_NTB_BUFF_MAX_SIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-ncm-in-ntb-buff-max-size">CONFIG_TINYUSB_NCM_IN_NTB_BUFF_MAX_SIZE</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#vendor-specific-interface">Vendor Specific Interface</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-vendor-count">CONFIG_TINYUSB_VENDOR_COUNT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-vendor-rx-bufsize">CONFIG_TINYUSB_VENDOR_RX_BUFSIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-vendor-tx-bufsize">CONFIG_TINYUSB_VENDOR_TX_BUFSIZE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#config-tinyusb-vendor-epsize">CONFIG_TINYUSB_VENDOR_EPSIZE</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vulnerabilities.html">Vulnerabilities</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ESP-USB Programming Guide</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">USB Device Stack</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/usb_device.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="usb-device-stack">
+<h1>USB Device Stack<a class="headerlink" href="#usb-device-stack" title="Permalink to this heading"></a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
+<p>The ESP-IDF USB Device Stack (hereinafter referred to as the Device Stack) enables USB Device support on ESP32-S3. By using the Device Stack, ESP32-S3 can be programmed with any well defined USB device functions (e.g., keyboard, mouse, camera), a custom function (aka vendor-specific class), or a combination of those functions (aka a composite device).</p>
+<p>The Device Stack is built around the TinyUSB stack, but extends TinyUSB with some minor features and modifications for better integration with ESP-IDF. The Device stack is distributed as a managed component via the <a class="reference external" href="https://components.espressif.com/components/espressif/esp_tinyusb">ESP Component Registry</a>.</p>
+</section>
+<section id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this heading"></a></h2>
+<p><ul class="simple">
+<li><dl class="simple">
+<dt>1 USB Full-Speed (USB 1.1) peripheral with internal PHY</dt><dd><ul>
+<li><p>Endpoint 0 and 6 additional endpoints configurable as IN or OUT</p></li>
+<li><p>Up to 5 IN endpoints (including Endpoint 0) concurrently active.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Multiple supported device classes (CDC, HID, MIDI, MSC…)</p></li>
+<li><p>Vendor specific class</p></li>
+<li><p>Composite devices</p></li>
+<li><p>VBUS monitoring for self-powered devices</p></li>
+<li><p>Remote wakeup</p></li>
+<li><p>Automatic light sleep control via ESP-IDF PM locks</p></li>
+</ul>
+</p>
+</section>
+<section id="hardware-connection">
+<h2>Hardware Connection<a class="headerlink" href="#hardware-connection" title="Permalink to this heading"></a></h2>
+<p>The ESP32-S3 routes the <strong>USB 1.1 peripheral</strong> D+ and D- signals to GPIOs 20 and 19 respectively. For USB device functionality, these GPIOs must be connected to the bus (e.g., via a Micro-B port, USB-C port, or directly to standard-A plug).</p>
+<figure class="align-center">
+<img alt="Connection of an USB GPIOs directly to a USB standard-A plug" src="_images/usb-board-connection.png" />
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are using an ESP32-S3 development board with two USB ports, the port labeled “USB” will already be connected to the D+ and D- GPIOs.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Self-powered devices must also connect VBUS through a voltage divider or comparator. For more details, please refer to <a class="reference internal" href="#self-powered-device"><span class="std std-ref">Self-Powered Device</span></a>.</p>
+</div>
+</section>
+<section id="external-phy-configuration">
+<h2>External PHY Configuration<a class="headerlink" href="#external-phy-configuration" title="Permalink to this heading"></a></h2>
+<p>The ESP32-S3 contains two USB controllers: USB-OTG and USB-Serial-JTAG. However, both controllers share a <strong>single PHY</strong>, which means only one can operate at a time. To use USB Device functionality while the USB-Serial-JTAG is active (e.g., for debugging or flashing), an <strong>external PHY</strong> is required, since the PHY is used by USB-Serial-JTAG.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An external PHY is not the only way to enable debugging alongside USB Host or Device functionality. It is also possible to switch the debugging interface from USB-Serial-JTAG to plain JTAG by burning the appropriate eFuses. For details, refer to document <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-guides/jtag-debugging/index.html">JTAG Debugging</a> in ESP-IDF Programming Guide for your target.</p>
+</div>
+<p>ESP32-S3 supports connecting external PHY ICs. This becomes especially relevant when full-speed USB device functionality is needed while the USB-Serial-JTAG controller is also in use. Various external PHY ICs may require different hardware modifications. Please refer to each IC’s datasheet for specifics. A general connection diagram below is provided for reference. For more information, please refer to <a class="reference external" href="https://docs.espressif.com/projects/esp-iot-solution/en/latest/usb/usb_overview/usb_phy.html#use-an-external-phy">Use an external PHY</a>.</p>
+<figure class="align-center" id="id71">
+<img alt="usb_fs_phy_sp5301" src="_images/usb_fs_phy_sp5301.png" />
+<figcaption>
+<p><span class="caption-text">A typical circuit diagram for an external PHY</span><a class="headerlink" href="#id71" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>List of Tested External PHY ICs:</strong></p>
+<ul class="simple">
+<li><p><strong>SP5301</strong> — Directly supported by ESP32-S3. See the guide above for schematic and routing information.</p></li>
+<li><p><strong>TUSB1106</strong> — Directly supported by ESP32-S3. Works with the external-PHY driver via GPIO mapping. Follow the reference wiring in the TUSB1106 datasheet (power-supply options and recommended series resistors on D+/D–).</p></li>
+<li><p><strong>STUSB03E</strong> — Requires signal routing using an analog switch. See example below.</p></li>
+</ul>
+<figure class="align-center" id="id72">
+<img alt="External PHY with Analog Switch Schematic (Device mode)" src="_images/ext_phy_schematic_stusb03e.png" />
+<figcaption>
+<p><span class="caption-text">Example connection using STUSB03E and analog switch (Device mode)</span><a class="headerlink" href="#id72" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This schematic is a minimal example intended only to demonstrate the external PHY connection. It omits other essential components and signals (e.g., VCC, GND, RESET) required for a complete, functional ESP32-S3 design.
+The schematic includes both a +5 V rail (usually from USB VBUS) and a VCC rail. VCC should match the chip supply voltage (usually 3.3 V). Ensure that the external PHY and the chip are powered from the same voltage domain. If designing a self-powered USB device, connect VBUSDET signal from the external PHY to ESP32-S3 for mandatory VBUS monitoring.</p>
+</div>
+<p>Hardware configuration is handled via GPIO mapping to the PHY’s pins. Any unused pins (e.g., <code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">usb_phy_ext_io_conf_t::suspend_n_io_num</span></code>, <code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">usb_phy_ext_io_conf_t::fs_edge_sel_io_num</span></code>) <strong>must be set to -1</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">usb_phy_ext_io_conf_t::suspend_n_io_num</span></code> pin is <strong>currently not supported</strong> and does not need to be connected.
+The <code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">usb_phy_ext_io_conf_t::fs_edge_sel_io_num</span></code> pin is optional and only required if switching between low-speed and full-speed modes is needed.</p>
+</div>
+<p>Starting from version 2.0, the ESP TinyUSB Device Stack supports external PHY usage. To use an external PHY in device mode:</p>
+<ol class="arabic simple">
+<li><p>Configure the GPIO mapping and PHY using <code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">usb_phy_config_t</span></code>.</p></li>
+<li><p>Create the PHY using <code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">usb_new_phy()</span></code>.</p></li>
+<li><p>Use <code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">TINYUSB_DEFAULT_CONFIG()</span></code> to initialize <a class="reference internal" href="#_CPPv416tinyusb_config_t" title="tinyusb_config_t"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">tinyusb_config_t</span></code></a>.</p></li>
+<li><p>Set the <cite>phy.skip_setup</cite> field of <a class="reference internal" href="#_CPPv416tinyusb_config_t" title="tinyusb_config_t"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">tinyusb_config_t</span></code></a> to <code class="docutils literal notranslate"><span class="pre">true</span></code> to bypass PHY reinitialization and use the externally configured PHY.</p></li>
+</ol>
+<p><strong>Example Code:</strong></p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="c1">// GPIO configuration for external PHY</span>
+<span class="k">const</span><span class="w"> </span><span class="n">usb_phy_ext_io_conf_t</span><span class="w"> </span><span class="n">ext_io_conf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="n">vp_io_num</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">vm_io_num</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">rcv_io_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">11</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">oen_io_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">17</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">vpo_io_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">vmo_io_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">46</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">suspend_n_io_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">fs_edge_sel_io_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="c1">// Configuration and initialization of external PHY for OTG controller (Device mode)</span>
+<span class="k">const</span><span class="w"> </span><span class="n">usb_phy_config_t</span><span class="w"> </span><span class="n">phy_config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="n">controller</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">USB_PHY_CTRL_OTG</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">USB_PHY_TARGET_EXT</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">otg_mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">USB_OTG_MODE_DEVICE</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">otg_speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">USB_PHY_SPEED_FULL</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">ext_io_conf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ext_io_conf</span>
+<span class="p">};</span>
+
+<span class="n">usb_phy_handle_t</span><span class="w"> </span><span class="n">phy_hdl</span><span class="p">;</span>
+<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">usb_new_phy</span><span class="p">(</span><span class="o">&amp;</span><span class="n">phy_config</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">phy_hdl</span><span class="p">));</span>
+
+<span class="c1">// Initialize TinyUSB with default configuration (event handler can be set if needed)</span>
+<span class="n">tinyusb_config_t</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TINYUSB_DEFAULT_CONFIG</span><span class="p">();</span>
+<span class="n">config</span><span class="p">.</span><span class="n">phy</span><span class="p">.</span><span class="n">skip_setup</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+
+<span class="n">tinyusb_driver_install</span><span class="p">(</span><span class="o">&amp;</span><span class="n">config</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>This setup ensures that the USB Device stack uses the <strong>external PHY</strong> instead of attempting to configure the internal one.</p>
+</section>
+<section id="device-stack-structure">
+<h2>Device Stack Structure<a class="headerlink" href="#device-stack-structure" title="Permalink to this heading"></a></h2>
+<p>The basis of the Device Stack is TinyUSB, where the Device Stack implements the following features on top of TinyUSB:</p>
+<ul class="simple">
+<li><p>Customization of USB descriptors</p></li>
+<li><p>Serial device support</p></li>
+<li><p>Redirecting of standard streams through the Serial device</p></li>
+<li><p>Storage Media (SPI-Flash and SD-Card) for USB Device MSC Class.</p></li>
+<li><p>A task within the encapsulated device stack that handles TinyUSB servicing</p></li>
+</ul>
+<section id="component-dependency">
+<h3>Component Dependency<a class="headerlink" href="#component-dependency" title="Permalink to this heading"></a></h3>
+<p>The Device Stack is distributed via the <a class="reference external" href="https://components.espressif.com/components/espressif/esp_tinyusb">ESP Component Registry</a>. Thus, to use it, please add the Device Stack component as dependency using the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>idf.py<span class="w"> </span>add-dependency<span class="w"> </span>esp_tinyusb
+</pre></div>
+</div>
+</section>
+<section id="configuration-options">
+<h3>Configuration Options<a class="headerlink" href="#configuration-options" title="Permalink to this heading"></a></h3>
+<p>Multiple aspects of the Device Stack can be configured using menuconfig. These include:</p>
+<ul class="simple">
+<li><p>The verbosity of the TinyUSB’s log</p></li>
+<li><p>Device Stack task related options</p></li>
+<li><p>Default device/string descriptor options</p></li>
+<li><p>Class specific options</p></li>
+<li><p>Power management options (PM locks and USB wakeup)</p></li>
+</ul>
+<p>The generated Kconfig reference for the available <code class="docutils literal notranslate"><span class="pre">CONFIG_TINYUSB_*</span></code> options is provided at the end of this document.</p>
+</section>
+<section id="descriptor-configuration">
+<span id="descriptors-configuration"></span><h3>Descriptor Configuration<a class="headerlink" href="#descriptor-configuration" title="Permalink to this heading"></a></h3>
+<p>The <a class="reference internal" href="#_CPPv416tinyusb_config_t" title="tinyusb_config_t"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">tinyusb_config_t</span></code></a> structure exposes USB descriptor settings through <a class="reference internal" href="#_CPPv4N16tinyusb_config_t10descriptorE" title="tinyusb_config_t::descriptor"><code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">tinyusb_config_t::descriptor</span></code></a>, which is a <a class="reference internal" href="#_CPPv421tinyusb_desc_config_t" title="tinyusb_desc_config_t"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">tinyusb_desc_config_t</span></code></a>.</p>
+<p>The following descriptors should be initialized for both full-speed and high-speed devices:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#_CPPv4N21tinyusb_desc_config_t6deviceE" title="tinyusb_desc_config_t::device"><code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">tinyusb_desc_config_t::device</span></code></a></p></li>
+<li><p><a class="reference internal" href="#_CPPv4N21tinyusb_desc_config_t6stringE" title="tinyusb_desc_config_t::string"><code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">tinyusb_desc_config_t::string</span></code></a></p></li>
+</ul>
+<p>Full-speed devices should initialize the following field to provide their configuration descriptor:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#_CPPv4N21tinyusb_desc_config_t17full_speed_configE" title="tinyusb_desc_config_t::full_speed_config"><code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">tinyusb_desc_config_t::full_speed_config</span></code></a></p></li>
+</ul>
+<p>The Device Stack will instantiate a USB device based on the descriptors provided in the fields described above when <a class="reference internal" href="#_CPPv422tinyusb_driver_installPK16tinyusb_config_t" title="tinyusb_driver_install"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">tinyusb_driver_install()</span></code></a> is called.</p>
+<p>The Device Stack also provides default descriptors when the corresponding fields in <a class="reference internal" href="#_CPPv421tinyusb_desc_config_t" title="tinyusb_desc_config_t"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">tinyusb_desc_config_t</span></code></a> are set to <code class="docutils literal notranslate"><span class="pre">NULL</span></code>. Their values come from menuconfig options such as <code class="docutils literal notranslate"><span class="pre">CONFIG_TINYUSB_DESC_*</span></code>. Default descriptors include:</p>
+<ul>
+<li><p>Default device descriptor: set <a class="reference internal" href="#_CPPv4N21tinyusb_desc_config_t6deviceE" title="tinyusb_desc_config_t::device"><code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">tinyusb_desc_config_t::device</span></code></a> to <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p></li>
+<li><p>Default string descriptor: set <a class="reference internal" href="#_CPPv4N21tinyusb_desc_config_t6stringE" title="tinyusb_desc_config_t::string"><code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">tinyusb_desc_config_t::string</span></code></a> to <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p></li>
+<li><p>Default qualifier descriptor: set <a class="reference internal" href="#_CPPv4N21tinyusb_desc_config_t9qualifierE" title="tinyusb_desc_config_t::qualifier"><code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">tinyusb_desc_config_t::qualifier</span></code></a> to <code class="docutils literal notranslate"><span class="pre">NULL</span></code> on high-speed-capable devices.</p></li>
+<li><p>Default configuration descriptors. Some classes that rarely require custom configuration (such as CDC, MSC, and NCM) provide default configuration descriptors. These can be enabled by setting the associated field to <code class="docutils literal notranslate"><span class="pre">NULL</span></code>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#_CPPv4N21tinyusb_desc_config_t17full_speed_configE" title="tinyusb_desc_config_t::full_speed_config"><code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">tinyusb_desc_config_t::full_speed_config</span></code></a>: full-speed descriptor</p></li>
+<li><p><a class="reference internal" href="#_CPPv4N21tinyusb_desc_config_t17high_speed_configE" title="tinyusb_desc_config_t::high_speed_config"><code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">tinyusb_desc_config_t::high_speed_config</span></code></a>: high-speed descriptor on high-speed-capable devices</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+</section>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h2>
+<p>To install the Device Stack, please call <a class="reference internal" href="#_CPPv422tinyusb_driver_installPK16tinyusb_config_t" title="tinyusb_driver_install"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">tinyusb_driver_install()</span></code></a>. The Device Stack’s configuration is specified in a <a class="reference internal" href="#_CPPv416tinyusb_config_t" title="tinyusb_config_t"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">tinyusb_config_t</span></code></a> structure that is passed as an argument to <a class="reference internal" href="#_CPPv422tinyusb_driver_installPK16tinyusb_config_t" title="tinyusb_driver_install"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">tinyusb_driver_install()</span></code></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Initialize <a class="reference internal" href="#_CPPv416tinyusb_config_t" title="tinyusb_config_t"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">tinyusb_config_t</span></code></a> with <code class="docutils literal notranslate"><span class="pre">TINYUSB_DEFAULT_CONFIG()</span></code> and then override only the fields you need. Descriptor pointers left as <code class="docutils literal notranslate"><span class="pre">NULL</span></code> use the default descriptor values when available.</p>
+</div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">"tinyusb_default_config.h"</span>
+
+<span class="n">tinyusb_config_t</span><span class="w"> </span><span class="n">tusb_cfg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TINYUSB_DEFAULT_CONFIG</span><span class="p">();</span>
+<span class="n">tusb_cfg</span><span class="p">.</span><span class="n">descriptor</span><span class="p">.</span><span class="n">device</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
+<span class="n">tusb_cfg</span><span class="p">.</span><span class="n">descriptor</span><span class="p">.</span><span class="n">string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
+<span class="n">tusb_cfg</span><span class="p">.</span><span class="n">descriptor</span><span class="p">.</span><span class="n">full_speed_config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
+<span class="cp">#if (SOC_USB_OTG_PERIPH_NUM &gt; 1)</span>
+<span class="w">    </span><span class="n">tusb_cfg</span><span class="p">.</span><span class="n">descriptor</span><span class="p">.</span><span class="n">high_speed_config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
+<span class="w">    </span><span class="n">tusb_cfg</span><span class="p">.</span><span class="n">descriptor</span><span class="p">.</span><span class="n">qualifier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
+<span class="cp">#endif</span>
+
+<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">tinyusb_driver_install</span><span class="p">(</span><span class="o">&amp;</span><span class="n">tusb_cfg</span><span class="p">));</span>
+</pre></div>
+</div>
+</section>
+<section id="self-powered-device">
+<span id="id1"></span><h2>Self-Powered Device<a class="headerlink" href="#self-powered-device" title="Permalink to this heading"></a></h2>
+<p>USB specification mandates self-powered devices to monitor voltage levels on USB’s VBUS signal. As opposed to bus-powered devices, a self-powered device can be fully functional even without a USB connection. The self-powered device detects connection and disconnection events by monitoring the VBUS voltage level. VBUS is considered valid if it rises above 4.75 V and invalid if it falls below 4.35 V.</p>
+<p>On the ESP32-S3, this will require using a GPIO to act as a voltage sensing pin to detect when VBUS goes above/below the prescribed thresholds. However, ESP32-S3 pins are 3.3 V tolerant. Thus, even if VBUS rises/falls above/below the thresholds mentioned above, it would still appear as a logic HIGH to the ESP32-S3. Thus, in order to detect the VBUS valid condition, users can do one of the following:</p>
+<ul class="simple">
+<li><p>Connect VBUS to a voltage comparator chip/circuit that detects the thresholds described above (i.e., 4.35 V and 4.75 V), and outputs a 3.3 V logic level to the ESP32-S3 indicating whether VBUS is valid or not.</p></li>
+<li><p>Use a resistor voltage divider that outputs (0.75 x Vdd) if VBUS is 4.4 V (see figure below).</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In either case, the voltage on the sensing pin must be logic low within 3 ms after the device is unplugged from the USB host.</p>
+</div>
+<figure class="align-center" id="id73">
+<img alt="Simple voltage divider for VBUS monitoring" src="_images/usb_vbus_voltage_monitor.png" />
+<figcaption>
+<p><span class="caption-text">Simple voltage divider for VBUS monitoring</span><a class="headerlink" href="#id73" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>To use this feature, set <a class="reference internal" href="#_CPPv4N20tinyusb_phy_config_t12self_poweredE" title="tinyusb_phy_config_t::self_powered"><code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">tinyusb_phy_config_t::self_powered</span></code></a> to <code class="docutils literal notranslate"><span class="pre">true</span></code> and <a class="reference internal" href="#_CPPv4N20tinyusb_phy_config_t15vbus_monitor_ioE" title="tinyusb_phy_config_t::vbus_monitor_io"><code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">tinyusb_phy_config_t::vbus_monitor_io</span></code></a> to the GPIO used for VBUS monitoring through <a class="reference internal" href="#_CPPv4N16tinyusb_config_t3phyE" title="tinyusb_config_t::phy"><code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">tinyusb_config_t::phy</span></code></a>.</p>
+</section>
+<section id="power-management">
+<h2>Power Management<a class="headerlink" href="#power-management" title="Permalink to this heading"></a></h2>
+<section id="suspend-and-resume-events">
+<h3>Suspend and Resume Events<a class="headerlink" href="#suspend-and-resume-events" title="Permalink to this heading"></a></h3>
+<p>Suspend and resume device events are optional and disabled by default. Enable the following Kconfig options to receive them through the USB Device Event callback (<a class="reference internal" href="#_CPPv4N16tinyusb_config_t8event_cbE" title="tinyusb_config_t::event_cb"><code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">tinyusb_config_t::event_cb</span></code></a>):</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#config-tinyusb-suspend-callback"><span class="std std-ref">CONFIG_TINYUSB_SUSPEND_CALLBACK</span></a> enables <a class="reference internal" href="#_CPPv4N18tinyusb_event_id_t23TINYUSB_EVENT_SUSPENDEDE" title="tinyusb_event_id_t::TINYUSB_EVENT_SUSPENDED"><code class="xref cpp cpp-enumerator docutils literal notranslate"><span class="pre">TINYUSB_EVENT_SUSPENDED</span></code></a></p></li>
+<li><p><a class="reference internal" href="#config-tinyusb-resume-callback"><span class="std std-ref">CONFIG_TINYUSB_RESUME_CALLBACK</span></a> enables <a class="reference internal" href="#_CPPv4N18tinyusb_event_id_t21TINYUSB_EVENT_RESUMEDE" title="tinyusb_event_id_t::TINYUSB_EVENT_RESUMED"><code class="xref cpp cpp-enumerator docutils literal notranslate"><span class="pre">TINYUSB_EVENT_RESUMED</span></code></a></p></li>
+</ul>
+<p>When these options are enabled, esp_tinyusb provides strong implementations of <code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">tud_suspend_cb()</span></code> and <code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">tud_resume_cb()</span></code>. User applications <strong>must not</strong> define these callbacks themselves, or a linker error will occur due to multiple definitions.</p>
+<p>If the Kconfig options are disabled, users may implement <code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">tud_suspend_cb()</span></code> and <code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">tud_resume_cb()</span></code> directly in the application instead.</p>
+</section>
+<section id="remote-wakeup">
+<h3>Remote Wakeup<a class="headerlink" href="#remote-wakeup" title="Permalink to this heading"></a></h3>
+<p>When the host suspends the device and enables remote wakeup, the device can signal resume with <a class="reference internal" href="#_CPPv421tinyusb_remote_wakeupv" title="tinyusb_remote_wakeup"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">tinyusb_remote_wakeup()</span></code></a>. Call this function only while the device is suspended and the host has enabled remote wakeup for the current suspend cycle.</p>
+</section>
+<section id="automatic-light-sleep-via-pm-locks">
+<h3>Automatic Light Sleep via PM Locks<a class="headerlink" href="#automatic-light-sleep-via-pm-locks" title="Permalink to this heading"></a></h3>
+<p>esp_tinyusb can manage an <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/api-reference/system/power_management.html#_CPPv4N18esp_pm_lock_type_t21ESP_PM_NO_LIGHT_SLEEPE" title="(in ESP-IDF Programming Guide vmaster)"><code class="xref cpp cpp-enumerator docutils literal notranslate"><span class="pre">esp_pm_lock_type_t::ESP_PM_NO_LIGHT_SLEEP</span></code></a> lock based on USB device state. While the lock is held, the SoC will not enter automatic light sleep. When the USB host suspends the bus, esp_tinyusb releases the lock so automatic light sleep can proceed.</p>
+<p>Enable this feature in two steps, using Kconfig options and runtime settings:</p>
+<section id="kconfig-prerequisites">
+<h4>Kconfig prerequisites<a class="headerlink" href="#kconfig-prerequisites" title="Permalink to this heading"></a></h4>
+<blockquote>
+<div><p>Enable <a class="reference internal" href="#config-tinyusb-pm"><span class="std std-ref">CONFIG_TINYUSB_PM</span></a> in menuconfig. This option requires the following config options:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#config-tinyusb-suspend-callback"><span class="std std-ref">CONFIG_TINYUSB_SUSPEND_CALLBACK</span></a></p></li>
+<li><p><a class="reference internal" href="#config-tinyusb-resume-callback"><span class="std std-ref">CONFIG_TINYUSB_RESUME_CALLBACK</span></a></p></li>
+<li><p><a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/api-reference/kconfig-reference.html#config-pm-enable" title="(in ESP-IDF Programming Guide vmaster)"><span class="xref std std-ref">CONFIG_PM_ENABLE</span></a></p></li>
+<li><p><a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/api-reference/kconfig-reference.html#config-freertos-use-tickless-idle" title="(in ESP-IDF Programming Guide vmaster)"><span class="xref std std-ref">CONFIG_FREERTOS_USE_TICKLESS_IDLE</span></a></p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="runtime-settings">
+<h4>Runtime settings<a class="headerlink" href="#runtime-settings" title="Permalink to this heading"></a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><p>configure the ESP-IDF PM module with the <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/api-reference/system/power_management.html#_CPPv4N15esp_pm_config_t18light_sleep_enableE" title="(in ESP-IDF Programming Guide vmaster)"><code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">esp_pm_config_t::light_sleep_enable</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">true</span></code>,</p></li>
+<li><p>set <a class="reference internal" href="#_CPPv4N16tinyusb_config_t14pm_lock_enableE" title="tinyusb_config_t::pm_lock_enable"><code class="xref cpp cpp-member docutils literal notranslate"><span class="pre">tinyusb_config_t::pm_lock_enable</span></code></a> to <code class="docutils literal notranslate"><span class="pre">true</span></code> when calling <a class="reference internal" href="#_CPPv422tinyusb_driver_installPK16tinyusb_config_t" title="tinyusb_driver_install"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">tinyusb_driver_install()</span></code></a>.</p></li>
+</ul>
+</div></blockquote>
+<p>Configure automatic light sleep through ESP-IDF PM:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">esp_pm_config_t</span><span class="w"> </span><span class="n">pm_config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="n">max_freq_mhz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">min_freq_mhz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">light_sleep_enable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">,</span>
+<span class="p">};</span>
+<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_pm_configure</span><span class="p">(</span><span class="o">&amp;</span><span class="n">pm_config</span><span class="p">));</span>
+
+<span class="n">tinyusb_config_t</span><span class="w"> </span><span class="n">tusb_cfg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TINYUSB_DEFAULT_CONFIG</span><span class="p">();</span>
+<span class="n">tusb_cfg</span><span class="p">.</span><span class="n">pm_lock_enable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">tinyusb_driver_install</span><span class="p">(</span><span class="o">&amp;</span><span class="n">tusb_cfg</span><span class="p">));</span>
+</pre></div>
+</div>
+</section>
+<section id="lock-behavior">
+<h4>Lock behavior<a class="headerlink" href="#lock-behavior" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p>On driver install, esp_tinyusb creates an <a class="reference external" href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/api-reference/system/power_management.html#_CPPv4N18esp_pm_lock_type_t21ESP_PM_NO_LIGHT_SLEEPE" title="(in ESP-IDF Programming Guide vmaster)"><code class="xref cpp cpp-enumerator docutils literal notranslate"><span class="pre">esp_pm_lock_type_t::ESP_PM_NO_LIGHT_SLEEP</span></code></a> lock and acquires it.</p></li>
+<li><p>On <a class="reference internal" href="#_CPPv4N18tinyusb_event_id_t22TINYUSB_EVENT_ATTACHEDE" title="tinyusb_event_id_t::TINYUSB_EVENT_ATTACHED"><code class="xref cpp cpp-enumerator docutils literal notranslate"><span class="pre">TINYUSB_EVENT_ATTACHED</span></code></a>, the lock is acquired if it is not already held.</p></li>
+<li><p>On <a class="reference internal" href="#_CPPv4N18tinyusb_event_id_t23TINYUSB_EVENT_SUSPENDEDE" title="tinyusb_event_id_t::TINYUSB_EVENT_SUSPENDED"><code class="xref cpp cpp-enumerator docutils literal notranslate"><span class="pre">TINYUSB_EVENT_SUSPENDED</span></code></a>, the lock is released while the device remains mounted, allowing automatic light sleep.</p></li>
+<li><p>On <a class="reference internal" href="#_CPPv4N18tinyusb_event_id_t21TINYUSB_EVENT_RESUMEDE" title="tinyusb_event_id_t::TINYUSB_EVENT_RESUMED"><code class="xref cpp cpp-enumerator docutils literal notranslate"><span class="pre">TINYUSB_EVENT_RESUMED</span></code></a>, the lock is re-acquired.</p></li>
+<li><p>On <a class="reference internal" href="#_CPPv4N18tinyusb_event_id_t22TINYUSB_EVENT_DETACHEDE" title="tinyusb_event_id_t::TINYUSB_EVENT_DETACHED"><code class="xref cpp cpp-enumerator docutils literal notranslate"><span class="pre">TINYUSB_EVENT_DETACHED</span></code></a>, the lock is acquired and the suspend PM state is cleared.</p></li>
+<li><p><a class="reference internal" href="#_CPPv421tinyusb_remote_wakeupv" title="tinyusb_remote_wakeup"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">tinyusb_remote_wakeup()</span></code></a> acquires the lock before signaling remote wakeup to the host.</p></li>
+</ul>
+<p>Suspend and Resume callbacks <a class="reference internal" href="#config-tinyusb-suspend-callback"><span class="std std-ref">CONFIG_TINYUSB_SUSPEND_CALLBACK</span></a> and <a class="reference internal" href="#config-tinyusb-resume-callback"><span class="std std-ref">CONFIG_TINYUSB_RESUME_CALLBACK</span></a> must be enabled, registered inside the esp_tinyusb, otherwise the PM module would not have information about the device being suspended or resumed.</p>
+<p>Use <a class="reference internal" href="#_CPPv426tinyusb_pm_get_lock_statusPb" title="tinyusb_pm_get_lock_status"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">tinyusb_pm_get_lock_status()</span></code></a> to query whether the PM lock is currently held.</p>
+</section>
+</section>
+<section id="light-sleep-with-usb-wakeup">
+<h3>Light Sleep with USB Wakeup<a class="headerlink" href="#light-sleep-with-usb-wakeup" title="Permalink to this heading"></a></h3>
+<p>On targets with full-speed port, the USB device peripheral can <strong>NOT</strong> be used as a light sleep wake-up source due to USB PHY limitations. This feature is only supported on high-speed ports.</p>
+</section>
+</section>
+<section id="usb-serial-device-cdc-acm">
+<h2>USB Serial Device (CDC-ACM)<a class="headerlink" href="#usb-serial-device-cdc-acm" title="Permalink to this heading"></a></h2>
+<p>If <a class="reference internal" href="#config-tinyusb-cdc-enabled"><span class="std std-ref">CONFIG_TINYUSB_CDC_ENABLED</span></a> is enabled in menuconfig, the USB Serial Device can be initialized with <a class="reference internal" href="#_CPPv419tinyusb_cdcacm_initPK23tinyusb_config_cdcacm_t" title="tinyusb_cdcacm_init"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">tinyusb_cdcacm_init()</span></code></a> according to the settings from <a class="reference internal" href="#_CPPv423tinyusb_config_cdcacm_t" title="tinyusb_config_cdcacm_t"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">tinyusb_config_cdcacm_t</span></code></a>, see the example below.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">const</span><span class="w"> </span><span class="n">tinyusb_config_cdcacm_t</span><span class="w"> </span><span class="n">acm_cfg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="n">cdc_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TINYUSB_CDC_ACM_0</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">callback_rx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">callback_rx_wanted_char</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">callback_line_state_changed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">callback_line_coding_changed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span>
+<span class="p">};</span>
+<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">tinyusb_cdcacm_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">acm_cfg</span><span class="p">));</span>
+</pre></div>
+</div>
+<p>To specify callbacks, you can either set the pointer to your <a class="reference internal" href="#_CPPv422tusb_cdcacm_callback_t" title="tusb_cdcacm_callback_t"><code class="xref cpp cpp-type docutils literal notranslate"><span class="pre">tusb_cdcacm_callback_t</span></code></a> function in the configuration structure or call <a class="reference internal" href="#_CPPv432tinyusb_cdcacm_register_callback20tinyusb_cdcacm_itf_t19cdcacm_event_type_t22tusb_cdcacm_callback_t" title="tinyusb_cdcacm_register_callback"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">tinyusb_cdcacm_register_callback()</span></code></a> after initialization.</p>
+<section id="usb-serial-console">
+<h3>USB Serial Console<a class="headerlink" href="#usb-serial-console" title="Permalink to this heading"></a></h3>
+<p>The USB Serial Device allows the redirection of all standard input/output streams (stdin, stdout, stderr) to USB. Thus, calling standard library input/output functions such as <code class="docutils literal notranslate"><span class="pre">printf()</span></code> will result into the data being sent/received over USB instead of UART.</p>
+<p>Users should call <a class="reference internal" href="#_CPPv420tinyusb_console_initi" title="tinyusb_console_init"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">tinyusb_console_init()</span></code></a> with the CDC interface number to switch the standard input/output streams to USB, and <a class="reference internal" href="#_CPPv422tinyusb_console_deiniti" title="tinyusb_console_deinit"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">tinyusb_console_deinit()</span></code></a> to switch them back to UART.</p>
+</section>
+</section>
+<section id="usb-mass-storage-device-msc">
+<h2>USB Mass Storage Device (MSC)<a class="headerlink" href="#usb-mass-storage-device-msc" title="Permalink to this heading"></a></h2>
+<p>If <a class="reference internal" href="#config-tinyusb-msc-enabled"><span class="std std-ref">CONFIG_TINYUSB_MSC_ENABLED</span></a> is enabled in menuconfig, the ESP chip can be used as a USB MSC device. The storage media (SPI flash or SD card) can be initialized as shown below.</p>
+<ul class="simple">
+<li><p>SPI-Flash</p></li>
+</ul>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="n">esp_err_t</span><span class="w"> </span><span class="nf">storage_init_spiflash</span><span class="p">(</span><span class="n">wl_handle_t</span><span class="w"> </span><span class="o">*</span><span class="n">wl_handle</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="o">***</span>
+<span class="w">    </span><span class="n">esp_partition_t</span><span class="w"> </span><span class="o">*</span><span class="n">data_partition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">esp_partition_find_first</span><span class="p">(</span><span class="n">ESP_PARTITION_TYPE_DATA</span><span class="p">,</span><span class="w"> </span><span class="n">ESP_PARTITION_SUBTYPE_DATA_FAT</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">);</span>
+<span class="w">    </span><span class="o">***</span>
+<span class="w">    </span><span class="n">wl_mount</span><span class="p">(</span><span class="n">data_partition</span><span class="p">,</span><span class="w"> </span><span class="n">wl_handle</span><span class="p">);</span>
+<span class="w">    </span><span class="o">***</span>
+<span class="p">}</span>
+<span class="n">storage_init_spiflash</span><span class="p">(</span><span class="o">&amp;</span><span class="n">wl_handle</span><span class="p">);</span>
+
+<span class="n">tinyusb_msc_storage_handle_t</span><span class="w"> </span><span class="n">storage_hdl</span><span class="p">;</span>
+<span class="k">const</span><span class="w"> </span><span class="n">tinyusb_msc_storage_config_t</span><span class="w"> </span><span class="n">config_spi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="n">medium</span><span class="p">.</span><span class="n">wl_handle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">wl_handle</span><span class="p">,</span>
+<span class="p">};</span>
+<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">tinyusb_msc_new_storage_spiflash</span><span class="p">(</span><span class="o">&amp;</span><span class="n">config_spi</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">storage_hdl</span><span class="p">));</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>SD-Card</p></li>
+</ul>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="n">esp_err_t</span><span class="w"> </span><span class="nf">storage_init_sdmmc</span><span class="p">(</span><span class="n">sdmmc_card_t</span><span class="w"> </span><span class="o">**</span><span class="n">card</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="o">***</span>
+<span class="w">    </span><span class="n">sdmmc_host_t</span><span class="w"> </span><span class="n">host</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDMMC_HOST_DEFAULT</span><span class="p">();</span>
+<span class="w">    </span><span class="n">sdmmc_slot_config_t</span><span class="w"> </span><span class="n">slot_config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDMMC_SLOT_CONFIG_DEFAULT</span><span class="p">();</span>
+<span class="w">    </span><span class="c1">// For SD Card, set bus width to use</span>
+
+<span class="w">    </span><span class="n">slot_config</span><span class="p">.</span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span>
+<span class="w">    </span><span class="n">slot_config</span><span class="p">.</span><span class="n">clk</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CONFIG_EXAMPLE_PIN_CLK</span><span class="p

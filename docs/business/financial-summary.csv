@@ -1,0 +1,4 @@
+﻿scenario,total_units,total_gross_sales,total_contribution,cumulative_profit_after_nre,ending_cash,minimum_cash,first_negative_cash_month,ending_receivable,ending_inventory_value
+downside,1613,553287.0,132936.08,-537063.92,-24819.92,-24819.92,10,20677.0,67079.0
+base,4610,1580890.0,379789.3,-290210.7,60494.3,45907.99,none_in_horizon,58435.0,190860.0
+upside,7837,2687263.0,645555.63,-101444.36,75106.64,23002.18,none_in_horizon,98890.0,324559.0
