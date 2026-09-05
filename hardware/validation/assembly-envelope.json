@@ -1,0 +1,21 @@
+{
+  "units": "mm",
+  "excludes": "USB cable extensions",
+  "mesh_assembly_min": [
+    -40.02244186401367,
+    -62.999752044677734,
+    0.0
+  ],
+  "mesh_assembly_max": [
+    40.00146484375,
+    63.0,
+    54.0
+  ],
+  "mesh_assembly_bbox": [
+    80.02390670776367,
+    125.99975204467773,
+    54.0
+  ],
+  "volume_of_manufactured_parts_mm3": 65462.37,
+  "note": "Nominal 126x80x54; BREP bounding boxes are conservative."
+}

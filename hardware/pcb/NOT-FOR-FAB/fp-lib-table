@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "LINGBAN") (type "KiCad") (uri "${KIPRJMOD}/LINGBAN.pretty") (options "") (descr "Self-contained engineering footprints; NOT-FOR-FAB")))

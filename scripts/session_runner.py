@@ -3,10 +3,10 @@
 import argparse,datetime,json,os,subprocess,time,fcntl
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-p=argparse.ArgumentParser();p.add_argument('role');p.add_argument('--effort',default='high');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('role');p.add_argument('--effort',default='high');p.add_argument('--resume');a=p.parse_args()
 local=ROOT/'.local/sessions';local.mkdir(parents=True,exist_ok=True)
 prompt=(local/(a.role+'.prompt.md')).read_text()
-record={'role':a.role,'model':'gpt-6-astra','effort':a.effort,'pid':os.getpid(),'started_at':datetime.datetime.now().astimezone().isoformat(),'state':'starting','thread_id':None,'attempt':0}
+record={'role':a.role,'model':'gpt-6-astra','effort':a.effort,'pid':os.getpid(),'started_at':datetime.datetime.now().astimezone().isoformat(),'state':'starting','thread_id':a.resume,'attempt':0}
 def save():
  (local/(a.role+'.status.json')).write_text(json.dumps(record,ensure_ascii=False,indent=2))
  rows=[]
@@ -20,11 +20,11 @@ for attempt in range(3):
  record['attempt']=attempt+1;record['state']='running';save()
  base=['codex','-a','never','-s','danger-full-access','-c',f'model_reasoning_effort="{a.effort}"','exec','-m','gpt-6-astra','--json','-o',str(local/(a.role+'.final.md'))]
  if record['thread_id']:
-  base=['codex','-c',f'model_reasoning_effort="{a.effort}"','exec','resume','-m','gpt-6-astra','--json','-o',str(local/(a.role+'.final.md')),record['thread_id'],'继续。完成你被分配的任务和验证，遵守仓库AGENTS.md，保持原有成果。']
+  base=['codex','-a','never','-s','danger-full-access','-c',f'model_reasoning_effort="{a.effort}"','exec','resume','-m','gpt-6-astra','--json','-o',str(local/(a.role+'.final.md')),record['thread_id'],'-']
  else: base+=['-']
  proc=subprocess.Popen(base,cwd=ROOT,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,bufsize=1)
  record['child_pid']=proc.pid;save()
- if not record['thread_id']: proc.stdin.write(prompt)
+ proc.stdin.write(prompt if attempt==0 else '继续。完成你被分配的任务和验证，遵守仓库AGENTS.md，保持原有成果。')
  proc.stdin.close()
  with (local/(a.role+'.jsonl')).open('a') as log:
   for line in proc.stdout:

@@ -1,0 +1,11 @@
+{
+  "source": "hardware/renders/hero_raw.png",
+  "source_sha256": "49edf85a46836fd7dc4ef2727be45d9b33809cde3394cb563d5b1b2e6d84d97c",
+  "output": "media/references/crystal-mouse-cad-landscape.png",
+  "output_sha256": "57f6673f503a5799313e39d3f3204d39d9b352baa3b182f23aa8dca5d32e2405",
+  "transformation": "Resize preserving geometry; extend row-edge studio background to 2560x1440",
+  "used_for": [
+    "01_crystal_mouse_focus",
+    "02_crystal_mouse_workday"
+  ]
+}

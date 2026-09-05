@@ -1,0 +1,138 @@
+[
+  {
+    "command": [
+      "pcb",
+      "drc",
+      "--schematic-parity",
+      "--format",
+      "json",
+      "--exit-code-violations",
+      "-o",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/validation/pcb-drc.json",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/lingban_carrier.kicad_pcb"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "pcb",
+      "drc",
+      "--format",
+      "json",
+      "--exit-code-violations",
+      "-o",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/validation/pcb-geometric-drc.json",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/lingban_carrier.kicad_pcb"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "sch",
+      "erc",
+      "--format",
+      "json",
+      "--exit-code-violations",
+      "-o",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/validation/sch-erc.json",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/lingban_carrier.kicad_sch"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "sch",
+      "export",
+      "netlist",
+      "-o",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/lingban_carrier.net",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/lingban_carrier.kicad_sch"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "-o",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/lingban_carrier.xml",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/lingban_carrier.kicad_sch"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "sch",
+      "export",
+      "svg",
+      "-o",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/plots/",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/lingban_carrier.kicad_sch"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "pcb",
+      "export",
+      "gerbers",
+      "-l",
+      "F.Cu,B.Cu,F.Mask,B.Mask,F.SilkS,B.SilkS,B.Paste,Edge.Cuts",
+      "-o",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/gerber-review-only/",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/lingban_carrier.kicad_pcb"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "pcb",
+      "export",
+      "drill",
+      "--excellon-separate-th",
+      "--generate-map",
+      "--map-format",
+      "svg",
+      "-o",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/gerber-review-only/",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/lingban_carrier.kicad_pcb"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "pcb",
+      "export",
+      "pos",
+      "--format",
+      "csv",
+      "--units",
+      "mm",
+      "--smd-only",
+      "--exclude-dnp",
+      "-o",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/PnP-kicad.csv",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/lingban_carrier.kicad_pcb"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "pcb",
+      "export",
+      "svg",
+      "--mode-single",
+      "--fit-page-to-board",
+      "--exclude-drawing-sheet",
+      "-l",
+      "F.Cu,B.Cu,F.SilkS,Edge.Cuts",
+      "-o",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/plots/pcb-routed.svg",
+      "/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/lingban_carrier.kicad_pcb"
+    ],
+    "exit_code": 0
+  }
+]

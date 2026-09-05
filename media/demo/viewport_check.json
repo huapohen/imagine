@@ -1,0 +1,7 @@
+{
+  "frames_checked": 700,
+  "check": "Every output frame downsampled; detect large grey regions caused by screenshot/mobile viewport artifacts",
+  "abnormal_grey_viewport_frames": 0,
+  "threshold": 0.12,
+  "limitations": "Not OCR, not a comprehensive secret detector; login intervals are excluded and password masking independently checked"
+}

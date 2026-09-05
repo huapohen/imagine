@@ -1,0 +1,115 @@
+{
+  "board": "ESP32-S3-DevKitC-1",
+  "revision": "v1.1",
+  "module": "N8R8",
+  "pinout_source": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html",
+  "serial": {
+    "protocol": "LB1",
+    "software_id": "lingban.serial/1",
+    "authority": "docs/software/serial-protocol.md",
+    "transport": "USB-UART bridge (UART0 RX44/TX43; native CDC disabled)",
+    "baud": 115200,
+    "format": "8N1",
+    "encoding": "ASCII + CRC16-CCITT-FALSE",
+    "max_frame_bytes_including_lf": 256,
+    "seq_range": [
+      1,
+      65535
+    ],
+    "led_enum": [
+      "off",
+      "teal",
+      "amber",
+      "blue"
+    ],
+    "text_max_utf8_bytes": 80,
+    "text_encoding": "lowercase hex",
+    "host_requests": [
+      "HELLO",
+      "SET",
+      "GET",
+      "PING"
+    ],
+    "per_message_ttl_supported": false,
+    "push_events_supported": false
+  },
+  "pins": {
+    "rgb_r": {
+      "gpio": 4,
+      "header": "J1.4",
+      "active": "low",
+      "series_ohms": 470
+    },
+    "rgb_g": {
+      "gpio": 5,
+      "header": "J1.5",
+      "active": "low",
+      "series_ohms": 470
+    },
+    "rgb_b": {
+      "gpio": 6,
+      "header": "J1.6",
+      "active": "low",
+      "series_ohms": 470
+    },
+    "touch": {
+      "gpio": 7,
+      "header": "J1.7",
+      "touch_channel": 7,
+      "series_ohms": 1000
+    },
+    "i2c_sda": {
+      "gpio": 8,
+      "header": "J1.12",
+      "pullup_ohms": 4700,
+      "pullup_rail": "SW3V3"
+    },
+    "i2c_scl": {
+      "gpio": 9,
+      "header": "J1.15",
+      "pullup_ohms": 4700,
+      "pullup_rail": "SW3V3"
+    },
+    "privacy_allow_n": {
+      "gpio": 10,
+      "header": "J1.16",
+      "pullup_ohms": 10000,
+      "pullup_rail": "3V3",
+      "high_or_open_means": "privacy"
+    }
+  },
+  "constraints": {
+    "gpio_voltage_max_nominal": 3.3,
+    "privacy_gpio_modes": "PWM detach, Wire.end, GPIO4/5/6/7/8/9 INPUT without internal pullups; outputs cleared",
+    "boot_default": "privacy until switch and handshake validated",
+    "heartbeat_timeout_ms": 5000,
+    "i2c_hz": 100000,
+    "display_address": 60,
+    "display_address_hex": "0x3C",
+    "display_behavior": "status icons; logical UTF-8 hex text via GET, no full-font claim",
+    "privacy_indicator": "host UI and physical switch only; no powered privacy LED/OLED",
+    "privacy_release_debounce_ms": 40,
+    "common_anode_off_duty": 255,
+    "heartbeat_refresh": "only valid empty GET/PING; HELLO establishes initial time; SET cannot keep alive",
+    "offline_behavior": "after >=5000ms clear ready/session/cache/outputs; if powered blank screen before high-Z; if private skip peripheral writes",
+    "validation": "read-only source alignment; master reports two-profile compile and mock HAL tests passed; no board test"
+  },
+  "firmware_profile": {
+    "source": "firmware/platformio.ini",
+    "env": "esp32s3_evt_a",
+    "flash_size": "8MB",
+    "flash_mode": "qio",
+    "arduino_memory_type": "qio_opi",
+    "psram_type": "opi",
+    "BOARD_HAS_PSRAM": true,
+    "ARDUINO_USB_CDC_ON_BOOT": 0,
+    "touch_threshold": 0,
+    "configured_caps": {
+      "led": 1,
+      "touch": 0,
+      "privacy": 1,
+      "screen": 1
+    },
+    "safe_profile": "esp32s3_safe: all LB_PIN_* / screen address -1; all caps 0"
+  }
+}

@@ -1,0 +1,161 @@
+[
+  {
+    "slide": 1,
+    "render_sha256": "5ea3877c7b7880c66e151260892aa79918b1a9679bf439cfd05a684ed87069eb",
+    "pixel_diff_bbox_to_prior": null,
+    "notes_and_html_source_match": true,
+    "html_image_exact_match": true,
+    "review": "prior full-size review + final contact sheet"
+  },
+  {
+    "slide": 2,
+    "render_sha256": "a30a219fdc4a179ac171fd707ff334d181f3e603390066cf48a7a523ad8974af",
+    "pixel_diff_bbox_to_prior": null,
+    "notes_and_html_source_match": true,
+    "html_image_exact_match": true,
+    "review": "prior full-size review + final contact sheet"
+  },
+  {
+    "slide": 3,
+    "render_sha256": "1823658971530d88e6cc302841d54d39f0f6a1ead9e2aee43d1db20cbd84c527",
+    "pixel_diff_bbox_to_prior": null,
+    "notes_and_html_source_match": true,
+    "html_image_exact_match": true,
+    "review": "prior full-size review + final contact sheet"
+  },
+  {
+    "slide": 4,
+    "render_sha256": "9d943c104e5ffc03d085c19454522bf64e64f6649cbd8877e61bd553739a7096",
+    "pixel_diff_bbox_to_prior": null,
+    "notes_and_html_source_match": true,
+    "html_image_exact_match": true,
+    "review": "prior full-size review + final contact sheet"
+  },
+  {
+    "slide": 5,
+    "render_sha256": "3b70f6588606e66c8a7e40fc99ea95b7cdae4599eb66449ac51b3b0fc2b39b59",
+    "pixel_diff_bbox_to_prior": [
+      137,
+      223,
+      756,
+      783
+    ],
+    "notes_and_html_source_match": true,
+    "html_image_exact_match": true,
+    "review": "affected page full-size"
+  },
+  {
+    "slide": 6,
+    "render_sha256": "551e63c85482d3f9626a07510be7996e48f5ec2266aa47a66d263f6d2a4c598a",
+    "pixel_diff_bbox_to_prior": [
+      79,
+      66,
+      1520,
+      837
+    ],
+    "notes_and_html_source_match": true,
+    "html_image_exact_match": true,
+    "review": "affected page full-size"
+  },
+  {
+    "slide": 7,
+    "render_sha256": "4b82990e2097a6de17d4046c8d8e53a52176d1d6acad4c72b276a17bc8ff1418",
+    "pixel_diff_bbox_to_prior": null,
+    "notes_and_html_source_match": true,
+    "html_image_exact_match": true,
+    "review": "prior full-size review + final contact sheet"
+  },
+  {
+    "slide": 8,
+    "render_sha256": "8ef95a8bec65abd507b13a3cc2e38dae129eee14e1430da7c3aa6035e6c36f3d",
+    "pixel_diff_bbox_to_prior": null,
+    "notes_and_html_source_match": true,
+    "html_image_exact_match": true,
+    "review": "prior full-size review + final contact sheet"
+  },
+  {
+    "slide": 9,
+    "render_sha256": "7ffb1b3d3fe9e9324bd00633eb6ed4fb73400b7a468bd27ac61eeeef81ac43aa",
+    "pixel_diff_bbox_to_prior": null,
+    "notes_and_html_source_match": true,
+    "html_image_exact_match": true,
+    "review": "prior full-size review + final contact sheet"
+  },
+  {
+    "slide": 10,
+    "render_sha256": "f784901ec337a8ee547ca1aa447e8c17b04ce8e847544a7920e94df931f67827",
+    "pixel_diff_bbox_to_prior": null,
+    "notes_and_html_source_match": true,
+    "html_image_exact_match": true,
+    "review": "prior full-size review + final contact sheet"
+  },
+  {
+    "slide": 11,
+    "render_sha256": "0342713d453defce7c83545966e6bd3e308163180c88962ffd02ec5fcfbd21f2",
+    "pixel_diff_bbox_to_prior": null,
+    "notes_and_html_source_match": true,
+    "html_image_exact_match": true,
+    "review": "prior full-size review + final contact sheet"
+  },
+  {
+    "slide": 12,
+    "render_sha256": "3c5b9967495190dd3e57a4fe996f80b919a3611cae2b5be061a7f492d9737b9d",
+    "pixel_diff_bbox_to_prior": null,
+    "notes_and_html_source_match": true,
+    "html_image_exact_match": true,
+    "review": "prior full-size review + final contact sheet"
+  },
+  {
+    "slide": 13,
+    "render_sha256": "cd60abba897d57127ac5b28aef9c37e890fa28a391fcd2f6672e63699ce9d803",
+    "pixel_diff_bbox_to_prior": null,
+    "notes_and_html_source_match": true,
+    "html_image_exact_match": true,
+    "review": "prior full-size review + final contact sheet"
+  },
+  {
+    "slide": 14,
+    "render_sha256": "eec7b4e36c7408f2aee09c1242cd237ff7414b5cf0dc2542995882508bbe03d4",
+    "pixel_diff_bbox_to_prior": null,
+    "notes_and_html_source_match": true,
+    "html_image_exact_match": true,
+    "review": "prior full-size review + final contact sheet"
+  },
+  {
+    "slide": 15,
+    "render_sha256": "94e9a7c56b7a68a05912056265e6aad8e028acc56f670c751ada40138b7ec0da",
+    "pixel_diff_bbox_to_prior": null,
+    "notes_and_html_source_match": true,
+    "html_image_exact_match": true,
+    "review": "prior full-size review + final contact sheet"
+  },
+  {
+    "slide": 16,
+    "render_sha256": "4c6c4eedc888b2336fc41a30cb21a623cf30d84fd7b94ec757fe18d2efe44dbc",
+    "pixel_diff_bbox_to_prior": [
+      84,
+      682,
+      631,
+      746
+    ],
+    "notes_and_html_source_match": true,
+    "html_image_exact_match": true,
+    "review": "affected page full-size"
+  },
+  {
+    "slide": 17,
+    "render_sha256": "a407f5c7e6c1913d9a7c8f83fd22f1973292fbf9374e2740a29fe70597b88f1d",
+    "pixel_diff_bbox_to_prior": null,
+    "notes_and_html_source_match": true,
+    "html_image_exact_match": true,
+    "review": "prior full-size review + final contact sheet"
+  },
+  {
+    "slide": 18,
+    "render_sha256": "8a60227a38920b43b36303ba19e040b07a67c8b8d520c2735178ced8058f9f53",
+    "pixel_diff_bbox_to_prior": null,
+    "notes_and_html_source_match": true,
+    "html_image_exact_match": true,
+    "review": "prior full-size review + final contact sheet"
+  }
+]

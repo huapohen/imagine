@@ -1,0 +1,22 @@
+[
+  {
+    "file": "pitch/src/build.mjs",
+    "sha256": "5323dc130a64943cdb9213677dafc737a2101a684d3283215b94e051af538a73"
+  },
+  {
+    "file": "pitch/src/postprocess.py",
+    "sha256": "76ff4d4c59814d39193cdda20cc071b090cb9abaca04ae966482082acfc57f9f"
+  },
+  {
+    "file": "pitch/src/verify-html.mjs",
+    "sha256": "49cf8343cc51ec6308ffe557a15c4dea80ba1b13459a0fdd43286796c3b21e80"
+  },
+  {
+    "file": "pitch/build.sh",
+    "sha256": "5bb7ed857204eb1ecb5759c70e47f96dedf6f1761d621e961e1e37681ea03064"
+  },
+  {
+    "file": "pitch/assets/manifest.json",
+    "sha256": "94ff4bb61d374e65d1b71809c5cecad343cbe7301f25c6abe83aa52e522081b2"
+  }
+]

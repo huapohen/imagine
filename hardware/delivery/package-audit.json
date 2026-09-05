@@ -1,0 +1,15 @@
+{
+  "archive": "hardware/delivery/lingban_evt_a_review.zip",
+  "files": 146,
+  "bytes": 9506818,
+  "sha256": "2a02a3fb65a133cbe8588dfbe7cbc21e85575ba6641ddfa344aafc39d5b70eaa",
+  "zip_crc": "PASS",
+  "manifest_verified_files": 145,
+  "manifest_mismatches": [],
+  "forbidden_entries": [],
+  "excluded": "tools / caches / downloads / .env and all dotfiles / KiCad local state / locks / symlinks",
+  "parity_issues": 0,
+  "erc_violations": 0,
+  "geometric_drc_violations": 0,
+  "status": "NOT-FOR-FAB; electronic/mechanical engineer and physical review required"
+}

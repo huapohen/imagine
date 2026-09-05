@@ -1,0 +1,104 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>灵伴 ESP32-S3 固件 — safe / EVT-A · 灵伴资料</title><style>:root{--ink:#142a32;--muted:#63777b;--mint:#007e78;--paper:#f4f5ef;--line:#dce2d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft Yahei',sans-serif}a{color:var(--mint);text-decoration:none}a:hover{text-decoration:underline}nav{background:#142a32;color:white;padding:18px 5%;display:flex;justify-content:space-between;gap:20px}nav a{color:#b2e3d4}main{max-width:1180px;margin:auto;padding:46px 26px 80px}h1,h2,h3{line-height:1.2;letter-spacing:-.035em}h1{font-size:clamp(36px,5vw,68px);margin:14px 0 24px}h2{font-size:30px;margin:60px 0 22px}h3{font-size:21px}p{max-width:75ch}small,.muted{color:var(--muted)}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:650;color:var(--mint)}.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:42px;align-items:center;min-height:410px}.hero-art{min-height:340px;background:linear-gradient(140deg,#dce6e3,#fff 55%,#e1ded4);border-radius:38px;overflow:hidden;display:grid;place-items:center;position:relative}.hero-art img{width:100%;height:100%;max-height:410px;object-fit:contain}.badge{display:inline-block;border:1px solid #b5cbc4;border-radius:100px;padding:5px 12px;font-size:12px;line-height:1.5;color:#31544f;background:#f7faf6}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.button{padding:12px 20px;border-radius:10px;background:var(--mint);color:white;display:inline-block;font-weight:600}.button.secondary{color:var(--ink);background:#e1e8df}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;min-width:0}.card h3{margin:12px 0}.card p{font-size:14px;color:var(--muted)}.card ul{list-style:none;padding:0;font-size:14px}.card li{border-top:1px solid #e9ece6;padding:9px 0}.number{font:600 12px/1 monospace;color:var(--mint)}.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:42px 0}.strip>div{background:white;padding:22px}.strip b{display:block;font-size:26px;line-height:1.2}.strip small{font-size:12px}.flow{display:flex;gap:12px;align-items:stretch;flex-wrap:wrap}.flow>div{flex:1;min-width:145px;background:#e5eee6;padding:19px;border-radius:14px;font-size:14px}.flow b{display:block;margin:5px 0}.flow span{font-size:12px;color:var(--muted)}details{border:1px solid var(--line);padding:14px 20px;border-radius:12px;margin:10px 0;background:#fff}summary{cursor:pointer;font-weight:600}.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.gallery video,.gallery img{width:100%;border-radius:14px;background:#142a32}.gallery figcaption{font-size:13px;margin-top:8px}.note{padding:16px 20px;border-left:3px solid var(--mint);background:#e7ede6;font-size:14px}.document{max-width:940px;background:white;padding:45px 55px;border-radius:20px;margin:0 auto}.document h1{font-size:36px}.document h2{font-size:25px;margin-top:40px}.document h3{font-size:21px;margin-top:30px}table{border-collapse:collapse;width:100%;font-size:13px;display:block;overflow:auto}th,td{padding:10px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf2eb}pre{overflow:auto;background:#132c31;color:#e6f3ee;padding:18px;border-radius:12px;font-size:12px}code{font-size:.86em}blockquote{border-left:3px solid #9ecabd;padding-left:20px;color:var(--muted)}footer{border-top:1px solid var(--line);padding-top:25px;margin-top:55px;font-size:12px;color:var(--muted)}@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-art{min-height:250px}.grid{grid-template-columns:1fr}.strip{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr}.document{padding:24px 18px}main{padding:24px 18px}.hero h1{font-size:42px}}@media print{nav,.actions{display:none}body{background:white}main{padding:0}.document{padding:0}h2,h3{break-after:avoid}table,pre{break-inside:avoid}}</style><nav><a href="../index.html">← 灵伴资料中心</a><a href="README.md">Markdown 源文件</a></nav><main><article class="document"><h1>灵伴 ESP32-S3 固件 — safe / EVT-A</h1>
+<p>工程数字原型，NOT-FOR-FAB。电脑承载 Agent，成熟 USB HID 鼠标底座独立；ESP32-S3 只负责灯光、触摸、隐私开关、可选状态屏与 LB1 串口。无录音摄像、医疗推断或外发。</p>
+<h2>实际构建与测试</h2>
+<pre><code class="language-sh">./firmware/test.sh
+./software/test-integration.sh
+# 已有隔离缓存，构建两个目标，无需安装或网络探测：
+PLATFORMIO_CORE_DIR=&quot;$PWD/firmware/.platformio&quot; PLATFORMIO_SETTING_ENABLE_TELEMETRY=No \
+  firmware/tools/venv/bin/python -m platformio run -d firmware
+</code></pre>
+<p>本轮两个目标实际编译 SUCCESS：</p>
+<table>
+<thead>
+<tr>
+<th>目标</th>
+<th align="right">RAM</th>
+<th align="right">Flash</th>
+<th>物理配置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>esp32s3_safe</td>
+<td align="right">19,964 B / 327,680 B</td>
+<td align="right">328,405 B / 3,342,336 B</td>
+<td>全部交互引脚和屏地址 -1，缺省隐私，外设不启用</td>
+</tr>
+<tr>
+<td>esp32s3_evt_a</td>
+<td align="right">19,964 B / 327,680 B</td>
+<td align="right">332,461 B / 3,342,336 B</td>
+<td>GPIO与硬件pin-map对齐，触摸阈值未标定，仍禁用</td>
+</tr>
+</tbody></table>
+<p>产物 <code>.pio/build/&lt;目标&gt;/firmware.bin</code> / <code>.elf</code>，日志 <code>build/integration-build.log</code>。<code>test.sh</code> 用 C++11、-Wall/-Wextra/-Werror 编译实际固件共用的协议核心和 Controller 模板。包含104行共用golden以及GPIO/Wire/PWM时序mock，软件完整回归结果见 <a href="../software/COMPLETION.md">COMPLETION</a>。<strong>这些不是烧录、板测、USB枚举、反灌或触摸校准证明。</strong></p>
+<h2>板型与端口</h2>
+<p>PlatformIO Core 6.1.18，espressif32 6.9.0，Arduino ESP32 2.0.17。注册表 <code>esp32-s3-devkitc-1</code> 默认描述 N8/no PSRAM，因此两个profile显式覆盖 <strong>N8R8：8MB QIO flash、OPI PSRAM、memory_type=qio_opi、BOARD_HAS_PSRAM</strong>。没有宣称通用板默认配置就是N8R8；实际板标签、PSRAM自检待实物验证。</p>
+<p><code>ARDUINO_USB_CDC_ON_BOOT=0</code>。注册表的 <code>ARDUINO_USB_MODE=1</code> 仅选择芯片USB模式，<strong>不会自动启用CDC</strong>；本实现的 <code>Serial</code> 是 UART0，代码显式 RX44/TX43、115200/SERIAL_8N1。使用开发板 <strong>USB-UART桥连接器</strong>，不是nativeUSB连接器；烧录端口也须硬件人员明确选择，固件会话未运行upload。OEM鼠标另有USB线，载板不并接VBUS。</p>
+<h2>EVT-A 针脚与共阳电气合同</h2>
+<table>
+<thead>
+<tr>
+<th>宏</th>
+<th>GPIO / 默认值</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>LB_PIN_LED_R/G/B</td>
+<td>4 / 5 / 6</td>
+<td>SW3V3共阳RGB，各经470Ω至GPIO灌电流</td>
+</tr>
+<tr>
+<td>LB_PIN_TOUCH</td>
+<td>7</td>
+<td>电极输入；阈值0时不调用touchRead</td>
+</tr>
+<tr>
+<td>LB_PIN_SDA/SCL</td>
+<td>8 / 9</td>
+<td>100kHz I2C，外部4.7k上拉到SW3V3</td>
+</tr>
+<tr>
+<td>LB_PIN_PRIVACY</td>
+<td>10</td>
+<td>外部10k上拉常供3V3；LOW允许，HIGH/断线隐私</td>
+</tr>
+<tr>
+<td>LB_SCREEN_ADDRESS</td>
+<td>0x3C</td>
+<td>SSD1306 128×64候选地址，不等于已探测成功</td>
+</tr>
+<tr>
+<td>LB_TOUCH_THRESHOLD</td>
+<td>0</td>
+<td>未实测，禁用触摸采集</td>
+</tr>
+</tbody></table>
+<p>共阳LED亮度b对应8-bit duty=255−b；<strong>off=255/HIGH</strong>，不能写0。恢复时先准备PWM通道off，再预装GPIO HIGH，再attach。当前低亮颜色逻辑为teal=(0,60,38)、amber=(70,30,0)、blue=(0,18,70)，均是占空亮度，不是已实测电流。470Ω限制峰值，LED具体Vf/电流仍需板测。</p>
+<h2>隐私与断线时序</h2>
+<p>共用控制器 <code>include/controller.hpp</code> 是实际固件和mock唯一外设启停策略：</p>
+<ol>
+<li>启动先配置/读取GPIO10，再将RGB/I2C/TOUCH全部INPUT，不给未判定电源状态的外设初始化。</li>
+<li>物理允许LOW连续稳定40ms，且LB1握手online后，才初始化PWM和屏。屏初始保持Display OFF，写入新图标后才点亮。</li>
+<li>检测HIGH立即detach PWM、Wire.end，将4/5/6/7/8/9设INPUT（无内部上拉），清灯/屏/触摸逻辑状态；停止屏刷新。<strong>此分支不发送OLED指令、不强亮LED</strong>，因为SW3V3已经切断。隐私指示靠UI/开关本体。</li>
+<li>允许态需重新稳定40ms才能恢复外设；不会恢复隐私前缓存的灯屏指令。</li>
+<li>无有效GET/PING心跳&gt;=5秒，清ready/session/cache/灯屏状态；电源仍允许时先OLED Display OFF再释放外设。隐私断电时不发送这个命令。重新HELLO才能恢复online；没有每消息TTL。</li>
+</ol>
+<p>主循环每轮及每串口字节检查控制器，串口单轮最多64字节；I2C每个事务前读物理状态、事务timeout=5ms。高电平在正在执行的事务期间变化时，在下一次检查返回后释放外设。这是软件检测时序，<strong>不保证DPDT触点切换瞬间零反灌</strong>；开关两极错时、GPIO复用、在途I2C与实测漏电仍是NOT-FOR-FAB门槛。</p>
+<p>无OLED ACK时Wire.end并释放I2C，不持续刷不存在的屏。屏幕仅绘制状态图标，不含中文字体；UTF-8逻辑文本只在串口STATE查询。CAPS声明配置能力，不冒充实物探测报告。</p>
+<h2>触摸启用指南（本轮未启用）</h2>
+<p>保持threshold=0直至hardware核对电极、串1k、ESD器件DNI/选型、地与外壳，使用合成操作验证干燥/潮湿、接触/不接触噪声分布。不要采用网络示例的未标定固定阈值。经实物审定阈值后，在单独的本地测试profile显式加 <code>-DLB_TOUCH_THRESHOLD=&lt;实测阈值&gt;</code>；S3逻辑为touchRead&gt;阈值、稳定40ms才变更布尔状态。</p>
+<p>然后必须实测隐私切换时GPIO7输入复用/漏电/触摸硬件是否完全停止、允许恢复是否正确、串口是否始终屏蔽隐私态touch。现有mock不能证明芯片触摸外设的电气状态。触摸只做非敏感本地交互，不能变成情绪/生理信息、医疗判断或审批捷径。</p>
+<h2>串口桥与协议</h2>
+<p>唯一 <a href="../docs/software/serial-protocol.html">LB1精确规范</a> 和 <a href="../docs/software/serial-golden-vectors.tsv">104行golden</a>。无NDJSON、无ttl_ms、无TOUCH/PRIVACY线缆类型。</p>
+<pre><code class="language-sh">cd software
+python3 -m lingban.serial_protocol --self-test
+LINGBAN_TOKEN=&#39;员工本地令牌占位&#39; python3 -m lingban.serial_protocol --once
+# 已确认硬件后显式给出设备；本轮未运行：
+LINGBAN_TOKEN=&#39;员工本地令牌占位&#39; python3 -m lingban.serial_protocol --device /dev/已确认USB_UART
+</code></pre>
+<p>桥默认模拟器，不扫描设备。POSIX stdlib termios/select配置115200/8N1；同帧最多重试3次，每次1秒。GET检测offline后新nonce重握手；设备物理拔除造成错误时退出，明确重启后重新打开。关闭时恢复该设备的termios，不改系统全局配置。</p>
+<h2>隔离工具链来源</h2>
+<p>本轮复用已有 <code>firmware/tools/venv</code>、<code>.platformio</code> 和 <code>.pio</code> 缓存，未下载或安装新依赖。首轮工具来自实测后的可信PyPI镜像和已验证动态系统代理的PlatformIO官方包，包管理器完整性检查开启。<code>tools-lock.txt</code> 记录Python依赖；缓存数GiB，均在firmware目录并由.gitignore排除。</p>
+<p>新环境需按AGENTS.md先短测源/代理/可信镜像，再建局部venv安装platformio==6.1.18；<code>build_local.py</code> 为需网络探测的首次构建辅助脚本，已有缓存优先上面的命令。禁止把构建成功当成允许投板、烧录、认证或量产的依据。</p>
+</article></main></html>

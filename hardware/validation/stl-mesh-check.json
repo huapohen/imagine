@@ -1,0 +1,142 @@
+{
+  "01_base": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 19662
+  },
+  "02_clear_canopy": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 10714
+  },
+  "03_button_left": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 652
+  },
+  "03_button_right": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 652
+  },
+  "04_oem_wheel_placeholder": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 628
+  },
+  "05_carrier_placeholder": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 2556
+  },
+  "06_devkit_placeholder": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 12
+  },
+  "07_socket_-21.43": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 12
+  },
+  "07_socket_1.43": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 12
+  },
+  "08_esp_module_placeholder": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 12
+  },
+  "09_usb_uart_placeholder": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 12
+  },
+  "10_oem_placeholder": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 764
+  },
+  "11_cloud_stair_castle": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 2130
+  },
+  "12_snowflake": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 1204
+  },
+  "13_screen_frame": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 1312
+  },
+  "14_display_placeholder": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 12
+  },
+  "15_display_glass": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 12
+  },
+  "16_castle_socket_sled": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 1924
+  },
+  "17_usb_cable_-7": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 628
+  },
+  "17_usb_cable_7": {
+    "watertight": true,
+    "winding_consistent": true,
+    "positive_volume": true,
+    "components": 1,
+    "faces": 628
+  }
+}

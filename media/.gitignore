@@ -1,0 +1,7 @@
+__pycache__/
+video_ledger.json
+video_ledger.lock
+*.response.json
+task-list-private.json
+*.part
+*.tmp

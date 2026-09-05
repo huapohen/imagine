@@ -6,9 +6,10 @@ from urllib.parse import unquote, urlsplit
 import argparse
 
 ROOT = Path(__file__).resolve().parents[1]
-ALLOWED = {"docs", "hardware", "pitch", "media"}
+ALLOWED = {"docs", "hardware", "pitch", "media", "software", "firmware"}
 EXTENSIONS = {".html", ".css", ".js", ".json", ".md", ".txt", ".csv", ".pdf", ".pptx", ".png", ".jpg", ".jpeg", ".svg", ".webp", ".mp4", ".webm", ".gif", ".stl", ".step", ".stp", ".scad", ".kicad_pcb", ".kicad_sch", ".zip"}
-BLOCKED = {"downloads", "tools", "vendor", "__pycache__", "node_modules", "snapshots"}
+BLOCKED = {"downloads", "tools", "vendor", "__pycache__", "node_modules", "snapshots", "data"}
+PRIVATE_FILES = {"video_ledger.json", "video_ledger.lock", "task-list-private.json"}
 
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
@@ -19,6 +20,8 @@ class Handler(SimpleHTTPRequestHandler):
         relative = Path(route.lstrip("/") or "index.html")
         parts = relative.parts
         if any(part.startswith(".") or part in BLOCKED for part in parts):
+            return self.send_error(404)
+        if relative.name in PRIVATE_FILES or relative.name.endswith((".response.json", ".part")):
             return self.send_error(404)
         if len(parts) == 1:
             valid = parts[0] in {"index.html", "README.md"}

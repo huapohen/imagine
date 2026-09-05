@@ -1,0 +1,29 @@
+{
+  "time_utc": "2026-09-05T18:12:21.608323+00:00",
+  "unittest_passed": 48,
+  "shared_golden_rows": 104,
+  "mock_hal": "PASS",
+  "platformio": [
+    {
+      "profile": "esp32s3_safe",
+      "bytes": 328768,
+      "sha256": "7219be2b5ae4a13fc800676af39fb661a750fa5079de1779bfd51aa81a366619"
+    },
+    {
+      "profile": "esp32s3_evt_a",
+      "bytes": 332832,
+      "sha256": "3e15bb8acfc00efe8ba6030a8eae0e32ca572f752cd7cb8d165966ade5b28675"
+    }
+  ],
+  "browser_evidence": "docs/verification/browser/report.json (main-controller independent 14/14; user Chrome profile remains blocked)",
+  "hardware_tested": false,
+  "test_scope": [
+    "test_core.py",
+    "test_http.py",
+    "test_protocols.py"
+  ],
+  "test_command": "./software/test-integration.sh",
+  "unittest_seconds": 2.208,
+  "read_credentials": false,
+  "paid_calls": 0
+}

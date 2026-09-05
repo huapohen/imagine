@@ -17,6 +17,8 @@ pitch/.build/
 hardware/downloads/
 hardware/.venv/
 hardware/tools/vendor/
+hardware/tools/*/
+software/data/
 release/
 **/.pytest_cache/
 **/.pio/
@@ -25,3 +27,14 @@ media/video_ledger.lock
 media/*.response.json
 media/task-list-private.json
 media/*.part
+# Large media and review archives are published as private GitHub release assets.
+media/generated/*.mp4
+media/final/*.mp4
+media/demo/*.mp4
+media/verification/
+media/voiceover/*.aiff
+hardware/delivery/*.zip
+hardware/renders/*.blend1
+hardware/renders/frames/
+hardware/validation/parse-*
+docs/verification/browser/failure.png

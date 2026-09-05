@@ -1,0 +1,77 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>灵伴 LINGBAN / Crystal Mouse — EVT-A 冻结接口 · 灵伴资料</title><style>:root{--ink:#142a32;--muted:#63777b;--mint:#007e78;--paper:#f4f5ef;--line:#dce2d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft Yahei',sans-serif}a{color:var(--mint);text-decoration:none}a:hover{text-decoration:underline}nav{background:#142a32;color:white;padding:18px 5%;display:flex;justify-content:space-between;gap:20px}nav a{color:#b2e3d4}main{max-width:1180px;margin:auto;padding:46px 26px 80px}h1,h2,h3{line-height:1.2;letter-spacing:-.035em}h1{font-size:clamp(36px,5vw,68px);margin:14px 0 24px}h2{font-size:30px;margin:60px 0 22px}h3{font-size:21px}p{max-width:75ch}small,.muted{color:var(--muted)}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:650;color:var(--mint)}.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:42px;align-items:center;min-height:410px}.hero-art{min-height:340px;background:linear-gradient(140deg,#dce6e3,#fff 55%,#e1ded4);border-radius:38px;overflow:hidden;display:grid;place-items:center;position:relative}.hero-art img{width:100%;height:100%;max-height:410px;object-fit:contain}.badge{display:inline-block;border:1px solid #b5cbc4;border-radius:100px;padding:5px 12px;font-size:12px;line-height:1.5;color:#31544f;background:#f7faf6}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.button{padding:12px 20px;border-radius:10px;background:var(--mint);color:white;display:inline-block;font-weight:600}.button.secondary{color:var(--ink);background:#e1e8df}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;min-width:0}.card h3{margin:12px 0}.card p{font-size:14px;color:var(--muted)}.card ul{list-style:none;padding:0;font-size:14px}.card li{border-top:1px solid #e9ece6;padding:9px 0}.number{font:600 12px/1 monospace;color:var(--mint)}.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:42px 0}.strip>div{background:white;padding:22px}.strip b{display:block;font-size:26px;line-height:1.2}.strip small{font-size:12px}.flow{display:flex;gap:12px;align-items:stretch;flex-wrap:wrap}.flow>div{flex:1;min-width:145px;background:#e5eee6;padding:19px;border-radius:14px;font-size:14px}.flow b{display:block;margin:5px 0}.flow span{font-size:12px;color:var(--muted)}details{border:1px solid var(--line);padding:14px 20px;border-radius:12px;margin:10px 0;background:#fff}summary{cursor:pointer;font-weight:600}.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.gallery video,.gallery img{width:100%;border-radius:14px;background:#142a32}.gallery figcaption{font-size:13px;margin-top:8px}.note{padding:16px 20px;border-left:3px solid var(--mint);background:#e7ede6;font-size:14px}.document{max-width:940px;background:white;padding:45px 55px;border-radius:20px;margin:0 auto}.document h1{font-size:36px}.document h2{font-size:25px;margin-top:40px}.document h3{font-size:21px;margin-top:30px}table{border-collapse:collapse;width:100%;font-size:13px;display:block;overflow:auto}th,td{padding:10px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf2eb}pre{overflow:auto;background:#132c31;color:#e6f3ee;padding:18px;border-radius:12px;font-size:12px}code{font-size:.86em}blockquote{border-left:3px solid #9ecabd;padding-left:20px;color:var(--muted)}footer{border-top:1px solid var(--line);padding-top:25px;margin-top:55px;font-size:12px;color:var(--muted)}@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-art{min-height:250px}.grid{grid-template-columns:1fr}.strip{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr}.document{padding:24px 18px}main{padding:24px 18px}.hero h1{font-size:42px}}@media print{nav,.actions{display:none}body{background:white}main{padding:0}.document{padding:0}h2,h3{break-after:avoid}table,pre{break-inside:avoid}}</style><nav><a href="../../index.html">← 灵伴资料中心</a><a href="architecture.md">Markdown 源文件</a></nav><main><article class="document"><h1>灵伴 LINGBAN / Crystal Mouse — EVT-A 冻结接口</h1>
+<p>工程数字原型，未打样、未板测、未认证。日期2026-09-06。主控集成；所有尺寸mm。原创「云阶晶堡」。本轮同步已实装的协议和固件配置，不改变GPIO、CAD几何或pitch渲染。</p>
+<h2>唯一首发与硬件边界</h2>
+<ul>
+<li><strong>299元是1000台情景的核心版目标含税零售价，功能为灯＋触摸＋OLED。</strong> 首轮只验证这一核心硬件；108元批量直接成本是未来商业模型假设，非当前开发板样机报价。5台DevKit工程样机成本单列、待报价。499元仅未来外观/服务套装，不是第二个首发版本。完整分档和敏感性见docs/hardware/engineering-and-manufacturing.md。</li>
+<li>成熟有线USB HID鼠标OEM总成＋独立ESP32-S3-DevKitC-1 N8R8开发板＋交互载板，电脑运行Agent。A线为OEM鼠标，B线固定使用开发板<strong>USB-UART桥</strong>：UART0 RX44/TX43、115200 8N1、无流控；<code>ARDUINO_USB_CDC_ON_BOOT=0</code>。可接外部供电Hub；不融合USB、不并接VBUS、不改OEM HID。</li>
+<li>载板接3V3/GND与GPIO4/5/6低电流共阳RGB、GPIO7触摸、GPIO8/9 I2C、GPIO10物理隐私。GPIO和N8R8设置以已实装的<code>firmware/platformio.ini</code>、<code>include/board_config.hpp</code>及<code>include/controller.hpp</code>为准，见本目录pin-map.md/json。</li>
+<li>3V3来自开发板稳压器；载板外设预算&lt;=60mA，5V电源按1A能力预留验证。500mA端口不得按1A使用，实耗、启动峰值和热耗未测；首版关闭Wi-Fi/BLE。</li>
+<li>物理DPDT一极切断灯/屏SW3V3，另一极在允许态将GPIO10接GND；外10k上拉常供3V3。HIGH/断线/未配置=隐私。隐私时外设断电，<strong>不显示隐私灯，也不在屏上显示privacy</strong>；指示由主机UI和开关本体提供。</li>
+<li>固件先读取隐私再初始化外设。进入隐私时detach PWM、Wire.end，GPIO4/5/6/7/8/9改INPUT、不启用内部上拉，清灯/屏/触摸逻辑状态。允许LOW连续40ms且已握手online才恢复。共阳RGB的PWM duty=255−亮度，off=255/HIGH，初始化先预装off。</li>
+<li>隐私开关不硬断触摸线路、USB或主机Agent，不删除电脑任务、不自动改变主机专注计时器。无音视频/医疗传感器、无员工评分；审批仍由主机执行授权流程，触摸不隐式批准。</li>
+<li>OEM原主控、镜片、光学高度、滚轮和按键沿用成熟总成，CAD包络不等于任意OEM能装入。壳体和电气仍需工程师及实物审查。</li>
+</ul>
+<h2>唯一设备协议：LB1 ASCII + CRC16</h2>
+<p><strong>权威规范：<code>docs/software/serial-protocol.md</code></strong>；<code>firmware/serial-protocol.md</code>指向同一合同。软件标识<code>lingban.serial/1</code>对应线缆<code>LB1</code>，非MCP/A2A。旧LBP/0.1 NDJSON草案已废弃，无兼容解析器。下表只是硬件交接摘要，不定义第二套协议。</p>
+<pre><code class="language-text">LB1|&lt;seq&gt;|&lt;TYPE&gt;|&lt;payload&gt;|&lt;CRC16&gt;&lt;LF&gt;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>冻结值/行为</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>帧</td>
+<td>ASCII，最多256 bytes（含单个LF），不接受CRLF；seq=1..65535十进制、无前导零</td>
+</tr>
+<tr>
+<td>CRC</td>
+<td>CRC16-CCITT-FALSE，poly=0x1021、init=0xffff、无反射/xorout=0；覆盖最后CRC分隔符之前全部字节；4位大写hex；123456789→29B1</td>
+</tr>
+<tr>
+<td>握手</td>
+<td>HELLO <code>versions=1;session=&lt;16位小写hex&gt;</code>；每次连接新nonce，返回CAPS；无session仅一次性自检兼容</td>
+</tr>
+<tr>
+<td>状态赋值</td>
+<td>SET只允许<code>led=off/teal/amber/blue</code>和/或<code>text=&lt;0..80 UTF-8 bytes的小写hex&gt;</code>，非空字段集合；无任意RGB数组、无每消息TTL；ACK applied=1不代表电脑审批执行完成</td>
+</tr>
+<tr>
+<td>读取/心跳</td>
+<td>GET/PING payload为空；GET→STATE，PING→ACK alive=0/1。正式桥每秒GET，其他控制器最多每2秒GET/PING</td>
+</tr>
+<tr>
+<td>5秒离线</td>
+<td>距最后有效心跳&gt;=5000ms，poll清会话/缓存/输出。仅合法空GET/PING（含同帧重试）刷新心跳；SET、错误帧、序号冲突、缓存HELLO不保活。恢复需HELLO</td>
+</tr>
+<tr>
+<td>离线电气</td>
+<td>仍有外设电源时先Display OFF再卸载PWM/Wire并高阻；若已物理隐私断电，跳过所有屏/PWM写操作，直接高阻</td>
+</tr>
+<tr>
+<td>重试</td>
+<td>最近16个seq FIFO；同seq异帧sequence_conflict；SET重试不重复应用，GET/PING重试返回当前状态</td>
+</tr>
+<tr>
+<td>错误</td>
+<td>坏CRC/帧/ASCII/类型词/seq静默丢弃；合法帧的方法/字段错误才返回可信seq的ERR；无ttl_ms、TOUCH/PRIVACY推送类型</td>
+</tr>
+<tr>
+<td>能力</td>
+<td>EVT-A配置led=1、privacy=1、screen=1，<strong>touch=0</strong>（阈值0未标定）；safe四项为0。CAPS描述配置而非板测</td>
+</tr>
+<tr>
+<td>屏幕</td>
+<td>SSD1306候选0x3C；当前HAL显示状态图标。text为逻辑数据，GET可读取，无任意文字/中文字体已实装承诺</td>
+</tr>
+<tr>
+<td>隐私状态</td>
+<td>STATE privacy=1、led=off、touch=0、text为空；SET被拒绝。主机UI的<code>led=privacy</code>是合成标签，不是线缆枚举或物理灯光</td>
+</tr>
+</tbody></table>
+<p>未完成帧1秒清接收缓冲仅用于分帧恢复，不是命令TTL或5秒会话watchdog。黄金向量为<code>docs/software/serial-golden-vectors.tsv</code>，RESET/PRIVACY/TOUCH/POLL是测试驱动命令，不是线缆消息。本轮只读核对实现；主控报告两目标编译及HAL隐私/共阳/断联测试通过，不替代烧录和实际串口/反灌/屏幕验证。</p>
+<h2>机械与制造边界</h2>
+<p>名义126×80×54，已验证的CAD/STEP及pitch渲染本轮保持不变。偏大展示样机，人体工学未验证。壁厚、间隙、柱位、双USB槽、光学孔等见CAD参数与工程交接；OEM真实尺寸、屏/LED/开关料号、反灌、ESD、天线净空和止拉须到货复审。即使ERC/DRC/parity清零，制造文件仍为NOT-FOR-FAB。</p>
+</article></main></html>

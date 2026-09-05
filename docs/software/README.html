@@ -1,0 +1,60 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>灵伴软件与固件验收资料 · 灵伴资料</title><style>:root{--ink:#142a32;--muted:#63777b;--mint:#007e78;--paper:#f4f5ef;--line:#dce2d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft Yahei',sans-serif}a{color:var(--mint);text-decoration:none}a:hover{text-decoration:underline}nav{background:#142a32;color:white;padding:18px 5%;display:flex;justify-content:space-between;gap:20px}nav a{color:#b2e3d4}main{max-width:1180px;margin:auto;padding:46px 26px 80px}h1,h2,h3{line-height:1.2;letter-spacing:-.035em}h1{font-size:clamp(36px,5vw,68px);margin:14px 0 24px}h2{font-size:30px;margin:60px 0 22px}h3{font-size:21px}p{max-width:75ch}small,.muted{color:var(--muted)}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:650;color:var(--mint)}.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:42px;align-items:center;min-height:410px}.hero-art{min-height:340px;background:linear-gradient(140deg,#dce6e3,#fff 55%,#e1ded4);border-radius:38px;overflow:hidden;display:grid;place-items:center;position:relative}.hero-art img{width:100%;height:100%;max-height:410px;object-fit:contain}.badge{display:inline-block;border:1px solid #b5cbc4;border-radius:100px;padding:5px 12px;font-size:12px;line-height:1.5;color:#31544f;background:#f7faf6}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.button{padding:12px 20px;border-radius:10px;background:var(--mint);color:white;display:inline-block;font-weight:600}.button.secondary{color:var(--ink);background:#e1e8df}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;min-width:0}.card h3{margin:12px 0}.card p{font-size:14px;color:var(--muted)}.card ul{list-style:none;padding:0;font-size:14px}.card li{border-top:1px solid #e9ece6;padding:9px 0}.number{font:600 12px/1 monospace;color:var(--mint)}.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:42px 0}.strip>div{background:white;padding:22px}.strip b{display:block;font-size:26px;line-height:1.2}.strip small{font-size:12px}.flow{display:flex;gap:12px;align-items:stretch;flex-wrap:wrap}.flow>div{flex:1;min-width:145px;background:#e5eee6;padding:19px;border-radius:14px;font-size:14px}.flow b{display:block;margin:5px 0}.flow span{font-size:12px;color:var(--muted)}details{border:1px solid var(--line);padding:14px 20px;border-radius:12px;margin:10px 0;background:#fff}summary{cursor:pointer;font-weight:600}.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.gallery video,.gallery img{width:100%;border-radius:14px;background:#142a32}.gallery figcaption{font-size:13px;margin-top:8px}.note{padding:16px 20px;border-left:3px solid var(--mint);background:#e7ede6;font-size:14px}.document{max-width:940px;background:white;padding:45px 55px;border-radius:20px;margin:0 auto}.document h1{font-size:36px}.document h2{font-size:25px;margin-top:40px}.document h3{font-size:21px;margin-top:30px}table{border-collapse:collapse;width:100%;font-size:13px;display:block;overflow:auto}th,td{padding:10px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf2eb}pre{overflow:auto;background:#132c31;color:#e6f3ee;padding:18px;border-radius:12px;font-size:12px}code{font-size:.86em}blockquote{border-left:3px solid #9ecabd;padding-left:20px;color:var(--muted)}footer{border-top:1px solid var(--line);padding-top:25px;margin-top:55px;font-size:12px;color:var(--muted)}@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-art{min-height:250px}.grid{grid-template-columns:1fr}.strip{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr}.document{padding:24px 18px}main{padding:24px 18px}.hero h1{font-size:42px}}@media print{nav,.actions{display:none}body{background:white}main{padding:0}.document{padding:0}h2,h3{break-after:avoid}table,pre{break-inside:avoid}}</style><nav><a href="../../index.html">← 灵伴资料中心</a><a href="README.md">Markdown 源文件</a></nav><main><article class="document"><h1>灵伴软件与固件验收资料</h1>
+<p>本会话只实现 <code>software/</code>、<code>firmware/</code>、<code>docs/software/</code>；Git、主板定型与发布由主控制器负责。未访问原始需求文件、任何 .env 或已有密钥，未读取或修改 <code>../active_agent</code>；本次代码为独立实现，无该项目代码来源。</p>
+<h2>运行与数据流</h2>
+<pre><code class="language-sh">./software/start.sh
+./software/test-integration.sh
+</code></pre>
+<p>Python 3.9+ 标准库 HTTP 服务 + SQLite，默认仅 <code>127.0.0.1:8765</code>。员工/企业使用启动时生成的不同 256-bit 随机 Bearer 令牌。终端输出的片段链接属于本地演示凭据，不能作为公开材料。页面清除 URL 片段，令牌只在内存中保存；不使用 localStorage、Cookie、第三方脚本或外部字体。重启清除旧令牌。SQLite 中仅存令牌 SHA-256。</p>
+<pre><code class="language-text">合成日程 / 任务事件 → 鉴权与权限 → 幂等事务 → SQLite 任务记忆
+                                          ↓
+                               每秒 worker 评估当前证据
+                                 ↓ 新版本 / 新状态
+                          专注静默与同规则同任务冷却
+                                 ↓
+                    带依据提醒 → 用户反馈 → 模拟灯光/小屏
+                                 ↓
+                   动作提案 → 人工批准 / 拒绝 → 审计
+                                 ↓ 批准一次
+                           本地 outbox（无发送器）
+</code></pre>
+<p>任务版本只在任务字段实际改变时增加。幂等键按员工隔离，相同键同内容返回原事件，不同内容返回 409。新幂等键但相同任务状态不会制造新提醒。冷却按员工、规则、任务计，默认 300 秒；新证据在冷却后仍有效才触发。专注期间所有主动提醒暂缓，结束后按当前状态重评；已解决的阻塞和已过期的会议不会补发。休息来自用户设置的计时器，无生理检测。提醒反馈支持有帮助、忽略、安静 10 分钟。API 名 snooze 保留兼容，但含义是暂停全部主动提醒 10 分钟，不承诺同一证据到期再通知；新证据在安静期后仍有效才触发。</p>
+<p>审批采用 SQLite <code>BEGIN IMMEDIATE</code>，动作状态只能从 pending 转为 approved 或 rejected；outbox.action UNIQUE，重复相同决定返回 duplicate；终态改变返回 409。所有批准只持久化本地内容。没有邮件、聊天、支付或网络动作执行器。</p>
+<h2>权限与撤销</h2>
+<table>
+<thead>
+<tr>
+<th>身份</th>
+<th>可读</th>
+<th>可写</th>
+<th>不可访问</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>员工</td>
+<td>自己的任务、提醒、动作、outbox、审计、设备</td>
+<td>自己的事件、反馈、审批、授权及明确业务分享</td>
+<td>他人数据、企业聚合</td>
+</tr>
+<tr>
+<td>企业</td>
+<td>本组织至少 5 位明确授权员工的业务聚合</td>
+<td>A2A 只读摘要任务的协议状态</td>
+<td>个人工作台、事件、个人动作、录音、生理数据、员工评分</td>
+</tr>
+<tr>
+<td>插件令牌</td>
+<td>manifest 授予的 tasks:read，且仅所属员工</td>
+<td>白名单事件 / 灯光状态</td>
+<td>审批、授权、分享、注册其他插件、A2A、隐私开关</td>
+</tr>
+</tbody></table>
+<p>企业结果只包含明确分享的 completed/blocked 整数。无按员工、群组任意过滤、排名、个人结果明细或历史聚合查询接口；人数仅显示分段。4 人及以下隐藏数值和精确人数。单次雇佣同意不构成共享授权。</p>
+<p>撤销事务删除共享行，并删除本组织企业身份缓存的全部 A2A 摘要任务，避免历史 tasks/get 继续返回撤销前的聚合。重新授权不会恢复旧分享；必须再次明确提交。SQLite 开启 secure_delete，但本地磁盘/WAL、备份及浏览器已经看到的内容不等同于可取回；本原型不声称法证级擦除。企业 API 使用 no-store，页面每 2.5 秒刷新。&gt;=5 仅满足本次演示门槛，不构成差分隐私，持续观察与外部知识仍可能推断变化，真实部署需固定发布窗口/队列和更严格隐私设计。</p>
+<p>输入结构禁止音频、影像、生理字段、键盘记录及评分类型。自由任务文本是员工主动提供的合成内容，不执行语义分类；本原型不能保证自由文本中永远没有个人信息。企业从不读取自由任务文本。</p>
+<h2>插件</h2>
+<p>manifest 权限白名单：<code>events:write</code>、<code>tasks:read</code>、<code>hardware:write</code>。事件另需 <code>event_types</code> 白名单。manifest 登记不执行代码、不访问 URL、不安装依赖，不宣称 OS 沙箱。通过 <code>/api/plugins/token</code> 生成专用插件令牌。服务端从令牌绑定插件身份，省略或伪造 plugin_id 无法绕过权限；插件不应持有员工主令牌。修改 manifest 后下一次请求重新检查权限。</p>
+<h2>验证范围</h2>
+<p>自动化测试和接口细节见 <a href="../../software/COMPLETION.md">COMPLETION</a>、<a href="http-examples.html">HTTP 示例</a>、<a href="protocols.html">协议子集</a>、<a href="deployment.html">部署边界</a>、<a href="../../firmware/README.html">固件说明</a>。实际测试输出在 <code>software/test-output/latest-tests.txt</code>；该目录为运行产物，不应提交数据库或令牌。</p>
+<p>主控已用独立 headless Chrome 152.0.7977.66 与实际 HTTP 完成 <strong>14/14 UI 链路检查</strong>，errors=[]，证据为 <code>docs/verification/browser/report.json</code> 及同目录截图。本轮读取并引用该证据，未重复浏览器测试。用户现有 Chrome profile 打开本地地址仍 <code>ERR_BLOCKED_BY_CLIENT</code>，保护未关闭；这与独立浏览器验证通过是两件事。</p>
+<p>板级集成修复、两种固件配置及待主控协调的旧硬件文档冲突见 <a href="INTEGRATION_NOTES.html">INTEGRATION_NOTES</a>。LB1精确规范与104行共用golden见 <a href="serial-protocol.html">serial-protocol</a>。</p>
+</article></main></html>

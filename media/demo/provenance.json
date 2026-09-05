@@ -1,0 +1,91 @@
+{
+  "created_at": "2026-09-05T18:16:03.201533+00:00",
+  "kind": "actual software browser recording edit; not AI concept footage and not real hardware",
+  "matched_success_report_sha256": "b72754acc0d80a3b44eec080d0b17de4ae4894fe69ef326ece2b02e4876b2453",
+  "successful_checks": 14,
+  "selected_source_mtimes": "2026-09-06 01:50:09 Asia/Shanghai; report 01:50:08, successful screenshots 01:49:56–01:50:08",
+  "excluded_recordings": "All earlier recordings including the 01:49:20 one-second recording excluded",
+  "timeline": [
+    {
+      "output_start": 0,
+      "output_end": 6,
+      "source": ".local/qa-recording/page@69599f6eb1e6de31e93728e8ee1cacb9.webm",
+      "source_start": 0.2,
+      "source_end": 3.2,
+      "source_cuts": null,
+      "speed": 0.5,
+      "caption": "01 员工提醒 → 本人批准 → 只写入本地 outbox",
+      "kind": "actual isolated Chrome recording",
+      "source_sha256": "1814121c13d72a4b396eb889f0e55bb07a533022d84baa6aaad3672b39a008b8"
+    },
+    {
+      "output_start": 6,
+      "output_end": 12,
+      "source": ".local/qa-recording/page@69599f6eb1e6de31e93728e8ee1cacb9.webm",
+      "source_start": 7.2,
+      "source_end": 10.34,
+      "source_cuts": [
+        [
+          7.2,
+          8.7
+        ],
+        [
+          8.84,
+          10.34
+        ]
+      ],
+      "speed": 0.5,
+      "caption": "02 模拟隐私开关开启：模拟触摸被禁用",
+      "kind": "actual isolated Chrome recording",
+      "source_sha256": "1814121c13d72a4b396eb889f0e55bb07a533022d84baa6aaad3672b39a008b8"
+    },
+    {
+      "output_start": 12,
+      "output_end": 16,
+      "source": ".local/qa-recording/page@c66339f90bb24ee53379e2f4e372741b.webm",
+      "source_start": 0.2,
+      "source_end": 2.2,
+      "source_cuts": null,
+      "speed": 0.5,
+      "caption": "03 企业仅见明确授权的业务汇总，不见个人状态",
+      "kind": "actual isolated Chrome recording",
+      "source_sha256": "ebb64125646918ad20f1f24e3e80e867c09d06f73c5bcb98d45b242f8b5afabb"
+    },
+    {
+      "output_start": 16,
+      "output_end": 21,
+      "source": ".local/qa-recording/page@69599f6eb1e6de31e93728e8ee1cacb9.webm",
+      "source_start": 10.2,
+      "source_end": 12.7,
+      "source_cuts": null,
+      "speed": 0.5,
+      "caption": "04 员工撤销分享，已有共享数据删除",
+      "kind": "actual isolated Chrome recording",
+      "source_sha256": "1814121c13d72a4b396eb889f0e55bb07a533022d84baa6aaad3672b39a008b8"
+    },
+    {
+      "output_start": 21,
+      "output_end": 28,
+      "source": "media/demo/enterprise_revoked_verified.png",
+      "source_start": null,
+      "source_end": null,
+      "source_cuts": null,
+      "speed": 0,
+      "caption": "05 同次成功验证截图定格：不足 5 人，企业结果隐藏",
+      "kind": "same successful QA screenshot freeze",
+      "source_sha256": "22de9f816ab064e7cf172b0d2a330f963de213f7a5909c30e5b118753376aac1"
+    }
+  ],
+  "output_duration_seconds": 28,
+  "output_size": [
+    1920,
+    1080
+  ],
+  "source_recording_size": [
+    1440,
+    960
+  ],
+  "voice": "Existing local macOS Tingting / say; no paid services",
+  "token_handling": "Selected only authenticated workspace intervals; no login field or browser chrome included. Login input verified type=password. No credentials loaded or read by edit script.",
+  "output_sha256": "e9e5423e4379a0a527497ac8ef369452d94b95fcc116430d43469b23519363a3"
+}

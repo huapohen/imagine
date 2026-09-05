@@ -1,0 +1,9 @@
+{
+  "mesh_files": 20,
+  "mesh_failures": [],
+  "pin_checks": 36,
+  "pin_failures": 0,
+  "netlist_mismatches": 0,
+  "functional_pads": 49,
+  "nc_pads": 33
+}

@@ -1,0 +1,40 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {createRequire} from 'node:module';
+import {fileURLToPath} from 'node:url';
+const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const modules=process.env.IMAGINE_NODE_MODULES||'/Users/lwblx/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
+const {chromium}=createRequire(path.join(modules,'_resolver.cjs'))('playwright');
+const tokens=JSON.parse(await fs.readFile(path.join(root,'.local/browser-qa-tokens.json'),'utf8'));
+const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
+const page=await browser.newPage({viewport:{width:1440,height:1050}});
+const checks=[],requests=[],errors=[];
+page.on('request',r=>requests.push(new URL(r.url()).hostname));
+page.on('pageerror',e=>errors.push(e.message));
+function check(name,ok){if(!ok)throw new Error(name);checks.push({name,pass:true});}
+try{
+ await page.goto('http://127.0.0.1:18765/');
+ await page.getByLabel('本地访问令牌',{exact:true}).fill(tokens.employee);
+ await page.getByRole('button',{name:'安全进入 →',exact:true}).click();
+ await page.waitForFunction(()=>document.querySelector('#modelStatus').textContent.includes('离线草稿'));
+ check('default mode visibly offline',(await page.locator('#modelStatus').innerText()).includes('无模型调用'));
+ const before=await page.locator('#actions .action').count();
+ const outbox=await page.locator('#outboxSummary').innerText();
+ await page.getByRole('button',{name:'生成待审批草稿',exact:true}).click();
+ check('consent required before submit',await page.locator('#modelConsent').evaluate(e=>!e.validity.valid));
+ check('no action without consent',await page.locator('#actions .action').count()===before);
+ await page.locator('#modelConsent').check();
+ await page.getByRole('button',{name:'生成待审批草稿',exact:true}).click();
+ await page.waitForFunction(n=>document.querySelectorAll('#actions .action').length===n,before+1);
+ check('fallback creates pending action',await page.locator('#actions .action').count()===before+1);
+ check('draft never writes outbox',await page.locator('#outboxSummary').innerText()===outbox);
+ check('consent resets for next request',!(await page.locator('#modelConsent').isChecked()));
+ await page.locator('#modelForm').scrollIntoViewIfNeeded();
+ await page.screenshot({path:path.join(root,'docs/verification/browser/model-offline.png'),fullPage:true});
+ await page.setViewportSize({width:390,height:844});
+ check('model form has no mobile horizontal overflow',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ check('browser made no external requests',requests.every(h=>h==='127.0.0.1'));
+ check('no frontend errors',errors.length===0);
+ await fs.writeFile(path.join(root,'docs/verification/browser/model-ui.json'),JSON.stringify({status:'pass',browser:await browser.version(),checks,model_calls:0},null,2)+'\n');
+ console.log(JSON.stringify({status:'pass',checks:checks.length,model_calls:0}));
+}finally{await browser.close();}

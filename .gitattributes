@@ -1,0 +1,15 @@
+# Preserve engineering/export bytes and keep generated geometry out of text diffs.
+*.step -text -diff
+*.stp -text -diff
+*.stl -text -diff
+*.dxf -text -diff
+*.pdf binary
+*.pptx binary
+*.blend binary
+*.mp4 binary
+*.webm binary
+*.zip binary
+hardware/pcb/NOT-FOR-FAB/plots/** -text -diff
+hardware/pcb/NOT-FOR-FAB/gerber-review-only/*.svg -text -diff
+hardware/pcb/NOT-FOR-FAB/*.csv -text whitespace=cr-at-eol
+pitch/business-plan/qa/extracted-text.txt -diff

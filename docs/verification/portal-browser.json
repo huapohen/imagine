@@ -1,0 +1,101 @@
+{
+  "status": "pass",
+  "browser": "152.0.7977.77",
+  "checks": [
+    {
+      "name": "actual CAD hero loaded",
+      "pass": true
+    },
+    {
+      "name": "three document groups present",
+      "pass": true
+    },
+    {
+      "name": "final pitch and factory links present",
+      "pass": true
+    },
+    {
+      "name": "all ten delivered videos have playable metadata",
+      "pass": true
+    },
+    {
+      "name": "eight native 2K fifteen second concepts",
+      "pass": true
+    },
+    {
+      "name": "120 second reel and 28 second real demo",
+      "pass": true
+    },
+    {
+      "name": "mobile portal has no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "no portal script exceptions",
+      "pass": true
+    }
+  ],
+  "media": [
+    {
+      "file": "media/final/01_crystal_mouse_focus.mp4",
+      "duration": 15,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "media/final/02_crystal_mouse_workday.mp4",
+      "duration": 15,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "media/final/03_keyboard_sidecar.mp4",
+      "duration": 15,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "media/final/04_desktop_orb.mp4",
+      "duration": 15,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "media/final/05_monitor_charm.mp4",
+      "duration": 15,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "media/final/06_meeting_puck.mp4",
+      "duration": 15,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "media/final/07_deskmat_module.mp4",
+      "duration": 15,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "media/final/08_robot_extension.mp4",
+      "duration": 15,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "media/final/LINGBAN_8_concepts_2min.mp4",
+      "duration": 120,
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "file": "media/demo/lingban-software-demo.mp4",
+      "duration": 28,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,64 @@
+{
+  "browser": "152.0.7977.66",
+  "isolated_headless": true,
+  "synthetic": true,
+  "checks": [
+    {
+      "name": "unauthenticated user sees token login",
+      "pass": true
+    },
+    {
+      "name": "employee role shown",
+      "pass": true
+    },
+    {
+      "name": "no browser storage of token",
+      "pass": true
+    },
+    {
+      "name": "new meeting produces alert and approval",
+      "pass": true
+    },
+    {
+      "name": "approval writes one local outbox",
+      "pass": true
+    },
+    {
+      "name": "blocked scenario adds another explained alert",
+      "pass": true
+    },
+    {
+      "name": "unchanged blocked evidence does not spam alerts",
+      "pass": true
+    },
+    {
+      "name": "focus state visible and pauses reminders",
+      "pass": true
+    },
+    {
+      "name": "resuming focus surfaces rest recommendation",
+      "pass": true
+    },
+    {
+      "name": "physical privacy simulation blocks touch",
+      "pass": true
+    },
+    {
+      "name": "enterprise sees only result summary",
+      "pass": true
+    },
+    {
+      "name": "revocation hides cohort below five",
+      "pass": true
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "no frontend exceptions",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

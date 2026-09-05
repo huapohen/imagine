@@ -1,0 +1,123 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>灵伴 LINGBAN / Crystal Mouse EVT-A — 完成交接 · 灵伴资料</title><style>:root{--ink:#142a32;--muted:#63777b;--mint:#007e78;--paper:#f4f5ef;--line:#dce2d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft Yahei',sans-serif}a{color:var(--mint);text-decoration:none}a:hover{text-decoration:underline}nav{background:#142a32;color:white;padding:18px 5%;display:flex;justify-content:space-between;gap:20px}nav a{color:#b2e3d4}main{max-width:1180px;margin:auto;padding:46px 26px 80px}h1,h2,h3{line-height:1.2;letter-spacing:-.035em}h1{font-size:clamp(36px,5vw,68px);margin:14px 0 24px}h2{font-size:30px;margin:60px 0 22px}h3{font-size:21px}p{max-width:75ch}small,.muted{color:var(--muted)}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:650;color:var(--mint)}.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:42px;align-items:center;min-height:410px}.hero-art{min-height:340px;background:linear-gradient(140deg,#dce6e3,#fff 55%,#e1ded4);border-radius:38px;overflow:hidden;display:grid;place-items:center;position:relative}.hero-art img{width:100%;height:100%;max-height:410px;object-fit:contain}.badge{display:inline-block;border:1px solid #b5cbc4;border-radius:100px;padding:5px 12px;font-size:12px;line-height:1.5;color:#31544f;background:#f7faf6}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.button{padding:12px 20px;border-radius:10px;background:var(--mint);color:white;display:inline-block;font-weight:600}.button.secondary{color:var(--ink);background:#e1e8df}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;min-width:0}.card h3{margin:12px 0}.card p{font-size:14px;color:var(--muted)}.card ul{list-style:none;padding:0;font-size:14px}.card li{border-top:1px solid #e9ece6;padding:9px 0}.number{font:600 12px/1 monospace;color:var(--mint)}.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:42px 0}.strip>div{background:white;padding:22px}.strip b{display:block;font-size:26px;line-height:1.2}.strip small{font-size:12px}.flow{display:flex;gap:12px;align-items:stretch;flex-wrap:wrap}.flow>div{flex:1;min-width:145px;background:#e5eee6;padding:19px;border-radius:14px;font-size:14px}.flow b{display:block;margin:5px 0}.flow span{font-size:12px;color:var(--muted)}details{border:1px solid var(--line);padding:14px 20px;border-radius:12px;margin:10px 0;background:#fff}summary{cursor:pointer;font-weight:600}.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.gallery video,.gallery img{width:100%;border-radius:14px;background:#142a32}.gallery figcaption{font-size:13px;margin-top:8px}.note{padding:16px 20px;border-left:3px solid var(--mint);background:#e7ede6;font-size:14px}.document{max-width:940px;background:white;padding:45px 55px;border-radius:20px;margin:0 auto}.document h1{font-size:36px}.document h2{font-size:25px;margin-top:40px}.document h3{font-size:21px;margin-top:30px}table{border-collapse:collapse;width:100%;font-size:13px;display:block;overflow:auto}th,td{padding:10px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf2eb}pre{overflow:auto;background:#132c31;color:#e6f3ee;padding:18px;border-radius:12px;font-size:12px}code{font-size:.86em}blockquote{border-left:3px solid #9ecabd;padding-left:20px;color:var(--muted)}footer{border-top:1px solid var(--line);padding-top:25px;margin-top:55px;font-size:12px;color:var(--muted)}@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-art{min-height:250px}.grid{grid-template-columns:1fr}.strip{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr}.document{padding:24px 18px}main{padding:24px 18px}.hero h1{font-size:42px}}@media print{nav,.actions{display:none}body{background:white}main{padding:0}.document{padding:0}h2,h3{break-after:avoid}table,pre{break-inside:avoid}}</style><nav><a href="../index.html">← 灵伴资料中心</a><a href="COMPLETION.md">Markdown 源文件</a></nav><main><article class="document"><h1>灵伴 LINGBAN / Crystal Mouse EVT-A — 完成交接</h1>
+<p><strong>交付状态：实际CAD + 实际布线PCB的数字工程原型；全部制造输出 NOT-FOR-FAB。</strong> 完成日期2026-09-06。唯一首发为299元核心目标含税零售价（1000台情景，灯＋触摸＋OLED）；当前5台DevKit样机成本约863–1850元/合格台未税工程估算、待报价；108元是未来批量商业模型假设，499仅未来外观/服务套装。没有实物打样、板级通电、固件烧录、认证或量产完成声明。本会话只写hardware/与docs/hardware/，不做Git、不读取原始input/需求或.env、不联系厂家、不付费；主控负责集成。</p>
+<h2>本轮最终集成结果</h2>
+<ul>
+<li>唯一协议LB1 ASCII+CRC16，UART桥115200 8N1、N8R8和GPIO冻结；无每消息TTL/推送事件。隐私切SW3V3并高阻GPIO4–9，不显示privacy灯/屏；touch阈值0默认禁用，屏为状态图标。</li>
+<li>修复已复现的86项parity差异：保留原理图局部标签，用完整<code>/3V3</code>等名称匹配PCB；33个明确NC单脚网按KiCad语义保留且无铜连接；H1–H4设<code>board_only/exclude_from_bom/exclude_from_pos_files</code>，不使用全局忽略或错误豁免。</li>
+<li><strong>KiCad9.0.7 schematic parity=0、几何DRC=0、未连接项=0、ERC=0</strong>。完整网络名逐节点比较：49功能节点＋33明确NC节点，共82节点一致；36项选定/保留脚检查通过。</li>
+<li>CAD与pitch渲染118个既有文件hash均未改变，铜线/过孔/焊盘/板框几何hash未改变，既有CAD干涉仍为[]。本轮不重新生成几何、不重渲染产品图；仅刷新PCB检查、制造导出与PCB图。</li>
+<li>交付ZIP重新生成，严格不含<code>tools/</code>、下载/缓存、<code>.env</code>、锁文件、KiCad本地状态或<code>.DS_Store</code>；源码S表达式辅助模块随PCB提供。包与逐文件hash在delivery/，包装审核见<code>package-audit.json</code>。</li>
+</ul>
+<p>证据：<code>validation/integration/result.json</code>、<code>integration/parity-before.json</code>、<code>pcb-drc.json</code>、<code>pcb-geometric-drc.json</code>、<code>sch-erc.json</code>、<code>netlist-pinmap-check.json</code>。生成器用<code>--sync-existing</code>只修项目语义，铜线原样保留；之后从头生成也调用同一语义逻辑。</p>
+<h2>精确产物</h2>
+<table>
+<thead>
+<tr>
+<th>用途</th>
+<th>路径</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>冻结软硬件架构</td>
+<td><code>hardware/specs/architecture.md</code></td>
+<td>OEM USB HID + 独立ESP32-S3开发板，双USB/外部Hub，电脑运行Agent；LB1 ASCII + CRC16串口协议</td>
+</tr>
+<tr>
+<td>官方核对引脚</td>
+<td><code>hardware/specs/pin-map.md</code>、<code>pin-map.json</code></td>
+<td>GPIO4/5/6/7/8/9/10对应J1.4/5/6/7/12/15/16；v1.1板载RGB38/初版48均避开；官方文本、DXF与原理图缓存在references/</td>
+</tr>
+<tr>
+<td>参数化CAD源</td>
+<td><code>hardware/cad/parameters.json</code>、<code>build_cad.py</code></td>
+<td>mm单位，外壳/底板/光学孔/双出线槽/柱位与公差、屏框、原创云阶晶堡、六折雪花、定位底座及组件占位</td>
+</tr>
+<tr>
+<td>CAD工程导出</td>
+<td><code>hardware/cad/exports/</code></td>
+<td>20件逐件STL + 20件逐件STEP；<code>lingban_assembly.step</code>整机装配；<code>lingban_exploded.step</code>爆炸装配。当前零件以parts.json为准，无旧插座重复件</td>
+</tr>
+<tr>
+<td>pitch图片</td>
+<td><code>hardware/renders/lingban_hero.png</code>、<code>lingban_exploded.png</code></td>
+<td>1800×1500透明Cycles渲染，带“AI概念展示 / 数字工程原型 / 非实物”标识</td>
+</tr>
+<tr>
+<td>动画与源</td>
+<td><code>hardware/renders/lingban_turntable_concept.mp4</code>、<code>lingban_hero.blend</code>、<code>lingban_exploded.blend</code>、<code>lingban_turntable.blend</code>、<code>render_scene.py</code>、<code>finish_media.py</code></td>
+<td>720×720、约5秒完整转台视频；120帧24fps可编辑旋转源，视频每4帧抽样。raw/frames只作中间产物</td>
+</tr>
+<tr>
+<td>可编辑PCB工程</td>
+<td><code>hardware/pcb/NOT-FOR-FAB/lingban_carrier.kicad_pro</code>、<code>.kicad_sch</code>、<code>.kicad_pcb</code></td>
+<td>36×76×1.6mm两层载板，开发板双排插座，灯/触摸/屏/DPDT物理开关线束，底面阻容，自包含符号和封装库</td>
+</tr>
+<tr>
+<td>真实走线图</td>
+<td><code>hardware/pcb/NOT-FOR-FAB/plots/pcb-routed.svg</code>、<code>pcb-routed.png</code></td>
+<td>由实际KiCad铜线/焊盘坐标导出，511段铜线、17过孔、35条连接树边；无未布线连接</td>
+</tr>
+<tr>
+<td>网表/装配清单</td>
+<td><code>hardware/pcb/NOT-FOR-FAB/lingban_carrier.net</code>、<code>.xml</code>、<code>BOM.csv</code>、<code>PnP.csv</code>、<code>PnP-kicad.csv</code></td>
+<td>KiCad真实网表；底面SMD贴装坐标，D1标DNI；厂商须确认底视/顶视、原点与旋转</td>
+</tr>
+<tr>
+<td>制造评审文件</td>
+<td><code>hardware/pcb/NOT-FOR-FAB/gerber-review-only/</code></td>
+<td>F/B铜、F/B阻焊、F/B丝印、底面锡膏、Edge.Cuts共8个Gerber；PTH/NPTH两份Excellon钻孔、钻孔图、gbrjob。不是下单包</td>
+</tr>
+<tr>
+<td>工程/商业交接</td>
+<td><code>docs/hardware/engineering-and-manufacturing.md</code></td>
+<td>99/199/299/499/899电子机械差异、BOM批量/税/良率/NRE估算、7天样机计划、制造就绪矩阵、装配验收与工厂待确认尺寸</td>
+</tr>
+<tr>
+<td>局部工具与校验</td>
+<td>工作区<code>hardware/tools/README.md</code>（不随ZIP）、<code>hardware/requirements.lock</code>；<code>hardware/validation/tool-integrity.json</code></td>
+<td>CadQuery2.8.0、trimesh5.1.0、Blender4.5.3、KiCad9.0.7；官方哈希/应用签名验证；不依赖全局brew安装</td>
+</tr>
+<tr>
+<td>精简交付包</td>
+<td><code>hardware/delivery/lingban_evt_a_review.zip</code>、<code>SHA256SUMS.txt</code></td>
+<td>供主控集成，不含tools目录、DMG、venv、缓存、挂载应用树、本地状态和视频逐帧中间文件</td>
+</tr>
+</tbody></table>
+<h2>可重复运行命令</h2>
+<p>在仓库根运行；工具挂载/重建步骤见hardware/tools/README.md。</p>
+<pre><code class="language-sh">python3 hardware/pcb/build_pcb.py --sync-existing
+python3 hardware/pcb/finalize_project.py
+python3 hardware/pcb/export_and_verify.py
+hardware/tools/venv/bin/python hardware/pcb/render_board.py
+hardware/tools/venv/bin/python hardware/validation/validate_artifacts.py
+python3 hardware/validation/integration/check_integration.py
+python3 hardware/package_delivery.py
+</code></pre>
+<p><code>export_and_verify.py</code>调用真实KiCad，parity检查同时启用<code>--schematic-parity --exit-code-violations</code>，另导出独立几何DRC和ERC，失败非零退出。当前命令使用工作区既有工具；精简ZIP不附带tools，可用已安装的等版本工具或以hardware/requirements.lock重建局部Python环境。CAD尺寸参数不是全部独立约束求解器；更改壳宽/壳长会调整放样，但安装坐标、OEM接口与装饰仍须检查Python参数与干涉，不能只改一个数字直接制造。</p>
+<h2>实际验证</h2>
+<ul>
+<li>OpenCascade：当前20件BREP均有效、均为一个实体；两两正体积干涉 &gt;0.05mm³ 为0。见<code>validation/cad-brep.json</code>、<code>cad-intersections.json</code>。不意味着局部法向壁厚、公差、强度或实物手感已通过。</li>
+<li>导出STL：20件均封闭、水密、法向一致、正体积、单连通实体，见<code>stl-mesh-check.json</code>、<code>artifact-check-summary.json</code>。</li>
+<li>KiCad9.0.7：<strong>ERC 0违规；几何DRC 0违规、0未连接项；schematic parity 0</strong>，未靠规则忽略/排除消除报告。见<code>sch-erc.json</code>、<code>pcb-drc.json</code>、<code>pcb-geometric-drc.json</code>与<code>kicad-command-results.json</code>。ERC对象是无源载板触点，不证明ESP/外部模块电气特性。</li>
+<li>36项官方选定脚/保留脚核对通过；49功能焊盘及33个明确NC焊盘与KiCad导出原理图网表完整名称一致（不再去掉/前缀），NC均单脚且无铜连接。见<code>netlist-pinmap-check.json</code>。本轮已只读核对LB1软件/固件、N8R8 profile及GPIO；主控报告两目标编译和HAL测试通过，本会话不重复编译/烧录。</li>
+<li>Blender官方SHA256匹配，Blender/KiCad应用codesign严格验证退出0；KiCad DMG内部校验有效。Python以官方PyPI元数据生成hash锁并从实测可信镜像执行<code>--require-hashes --reinstall</code>成功。见工具完整性/安装日志。</li>
+<li>渲染由本地Cycles执行；视频由ffmpeg编码、ffprobe检查，见<code>media-probe.json</code>。城堡窗发光、光导环与屏幕文案是视觉示意/合成数据。</li>
+</ul>
+<h2>工程师/厂商确认后才能推进的点</h2>
+<ol>
+<li><strong>制造状态不提升到fab-candidate</strong>：D1为未冻结封装的ESD DNI占位；RGB、OLED、DPDT及插座未全部冻结MPN/供应商图纸。需要真实TVS方案、线束脚序、装配方向和DFM审核。</li>
+<li><strong>电气未实测</strong>：开发板稳压器/USB能力、启动与无线峰值、满白屏/满亮、隐私断电反灌、触摸阈值/ESD、温升。初版默认USB-UART且关闭Wi-Fi/BLE；通用500mA端口不能按1A电源使用。</li>
+<li><strong>隐私边界明确</strong>：机械DPDT切屏/灯电源并给GPIO状态，断线默认隐私；不硬断USB、触摸线路或主机Agent。实装HAL detach PWM/Wire.end并将GPIO4–9置INPUT，无内部上拉；SW3V3断电后不显示privacy灯/屏，只由UI/开关本体指示。触摸默认阈值0、禁用采集，屏仅状态图标；没有音视频、生理诊断、员工评分或秘密采集。</li>
+<li><strong>机械需实物ECO</strong>：OEM外形/固定孔/镜片到桌面高度/光学中心、按钮杠杆与滚轮结构；屏模块厚度/孔位和屏框防脱卡扣；装饰底座防脱；隐私开关固定孔与实际止拉件；铜螺母/底脚/螺钉/透明料收缩和后处理。当前名义126×80×54，实际曲面可能超调，完整包络见<code>assembly-envelope.json</code>。</li>
+<li><strong>RF净空未完成整机验证</strong>：PCB有禁铜区，但附近金属紧固件/铜螺母仍需移位或改非金属，按实际模块天线参考布局复审；不宣称无线/EMC验证通过。</li>
+<li><strong>下阶段是7天样机</strong>：到货、工程师签字、电气上电与机械验收均是门槛；30天试销受法规/认证/小批量验收限制。没有厂商报价，所有成本明确批量、税、良率和NRE假设；VC/退出估值不属于本次硬件事实。</li>
+</ol>
+<p>specs/已与实装LB1/GPIO同步，继续使用hash未变的带标识PNG/MP4供pitch，最后将NOT-FOR-FAB工程交给电子/机械工程师审核。不要把hardware/downloads、tools/venv、uv-cache、mount-*加入Git或对外包。</p>
+<h2>本轮影响文件</h2>
+<ul>
+<li>接口与商业：<code>hardware/specs/architecture.md</code>、<code>pin-map.md</code>、<code>pin-map.json</code>；<code>hardware/README.md</code>、本文件；<code>docs/hardware/README.md</code>、<code>engineering-and-manufacturing.md</code>。</li>
+<li>PCB语义与复现：<code>hardware/pcb/build_pcb.py</code>、新增<code>semantic_sync.py</code>与本地<code>sexpr.py</code>、<code>finalize_project.py</code>、<code>export_and_verify.py</code>、<code>render_board.py</code>、PCB README；NOT-FOR-FAB中的PCB/原理图、库、BOM、导出网表/制造文件/PCB图已刷新。铜线几何未改，原项目规则未加忽略项。</li>
+<li>验证与交付：<code>hardware/validation/validate_artifacts.py</code>、README、<code>integration/</code>和当前检查报告；<code>hardware/package_delivery.py</code>、用于无工具环境交付的<code>hardware/requirements.lock</code>、delivery/ZIP/manifest/SHA/audit。CAD与产品PNG/MP4/Blender源均未修改；软件、固件及商业主文只读。</li>
+</ul>
+</article></main></html>

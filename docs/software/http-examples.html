@@ -1,0 +1,71 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HTTP 示例（本机合成演示） · 灵伴资料</title><style>:root{--ink:#142a32;--muted:#63777b;--mint:#007e78;--paper:#f4f5ef;--line:#dce2d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft Yahei',sans-serif}a{color:var(--mint);text-decoration:none}a:hover{text-decoration:underline}nav{background:#142a32;color:white;padding:18px 5%;display:flex;justify-content:space-between;gap:20px}nav a{color:#b2e3d4}main{max-width:1180px;margin:auto;padding:46px 26px 80px}h1,h2,h3{line-height:1.2;letter-spacing:-.035em}h1{font-size:clamp(36px,5vw,68px);margin:14px 0 24px}h2{font-size:30px;margin:60px 0 22px}h3{font-size:21px}p{max-width:75ch}small,.muted{color:var(--muted)}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:650;color:var(--mint)}.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:42px;align-items:center;min-height:410px}.hero-art{min-height:340px;background:linear-gradient(140deg,#dce6e3,#fff 55%,#e1ded4);border-radius:38px;overflow:hidden;display:grid;place-items:center;position:relative}.hero-art img{width:100%;height:100%;max-height:410px;object-fit:contain}.badge{display:inline-block;border:1px solid #b5cbc4;border-radius:100px;padding:5px 12px;font-size:12px;line-height:1.5;color:#31544f;background:#f7faf6}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.button{padding:12px 20px;border-radius:10px;background:var(--mint);color:white;display:inline-block;font-weight:600}.button.secondary{color:var(--ink);background:#e1e8df}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;min-width:0}.card h3{margin:12px 0}.card p{font-size:14px;color:var(--muted)}.card ul{list-style:none;padding:0;font-size:14px}.card li{border-top:1px solid #e9ece6;padding:9px 0}.number{font:600 12px/1 monospace;color:var(--mint)}.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:42px 0}.strip>div{background:white;padding:22px}.strip b{display:block;font-size:26px;line-height:1.2}.strip small{font-size:12px}.flow{display:flex;gap:12px;align-items:stretch;flex-wrap:wrap}.flow>div{flex:1;min-width:145px;background:#e5eee6;padding:19px;border-radius:14px;font-size:14px}.flow b{display:block;margin:5px 0}.flow span{font-size:12px;color:var(--muted)}details{border:1px solid var(--line);padding:14px 20px;border-radius:12px;margin:10px 0;background:#fff}summary{cursor:pointer;font-weight:600}.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.gallery video,.gallery img{width:100%;border-radius:14px;background:#142a32}.gallery figcaption{font-size:13px;margin-top:8px}.note{padding:16px 20px;border-left:3px solid var(--mint);background:#e7ede6;font-size:14px}.document{max-width:940px;background:white;padding:45px 55px;border-radius:20px;margin:0 auto}.document h1{font-size:36px}.document h2{font-size:25px;margin-top:40px}.document h3{font-size:21px;margin-top:30px}table{border-collapse:collapse;width:100%;font-size:13px;display:block;overflow:auto}th,td{padding:10px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf2eb}pre{overflow:auto;background:#132c31;color:#e6f3ee;padding:18px;border-radius:12px;font-size:12px}code{font-size:.86em}blockquote{border-left:3px solid #9ecabd;padding-left:20px;color:var(--muted)}footer{border-top:1px solid var(--line);padding-top:25px;margin-top:55px;font-size:12px;color:var(--muted)}@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-art{min-height:250px}.grid{grid-template-columns:1fr}.strip{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr}.document{padding:24px 18px}main{padding:24px 18px}.hero h1{font-size:42px}}@media print{nav,.actions{display:none}body{background:white}main{padding:0}.document{padding:0}h2,h3{break-after:avoid}table,pre{break-inside:avoid}}</style><nav><a href="../../index.html">← 灵伴资料中心</a><a href="http-examples.md">Markdown 源文件</a></nav><main><article class="document"><h1>HTTP 示例（本机合成演示）</h1>
+<p>先执行 <code>./software/start.sh</code>。把启动终端员工或企业链接中 <code>#token=</code> 后的值显式填入下列变量。不要将令牌或带令牌链接提交到 Git；以下占位值不是实际凭据。所有命令在仓库根目录运行。</p>
+<pre><code class="language-sh">EMPLOYEE_TOKEN=&#39;员工令牌占位&#39;
+ENTERPRISE_TOKEN=&#39;企业令牌占位&#39;
+BASE=&#39;http://127.0.0.1:8765&#39;
+curl &quot;$BASE/api/me&quot; -H &quot;Authorization: Bearer $EMPLOYEE_TOKEN&quot;
+curl &quot;$BASE/api/state&quot; -H &quot;Authorization: Bearer $EMPLOYEE_TOKEN&quot;
+</code></pre>
+<p>摄入事件（同键重放不会创建第二条，改变同键内容返回 409）：</p>
+<pre><code class="language-sh">curl &quot;$BASE/api/events&quot; -H &quot;Authorization: Bearer $EMPLOYEE_TOKEN&quot; \
+  -H &#39;Content-Type: application/json&#39; --data-binary @- &lt;&lt;&#39;JSON&#39;
+{&quot;idempotency_key&quot;:&quot;example-blocked-1&quot;,&quot;type&quot;:&quot;task.upsert&quot;,&quot;payload&quot;:{&quot;id&quot;:&quot;board-review&quot;,&quot;title&quot;:&quot;合成任务：等待主板接口核对&quot;,&quot;state&quot;:&quot;blocked&quot;,&quot;project&quot;:&quot;晶鼠试点&quot;}}
+JSON
+</code></pre>
+<p>不需要手动调用 tick；worker 每秒自动判断。<code>meeting.upsert</code> 同样接受 id/title/state/due_at/project，其中 due_at 为 UTC Unix 秒。<code>focus.set</code> payload 为 <code>{&quot;until&quot;:0,&quot;cooldown_seconds&quot;:300}</code>，until=0 结束专注，未来时间开启安静期（最多 24 小时）。<code>break.due</code> payload 只接受 due_at。</p>
+<pre><code class="language-sh">curl &quot;$BASE/api/scenarios&quot; -H &quot;Authorization: Bearer $EMPLOYEE_TOKEN&quot; \
+  -H &#39;Content-Type: application/json&#39; -d &#39;{&quot;name&quot;:&quot;meeting&quot;}&#39;
+# 其他场景名：blocked / focus / resume / revoke
+curl &quot;$BASE/api/alerts/feedback&quot; -H &quot;Authorization: Bearer $EMPLOYEE_TOKEN&quot; \
+  -H &#39;Content-Type: application/json&#39; -d &#39;{&quot;id&quot;:&quot;提醒ID&quot;,&quot;feedback&quot;:&quot;useful&quot;}&#39;
+# feedback: useful / dismissed / snooze（安静 10 分钟，不承诺同证据到期再通知）
+</code></pre>
+<p>动作提案与批准，使用提案响应中的 id：</p>
+<pre><code class="language-sh">curl &quot;$BASE/api/actions&quot; -H &quot;Authorization: Bearer $EMPLOYEE_TOKEN&quot; \
+  -H &#39;Content-Type: application/json&#39; -d &#39;{&quot;title&quot;:&quot;合成会议要点&quot;,&quot;body&quot;:&quot;仅在本地保存：核对主板接口和城堡空间&quot;}&#39;
+curl &quot;$BASE/api/actions/decide&quot; -H &quot;Authorization: Bearer $EMPLOYEE_TOKEN&quot; \
+  -H &#39;Content-Type: application/json&#39; -d &#39;{&quot;id&quot;:&quot;动作ID&quot;,&quot;decision&quot;:&quot;approve&quot;}&#39;
+# decision=reject 不生成 outbox。相同决定可安全重放，终态不可翻转。
+</code></pre>
+<p>授权、明确分享、撤销及企业聚合：</p>
+<pre><code class="language-sh">curl &quot;$BASE/api/consent&quot; -H &quot;Authorization: Bearer $EMPLOYEE_TOKEN&quot; \
+  -H &#39;Content-Type: application/json&#39; -d &#39;{&quot;enabled&quot;:true}&#39;
+curl &quot;$BASE/api/share&quot; -H &quot;Authorization: Bearer $EMPLOYEE_TOKEN&quot; \
+  -H &#39;Content-Type: application/json&#39; -d &#39;{&quot;completed&quot;:2,&quot;blocked&quot;:1}&#39;
+curl &quot;$BASE/api/enterprise/summary&quot; -H &quot;Authorization: Bearer $ENTERPRISE_TOKEN&quot;
+curl &quot;$BASE/api/consent&quot; -H &quot;Authorization: Bearer $EMPLOYEE_TOKEN&quot; \
+  -H &#39;Content-Type: application/json&#39; -d &#39;{&quot;enabled&quot;:false}&#39;
+# 初始仅 5 位合成分享者，撤销一位后企业结果 available=false。
+curl &quot;$BASE/api/enterprise/summary&quot; -H &quot;Authorization: Bearer $ENTERPRISE_TOKEN&quot;
+# 下列越权访问必须 403：
+curl -i &quot;$BASE/api/state&quot; -H &quot;Authorization: Bearer $ENTERPRISE_TOKEN&quot;
+</code></pre>
+<p>插件 manifest 与受限令牌：</p>
+<pre><code class="language-sh">curl &quot;$BASE/api/plugins&quot; -H &quot;Authorization: Bearer $EMPLOYEE_TOKEN&quot; \
+  -H &#39;Content-Type: application/json&#39; --data-binary @- &lt;&lt;&#39;JSON&#39;
+{&quot;id&quot;:&quot;demo-calendar&quot;,&quot;name&quot;:&quot;合成日历插件&quot;,&quot;version&quot;:&quot;1.0.0&quot;,&quot;permissions&quot;:[&quot;events:write&quot;,&quot;tasks:read&quot;],&quot;event_types&quot;:[&quot;meeting.upsert&quot;]}
+JSON
+curl &quot;$BASE/api/plugins/token&quot; -H &quot;Authorization: Bearer $EMPLOYEE_TOKEN&quot; \
+  -H &#39;Content-Type: application/json&#39; -d &#39;{&quot;id&quot;:&quot;demo-calendar&quot;}&#39;
+PLUGIN_TOKEN=&#39;插件接口响应令牌占位&#39;
+curl &quot;$BASE/api/plugins/demo-calendar/tasks&quot; -H &quot;Authorization: Bearer $PLUGIN_TOKEN&quot;
+# 插件令牌访问 /api/state、审批、consent、A2A 等必须 403。
+</code></pre>
+<p>模拟设备（员工主令牌）：</p>
+<pre><code class="language-sh">curl &quot;$BASE/api/hardware&quot; -H &quot;Authorization: Bearer $EMPLOYEE_TOKEN&quot; \
+  -H &#39;Content-Type: application/json&#39; -d &#39;{&quot;led&quot;:&quot;teal&quot;,&quot;screen&quot;:&quot;会议将在十分钟后开始&quot;,&quot;touch&quot;:true}&#39;
+curl &quot;$BASE/api/hardware&quot; -H &quot;Authorization: Bearer $EMPLOYEE_TOKEN&quot; \
+  -H &#39;Content-Type: application/json&#39; -d &#39;{&quot;privacy&quot;:true}&#39;
+# 隐私启用后 led=privacy、touch=false；插件不能解除隐私。
+</code></pre>
+<p>A2A 正式 JSON-RPC：</p>
+<pre><code class="language-sh">curl &quot;$BASE/.well-known/agent-card.json&quot;
+curl &quot;$BASE/a2a&quot; -H &quot;Authorization: Bearer $EMPLOYEE_TOKEN&quot; \
+  -H &#39;Content-Type: application/json&#39; --data-binary @- &lt;&lt;&#39;JSON&#39;
+{&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;id&quot;:&quot;send-1&quot;,&quot;method&quot;:&quot;message/send&quot;,&quot;params&quot;:{&quot;message&quot;:{&quot;kind&quot;:&quot;message&quot;,&quot;role&quot;:&quot;user&quot;,&quot;messageId&quot;:&quot;example-a2a-1&quot;,&quot;parts&quot;:[{&quot;kind&quot;:&quot;text&quot;,&quot;text&quot;:&quot;给我一份合成任务摘要&quot;}]},&quot;configuration&quot;:{&quot;blocking&quot;:true,&quot;acceptedOutputModes&quot;:[&quot;text/plain&quot;]}}}
+JSON
+curl &quot;$BASE/a2a&quot; -H &quot;Authorization: Bearer $EMPLOYEE_TOKEN&quot; \
+  -H &#39;Content-Type: application/json&#39; -d &#39;{&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;id&quot;:&quot;get-1&quot;,&quot;method&quot;:&quot;tasks/get&quot;,&quot;params&quot;:{&quot;id&quot;:&quot;返回的task id&quot;,&quot;historyLength&quot;:2}}&#39;
+</code></pre>
+<p>主要状态码：400 输入无效，401 令牌无效，403 权限/Origin/Host 拒绝，404 不存在或非本人对象，409 幂等/审批冲突，411 缺少长度，413 超过 32 KiB，415 非 JSON。A2A 方法执行错误使用 JSON-RPC error，见协议文档。</p>
+</article></main></html>

@@ -1,0 +1,43 @@
+{
+  "status": "pass",
+  "browser": "152.0.7977.77",
+  "checks": [
+    {
+      "name": "default mode visibly offline",
+      "pass": true
+    },
+    {
+      "name": "consent required before submit",
+      "pass": true
+    },
+    {
+      "name": "no action without consent",
+      "pass": true
+    },
+    {
+      "name": "fallback creates pending action",
+      "pass": true
+    },
+    {
+      "name": "draft never writes outbox",
+      "pass": true
+    },
+    {
+      "name": "consent resets for next request",
+      "pass": true
+    },
+    {
+      "name": "model form has no mobile horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "browser made no external requests",
+      "pass": true
+    },
+    {
+      "name": "no frontend errors",
+      "pass": true
+    }
+  ],
+  "model_calls": 0
+}

@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/lingban_carrier.kicad_sch</source>
+    <date>2026-09-06T02:25:47+0800</date>
+    <tool>Eeschema 9.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>lingban_carrier.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100nF_16V_X7R</value>
+      <footprint>LINGBAN:C1</footprint>
+      <fields>
+        <field name="Footprint">LINGBAN:C1</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LINGBAN" part="C1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="lingban_carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9137fd72-b3f4-5ab5-8095-94e61065a539</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>10uF_10V_X5R</value>
+      <footprint>LINGBAN:C2</footprint>
+      <fields>
+        <field name="Footprint">LINGBAN:C2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LINGBAN" part="C2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="lingban_carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f235f7e9-e8a8-58ee-a7c9-dd892465bb0a</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100nF_16V_X7R</value>
+      <footprint>LINGBAN:C3</footprint>
+      <fields>
+        <field name="Footprint">LINGBAN:C3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LINGBAN" part="C3" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="lingban_carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9aa48243-3df9-58c1-81f7-d69d1fccfd7c</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>ESD_DNI_REVIEW</value>
+      <footprint>LINGBAN:D1</footprint>
+      <fields>
+        <field name="Footprint">LINGBAN:D1</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LINGBAN" part="D1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="lingban_carrier.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8b9031ce-6d87-5e8f-887c-01c5fb95392d</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>DevKitC1_LEFT_1x22</value>
+      <footprint>LINGBAN:J1</footprint>
+      <fields>
+        <field name="Footprint">LINGBAN:J1</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LINGBAN" part="J1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="lingban_carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>226da7c8-c901-5e27-b5aa-6784c56a9454</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>DevKitC1_RIGHT_1x22</value>
+      <footprint>LINGBAN:J3</footprint>
+      <fields>
+        <field name="Footprint">LINGBAN:J3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LINGBAN" part="J3" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="lingban_carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d4f9236a-ff62-5b43-99a4-a7d2b272345c</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>OLED_GND_VCC_SCL_SDA</value>
+      <footprint>LINGBAN:J4</footprint>
+      <fields>
+        <field name="Footprint">LINGBAN:J4</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LINGBAN" part="J4" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="lingban_carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aa617e51-6bc0-5c43-afd6-459f38948a97</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>REMOTE_RGB_COMMON_ANODE</value>
+      <footprint>LINGBAN:J5</footprint>
+      <fields>
+        <field name="Footprint">LINGBAN:J5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LINGBAN" part="J5" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="lingban_carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>419f1c23-718a-5b1b-a97d-c0327faad50d</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>TOUCH_ELECTRODE_GND</value>
+      <footprint>LINGBAN:J6</footprint>
+      <fields>
+        <field name="Footprint">LINGBAN:J6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LINGBAN" part="J6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="lingban_carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9d8bc3ff-0b61-50db-95a4-43c1c5ddb2b4</tstamps>
+    </comp>
+    <comp ref="J7">
+      <value>DPDT_HARNESS_6</value>
+      <footprint>LINGBAN:J7</footprint>
+      <fields>
+        <field name="Footprint">LINGBAN:J7</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LINGBAN" part="J7" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="lingban_carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>903c0a8b-0cc3-555c-858e-b61f11400d3a</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>470R</value>
+      <footprint>LINGBAN:R1</footprint>
+      <fields>
+        <field name="Footprint">LINGBAN:R1</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LINGBAN" part="R1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="lingban_carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>094d566d-c7f9-56fc-a608-41244635edbd</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>470R</value>
+      <footprint>LINGBAN:R2</footprint>
+      <fields>
+        <field name="Footprint">LINGBAN:R2</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LINGBAN" part="R2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="lingban_carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a8f6954c-0377-5573-bca3-4f3d5375efa1</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>470R</value>
+      <footprint>LINGBAN:R3</footprint>
+      <fields>
+        <field name="Footprint">LINGBAN:R3</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LINGBAN" part="R3" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="lingban_carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8f06e660-c840-5adf-b3a5-7652eb717e61</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>1k</value>
+      <footprint>LINGBAN:R4</footprint>
+      <fields>
+        <field name="Footprint">LINGBAN:R4</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LINGBAN" part="R4" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="lingban_carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5901e87b-0169-5712-bf2b-973262a31b74</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>4.7k</value>
+      <footprint>LINGBAN:R5</footprint>
+      <fields>
+        <field name="Footprint">LINGBAN:R5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LINGBAN" part="R5" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="lingban_carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7f373410-ef61-5cfc-8449-76b430bebea6</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>4.7k</value>
+      <footprint>LINGBAN:R6</footprint>
+      <fields>
+        <field name="Footprint">LINGBAN:R6</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LINGBAN" part="R6" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="lingban_carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ce2983ed-7f77-549c-abd0-6721aaf5118f</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <footprint>LINGBAN:R7</footprint>
+      <fields>
+        <field name="Footprint">LINGBAN:R7</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="LINGBAN" part="R7" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="lingban_carrier.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9bca35ae-1289-5ba1-a8a1-774c154396a7</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="LINGBAN" part="C1">
+      <fields>
+        <field name="Reference">C1</field>
+        <field name="Value">100nF_16V_X7R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="3V3" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LINGBAN" part="C2">
+      <fields>
+        <field name="Reference">C2</field>
+        <field name="Value">10uF_10V_X5R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SW3V3" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LINGBAN" part="C3">
+      <fields>
+        <field name="Reference">C3</field>
+        <field name="Value">100nF_16V_X7R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SW3V3" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LINGBAN" part="D1">
+      <fields>
+        <field name="Reference">D1</field>
+        <field name="Value">ESD_DNI_REVIEW</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="ELECTRODE" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LINGBAN" part="J1">
+      <fields>
+        <field name="Reference">J1</field>
+        <field name="Value">DevKitC1_LEFT_1x22</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="3V3" type="passive"/>
+        <pin num="2" name="3V3" type="passive"/>
+        <pin num="3" name="NC" type="passive"/>
+        <pin num="4" name="PWM_R" type="passive"/>
+        <pin num="5" name="PWM_G" type="passive"/>
+        <pin num="6" name="PWM_B" type="passive"/>
+        <pin num="7" name="TOUCH_IN" type="passive"/>
+        <pin num="8" name="NC" type="passive"/>
+        <pin num="9" name="NC" type="passive"/>
+        <pin num="10" name="NC" type="passive"/>
+        <pin num="11" name="NC" type="passive"/>
+        <pin num="12" name="SDA" type="passive"/>
+        <pin num="13" name="NC" type="passive"/>
+        <pin num="14" name="NC" type="passive"/>
+        <pin num="15" name="SCL" type="passive"/>
+        <pin num="16" name="PRIVACY_N" type="passive"/>
+        <pin num="17" name="NC" type="passive"/>
+        <pin num="18" name="NC" type="passive"/>
+        <pin num="19" name="NC" type="passive"/>
+        <pin num="20" name="NC" type="passive"/>
+        <pin num="21" name="NC" type="passive"/>
+        <pin num="22" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LINGBAN" part="J3">
+      <fields>
+        <field name="Reference">J3</field>
+        <field name="Value">DevKitC1_RIGHT_1x22</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="NC" type="passive"/>
+        <pin num="3" name="NC" type="passive"/>
+        <pin num="4" name="NC" type="passive"/>
+        <pin num="5" name="NC" type="passive"/>
+        <pin num="6" name="NC" type="passive"/>
+        <pin num="7" name="NC" type="passive"/>
+        <pin num="8" name="NC" type="passive"/>
+        <pin num="9" name="NC" type="passive"/>
+        <pin num="10" name="NC" type="passive"/>
+        <pin num="11" name="NC" type="passive"/>
+        <pin num="12" name="NC" type="passive"/>
+        <pin num="13" name="NC" type="passive"/>
+        <pin num="14" name="NC" type="passive"/>
+        <pin num="15" name="NC" type="passive"/>
+        <pin num="16" name="NC" type="passive"/>
+        <pin num="17" name="NC" type="passive"/>
+        <pin num="18" name="NC" type="passive"/>
+        <pin num="19" name="NC" type="passive"/>
+        <pin num="20" name="NC" type="passive"/>
+        <pin num="21" name="GND" type="passive"/>
+        <pin num="22" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LINGBAN" part="J4">
+      <fields>
+        <field name="Reference">J4</field>
+        <field name="Value">OLED_GND_VCC_SCL_SDA</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="SW3V3" type="passive"/>
+        <pin num="3" name="SCL" type="passive"/>
+        <pin num="4" name="SDA" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LINGBAN" part="J5">
+      <fields>
+        <field name="Reference">J5</field>
+        <field name="Value">REMOTE_RGB_COMMON_ANODE</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SW3V3" type="passive"/>
+        <pin num="2" name="LED_R" type="passive"/>
+        <pin num="3" name="LED_G" type="passive"/>
+        <pin num="4" name="LED_B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LINGBAN" part="J6">
+      <fields>
+        <field name="Reference">J6</field>
+        <field name="Value">TOUCH_ELECTRODE_GND</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="ELECTRODE" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LINGBAN" part="J7">
+      <fields>
+        <field name="Reference">J7</field>
+        <field name="Value">DPDT_HARNESS_6</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SW3V3" type="passive"/>
+        <pin num="2" name="3V3" type="passive"/>
+        <pin num="3" name="NC" type="passive"/>
+        <pin num="4" name="PRIVACY_N" type="passive"/>
+        <pin num="5" name="GND" type="passive"/>
+        <pin num="6" name="NC" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LINGBAN" part="R1">
+      <fields>
+        <field name="Reference">R1</field>
+        <field name="Value">470R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="PWM_R" type="passive"/>
+        <pin num="2" name="LED_R" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LINGBAN" part="R2">
+      <fields>
+        <field name="Reference">R2</field>
+        <field name="Value">470R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="PWM_G" type="passive"/>
+        <pin num="2" name="LED_G" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LINGBAN" part="R3">
+      <fields>
+        <field name="Reference">R3</field>
+        <field name="Value">470R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="PWM_B" type="passive"/>
+        <pin num="2" name="LED_B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LINGBAN" part="R4">
+      <fields>
+        <field name="Reference">R4</field>
+        <field name="Value">1k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="TOUCH_IN" type="passive"/>
+        <pin num="2" name="ELECTRODE" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LINGBAN" part="R5">
+      <fields>
+        <field name="Reference">R5</field>
+        <field name="Value">4.7k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SW3V3" type="passive"/>
+        <pin num="2" name="SDA" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LINGBAN" part="R6">
+      <fields>
+        <field name="Reference">R6</field>
+        <field name="Value">4.7k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SW3V3" type="passive"/>
+        <pin num="2" name="SCL" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LINGBAN" part="R7">
+      <fields>
+        <field name="Reference">R7</field>
+        <field name="Value">10k</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="3V3" type="passive"/>
+        <pin num="2" name="PRIVACY_N" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="LINGBAN">
+      <uri>/Users/lwblx/huapohen/agent/execute/enterprise_work/imagine/hardware/pcb/NOT-FOR-FAB/LINGBAN.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/3V3" class="Default">
+      <node ref="C1" pin="1" pinfunction="3V3" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="3V3" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="3V3" pintype="passive"/>
+      <node ref="J7" pin="2" pinfunction="3V3" pintype="passive"/>
+      <node ref="R7" pin="1" pinfunction="3V3" pintype="passive"/>
+    </net>
+    <net code="2" name="/ELECTRODE" class="Default">
+      <node ref="D1" pin="1" pinfunction="ELECTRODE" pintype="passive"/>
+      <node ref="J6" pin="1" pinfunction="ELECTRODE" pintype="passive"/>
+      <node ref="R4" pin="2" pinfunction="ELECTRODE" pintype="passive"/>
+    </net>
+    <net code="3" name="/GND" class="Default">
+      <node ref="C1" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="C2" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="C3" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="J1" pin="22" pinfunction="GND" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="GND" pintype="passive"/>
+      <node ref="J3" pin="21" pinfunction="GND" pintype="passive"/>
+      <node ref="J3" pin="22" pinfunction="GND" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="GND" pintype="passive"/>
+      <node ref="J6" pin="2" pinfunction="GND" pintype="passive"/>
+      <node ref="J7" pin="5" pinfunction="GND" pintype="passive"/>
+    </net>
+    <net code="4" name="/LED_B" class="Default">
+      <node ref="J5" pin="4" pinfunction="LED_B" pintype="passive"/>
+      <node ref="R3" pin="2" pinfunction="LED_B" pintype="passive"/>
+    </net>
+    <net code="5" name="/LED_G" class="Default">
+      <node ref="J5" pin="3" pinfunction="LED_G" pintype="passive"/>
+      <node ref="R2" pin="2" pinfunction="LED_G" pintype="passive"/>
+    </net>
+    <net code="6" name="/LED_R" class="Default">
+      <node ref="J5" pin="2" pinfunction="LED_R" pintype="passive"/>
+      <node ref="R1" pin="2" pinfunction="LED_R" pintype="passive"/>
+    </net>
+    <net code="7" name="/PRIVACY_N" class="Default">
+      <node ref="J1" pin="16" pinfunction="PRIVACY_N" pintype="passive"/>
+      <node ref="J7" pin="4" pinfunction="PRIVACY_N" pintype="passive"/>
+      <node ref="R7" pin="2" pinfunction="PRIVACY_N" pintype="passive"/>
+    </net>
+    <net code="8" name="/PWM_B" class="Default">
+      <node ref="J1" pin="6" pinfunction="PWM_B" pintype="passive"/>
+      <node ref="R3" pin="1" pinfunction="PWM_B" pintype="passive"/>
+    </net>
+    <net code="9" name="/PWM_G" class="Default">
+      <node ref="J1" pin="5" pinfunction="PWM_G" pintype="passive"/>
+      <node ref="R2" pin="1" pinfunction="PWM_G" pintype="passive"/>
+    </net>
+    <net code="10" name="/PWM_R" class="Default">
+      <node ref="J1" pin="4" pinfunction="PWM_R" pintype="passive"/>
+      <node ref="R1" pin="1" pinfunction="PWM_R" pintype="passive"/>
+    </net>
+    <net code="11" name="/SCL" class="Default">
+      <node ref="J1" pin="15" pinfunction="SCL" pintype="passive"/>
+      <node ref="J4" pin="3" pinfunction="SCL" pintype="passive"/>
+      <node ref="R6" pin="2" pinfunction="SCL" pintype="passive"/>
+    </net>
+    <net code="12" name="/SDA" class="Default">
+      <node ref="J1" pin="12" pinfunction="SDA" pintype="passive"/>
+      <node ref="J4" pin="4" pinfunction="SDA" pintype="passive"/>
+      <node ref="R5" pin="2" pinfunction="SDA" pintype="passive"/>
+    </net>
+    <net code="13" name="/SW3V3" class="Default">
+      <node ref="C2" pin="1" pinfunction="SW3V3" pintype="passive"/>
+      <node ref="C3" pin="1" pinfunction="SW3V3" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="SW3V3" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="SW3V3" pintype="passive"/>
+      <node ref="J7" pin="1" pinfunction="SW3V3" pintype="passive"/>
+      <node ref="R5" pin="1" pinfunction="SW3V3" pintype="passive"/>
+      <node ref="R6" pin="1" pinfunction="SW3V3" pintype="passive"/>
+    </net>
+    <net code="14" name="/TOUCH_IN" class="Default">
+      <node ref="J1" pin="7" pinfunction="TOUCH_IN" pintype="passive"/>
+      <node ref="R4" pin="1" pinfunction="TOUCH_IN" pintype="passive"/>
+    </net>
+    <net code="15" name="unconnected-(J1-NC-Pad3)" class="Default">
+      <node ref="J1" pin="3" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="16" name="unconnected-(J1-NC-Pad8)" class="Default">
+      <node ref="J1" pin="8" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="17" name="unconnected-(J1-NC-Pad9)" class="Default">
+      <node ref="J1" pin="9" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="18" name="unconnected-(J1-NC-Pad10)" class="Default">
+      <node ref="J1" pin="10" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="19" name="unconnected-(J1-NC-Pad11)" class="Default">
+      <node ref="J1" pin="11" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="20" name="unconnected-(J1-NC-Pad13)" class="Default">
+      <node ref="J1" pin="13" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(J1-NC-Pad14)" class="Default">
+      <node ref="J1" pin="14" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="22" name="unconnected-(J1-NC-Pad17)" class="Default">
+      <node ref="J1" pin="17" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="23" name="unconnected-(J1-NC-Pad18)" class="Default">
+      <node ref="J1" pin="18" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="24" name="unconnected-(J1-NC-Pad19)" class="Default">
+      <node ref="J1" pin="19" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="25" name="unconnected-(J1-NC-Pad20)" class="Default">
+      <node ref="J1" pin="20" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="26" name="unconnected-(J1-NC-Pad21)" class="Default">
+      <node ref="J1" pin="21" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="27" name="unconnected-(J3-NC-Pad2)" class="Default">
+      <node ref="J3" pin="2" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(J3-NC-Pad3)" class="Default">
+      <node ref="J3" pin="3" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(J3-NC-Pad4)" class="Default">
+      <node ref="J3" pin="4" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="30" name="unconnected-(J3-NC-Pad5)" class="Default">
+      <node ref="J3" pin="5" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(J3-NC-Pad6)" class="Default">
+      <node ref="J3" pin="6" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(J3-NC-Pad7)" class="Default">
+      <node ref="J3" pin="7" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(J3-NC-Pad8)" class="Default">
+      <node ref="J3" pin="8" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(J3-NC-Pad9)" class="Default">
+      <node ref="J3" pin="9" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(J3-NC-Pad10)" class="Default">
+      <node ref="J3" pin="10" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(J3-NC-Pad11)" class="Default">
+      <node ref="J3" pin="11" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(J3-NC-Pad12)" class="Default">
+      <node ref="J3" pin="12" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(J3-NC-Pad13)" class="Default">
+      <node ref="J3" pin="13" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(J3-NC-Pad14)" class="Default">
+      <node ref="J3" pin="14" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(J3-NC-Pad15)" class="Default">
+      <node ref="J3" pin="15" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(J3-NC-Pad16)" class="Default">
+      <node ref="J3" pin="16" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="42" name="unconnected-(J3-NC-Pad17)" class="Default">
+      <node ref="J3" pin="17" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="43" name="unconnected-(J3-NC-Pad18)" class="Default">
+      <node ref="J3" pin="18" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="44" name="unconnected-(J3-NC-Pad19)" class="Default">
+      <node ref="J3" pin="19" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="45" name="unconnected-(J3-NC-Pad20)" class="Default">
+      <node ref="J3" pin="20" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="46" name="unconnected-(J7-NC-Pad3)" class="Default">
+      <node ref="J7" pin="3" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(J7-NC-Pad6)" class="Default">
+      <node ref="J7" pin="6" pinfunction="NC" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>

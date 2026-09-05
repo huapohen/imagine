@@ -1,6 +1,19 @@
 <!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>独立集成评审：灵伴 LINGBAN · 灵伴资料</title><style>:root{--ink:#142a32;--muted:#63777b;--mint:#007e78;--paper:#f4f5ef;--line:#dce2d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft Yahei',sans-serif}a{color:var(--mint);text-decoration:none}a:hover{text-decoration:underline}nav{background:#142a32;color:white;padding:18px 5%;display:flex;justify-content:space-between;gap:20px}nav a{color:#b2e3d4}main{max-width:1180px;margin:auto;padding:46px 26px 80px}h1,h2,h3{line-height:1.2;letter-spacing:-.035em}h1{font-size:clamp(36px,5vw,68px);margin:14px 0 24px}h2{font-size:30px;margin:60px 0 22px}h3{font-size:21px}p{max-width:75ch}small,.muted{color:var(--muted)}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:650;color:var(--mint)}.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:42px;align-items:center;min-height:410px}.hero-art{min-height:340px;background:linear-gradient(140deg,#dce6e3,#fff 55%,#e1ded4);border-radius:38px;overflow:hidden;display:grid;place-items:center;position:relative}.hero-art img{width:100%;height:100%;max-height:410px;object-fit:contain}.badge{display:inline-block;border:1px solid #b5cbc4;border-radius:100px;padding:5px 12px;font-size:12px;line-height:1.5;color:#31544f;background:#f7faf6}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.button{padding:12px 20px;border-radius:10px;background:var(--mint);color:white;display:inline-block;font-weight:600}.button.secondary{color:var(--ink);background:#e1e8df}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;min-width:0}.card h3{margin:12px 0}.card p{font-size:14px;color:var(--muted)}.card ul{list-style:none;padding:0;font-size:14px}.card li{border-top:1px solid #e9ece6;padding:9px 0}.number{font:600 12px/1 monospace;color:var(--mint)}.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:42px 0}.strip>div{background:white;padding:22px}.strip b{display:block;font-size:26px;line-height:1.2}.strip small{font-size:12px}.flow{display:flex;gap:12px;align-items:stretch;flex-wrap:wrap}.flow>div{flex:1;min-width:145px;background:#e5eee6;padding:19px;border-radius:14px;font-size:14px}.flow b{display:block;margin:5px 0}.flow span{font-size:12px;color:var(--muted)}details{border:1px solid var(--line);padding:14px 20px;border-radius:12px;margin:10px 0;background:#fff}summary{cursor:pointer;font-weight:600}.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.gallery video,.gallery img{width:100%;border-radius:14px;background:#142a32}.gallery figcaption{font-size:13px;margin-top:8px}.note{padding:16px 20px;border-left:3px solid var(--mint);background:#e7ede6;font-size:14px}.document{max-width:940px;background:white;padding:45px 55px;border-radius:20px;margin:0 auto}.document h1{font-size:36px}.document h2{font-size:25px;margin-top:40px}.document h3{font-size:21px;margin-top:30px}table{border-collapse:collapse;width:100%;font-size:13px;display:block;overflow:auto}th,td{padding:10px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf2eb}pre{overflow:auto;background:#132c31;color:#e6f3ee;padding:18px;border-radius:12px;font-size:12px}code{font-size:.86em}blockquote{border-left:3px solid #9ecabd;padding-left:20px;color:var(--muted)}footer{border-top:1px solid var(--line);padding-top:25px;margin-top:55px;font-size:12px;color:var(--muted)}@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-art{min-height:250px}.grid{grid-template-columns:1fr}.strip{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr}.document{padding:24px 18px}main{padding:24px 18px}.hero h1{font-size:42px}}@media print{nav,.actions{display:none}body{background:white}main{padding:0}.document{padding:0}h2,h3{break-after:avoid}table,pre{break-inside:avoid}}</style><nav><a href="../../index.html">← 灵伴资料中心</a><a href="REVIEW_FINDINGS.md">Markdown 源文件</a></nav><main><article class="document"><h1>独立集成评审：灵伴 LINGBAN</h1>
 <p>评审日期：2026-09-06。范围为正在集成的数字原型；以下行号对应首次发现时的文件。软件、硬件、商业与演示仍由各自会话持续修改，本报告不是最终完成认证。高优先级发现已即时发送主控；修复后需回归，不能以本报告视为修复证据。</p>
-<h2>必须修复的已复现问题</h2>
+<h2>2026-09-06 最终回归状态</h2>
+<p>本轮 R1—R7 均已修复或按明确产品语义关闭；下面的折叠内容和旧口径表保留发现历史，不代表当前未修问题。</p>
+<ul>
+<li><strong>R1 已关闭</strong>：全新内存 Store 首次 task/meeting 摄入成功；原 9 列/10 占位符错误消失。</li>
+<li><strong>R2 已关闭</strong>：撤回后企业旧 A2A task 读取 404，同 messageId 重放重新计算 available=false；再次读取不再暴露旧缓存。</li>
+<li><strong>R3 按明确产品语义关闭</strong>：主控决定按钮为“安静 10 分钟”，只暂停新通知，不承诺同证据到期重发。实测601秒后不重放同证据符合此决定；当前UI、HTTP示例和软件README均明确该语义，保留API名称snooze兼容。未发现当前操作文档承诺“稍后重新提醒”。</li>
+<li><strong>R4 已关闭</strong>：非文本 file part 实际返回 -32005。</li>
+<li><strong>R6 已关闭</strong>：RFQ 已明确离散共阳 RGB、GPIO4/5/6 PWM，与载板一致。</li>
+<li><strong>R5/R7 已关闭</strong>：硬件架构、README/COMPLETION和制造说明已统一首发299灯＋触摸＋OLED、唯一LB1；旧LBP仅明确作为废弃稿。最终软件状态标识为 <code>LB1/1.0</code>；早期 <code>lingban.serial/1</code> 在协议文档中定义为LB1别名，不是第二种线缆协议。详情与固件修复证据见 <code>HARDWARE_REVIEW.md</code>。</li>
+<li>插件权限较首次审查已有改进：现有专用令牌携带 plugin_id，由服务端强制绑定。实测只读插件令牌即使省略输入 plugin_id，写事件仍返回403；首次报告中“尚无插件专用令牌”的限制已失效。仍不可将 manifest-only 称为完整第三方代码沙箱。</li>
+</ul>
+<details>
+<summary>首次发现与复现记录（历史；当前关闭状态见上文）</summary>
+
 <h3>R1 / P1：首次任务摄入阻断，连带 seed 无法完成</h3>
 <ul>
 <li>位置：<code>software/lingban/core.py:56,127</code>。</li>
@@ -28,7 +41,9 @@
 <li>非文本 part 实际返回 <code>-32003</code>。A2A 0.3.0 规定内容类型不支持为 <code>-32005</code>，<code>-32003</code> 表示 push notification 不支持。</li>
 <li>回归：file/data 输入及不支持的输出 MIME 返回 <code>-32005</code>；不存在 task 保持 <code>-32001</code>。</li>
 </ul>
-<h2>必须统一的交付口径</h2>
+</details>
+
+<h2>交付口径发现历史（已关闭）</h2>
 <table>
 <thead>
 <tr>
@@ -57,10 +72,10 @@
 <ul>
 <li>权限检查：角色和 owner 查询在已阅核心路径中存在；审批有 owner 约束，只有 pending 可决定，批准写本地 outbox 且 action 唯一。未发现该路径会自动对外发送；此处的本地 outbox 是已声明的演示限制。</li>
 <li>聚合：普通接口强制同组织、当前同意世代与至少 5 人；重新授权清空历史分享，未自动复活旧数据。这个门槛不能防止相邻实时查询差分推断；当前精确实时总和尚无固定统计窗口、差分保护或极端值抑制。商业计划已指出该要求，演示必须继续标合成数据，真实员工数据启用前另行验收。</li>
-<li>数据生命周期：已阅代码尚无保留期限、个人全量导出/删除、插件专用令牌与独立沙箱。manifest-only 并不构成第三方代码权限隔离；若插件拥有员工完整令牌，省略 <code>plugin_id</code> 即回到员工权限。当前不执行第三方代码的明确限制可以接受；不可宣传为已隔离的插件运行环境。撤回业务分享不等同于删除个人任务、事件、审计或全部派生数据。</li>
-<li>隐私开关：实际模拟 <code>privacy=true</code> 后，新增阻塞任务仍会产生主机 alert，仅硬件状态被覆盖为隐私显示。架构写“主机必须同步停止自动执行”，产品写可关闭主动提醒；应定义隐私/暂停分别覆盖哪些主机行为并测试。无真实硬件时不推断物理开关已失效。</li>
-<li>GPIO：已将 GPIO4/5/6 RGB、7 touch、8/9 I2C、10 privacy 与缓存官方文本比较，均为可用 GPIO；N8R8 的 35/36/37 避让一致。官方文本也说明板载 RGB 初版为 GPIO48、v1.1 为 GPIO38；当前分配未使用两者。PCB 尚在制，本次没有验证连接器脚号、焊盘、电气网络、反灌、功耗或信号时序。</li>
-<li>CAD：已看到 BRep 与相交报告，但 CAD 仍在调整；没有将中间相交清单视为最终结构缺陷，也没有执行最终装配验收。</li>
+<li>数据生命周期：已阅核心代码尚无自动保留期限或个人全量导出/删除API；撤回业务分享不等同于删除个人任务、事件、审计或全部派生数据。插件已有专用令牌、服务端权限绑定，但 manifest-only 不构成第三方代码沙箱；完整员工令牌仍应只交给员工本人。原型不执行第三方代码，真实数据使用前需另验生命周期合同。</li>
+<li>隐私开关：最终合同明确物理开关屏蔽外设，不自动改变电脑的主动提醒/专注计时器，不删除个人数据；暂停主机提醒由独立“安静10分钟”控制。最终核心模拟隐私态led=off，提示明确仅在电脑UI；固件的高阻/屏总线停止已由独立HAL测试验证。无真实硬件时不推断物理隔离或瞬时零反灌已获证明。</li>
+<li>GPIO/PCB：GPIO4–10、N8R8保留脚已对照官方文本；后续实际KiCad网表/PCB精确82针脚比较、ERC/DRC/parity均通过，见 <code>HARDWARE_REVIEW.md</code>。反灌、功耗和真实信号时序未验证。</li>
+<li>CAD：后续当前20件STEP有效、生成的完整相交报告为空；独立回读base/carrier/canopy与其他有效部件求交亦无&gt;0.05mm³干涉，见硬件评审。没有执行公差链或实物装配验收。</li>
 <li>MCP/A2A：MCP 声明 2025-06-18 stdio tools 子集，A2A 声明 0.3.0 同步文本 JSON-RPC 子集；均明确未认证。已审初始化、工具路由、结构与错误路径；未跑官方客户端互操作认证。未覆盖官方完整协议不作为缺陷。</li>
 </ul>
 <h2>实际检查与复现边界</h2>
@@ -69,7 +84,7 @@
 <li>静态阅读 <code>software/lingban/{core,mcp,protocols,server}.py</code>，用 Python 标准库和内存 SQLite 复现 R1—R4；测试数据均为本次临时合成数据。</li>
 <li>阅读产品决策、商业计划/财务说明、RFQ、硬件架构与 pin-map，交叉检查首发售价、RGB 与 LBP 口径。</li>
 <li>财务脚本仅在内存替换输出函数后重算，不写商业目录；5 行 SKU economics、33 行 monthly、3 行 summary 均与现有 CSV 完全匹配，脚本内部现金勾稽通过。</li>
-<li>未验证最终 UI、PPT/视频、固件、PCB、CAD 装配、真实 USB 设备、部署或真实企业数据处理。进行中的文件缺失未列为缺陷。</li>
+<li>本文最初仅覆盖软件核心与文档；后续固件编译、HAL、LB1协议、PCB和CAD检查已在 <code>HARDWARE_REVIEW.md</code> 单列。未验证PPT/视频、真实USB设备、实物装配、部署或真实企业数据处理。进行中的文件缺失未列为缺陷。</li>
 </ol>
 <p>复现核心导入方式：在项目根目录设置 <code>PYTHONDONTWRITEBYTECODE=1</code> 后运行 Python，将 <code>software</code> 加入 <code>sys.path</code>，导入 <code>lingban.core.Store</code> 和 <code>lingban.protocols.A2A</code>。所有逻辑复现使用 <code>Store()</code> 内存数据库；R3 使用可控 <code>clock=lambda: now[0]</code>。主控可按每项给出的输入建立永久回归测试。</p>
 </article></main></html>

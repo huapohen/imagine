@@ -1,0 +1,26 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+import {chromium} from 'playwright';
+const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');const run=process.argv[2];const dir=path.join(ROOT,'.build',run), out=path.join(ROOT,'deliverables',run);
+const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
+const context=await browser.newContext({viewport:{width:1440,height:900}});const page=await context.newPage();const errors=[],external=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url()))external.push(r.url())});
+await page.goto(pathToFileURL(path.join(out,'lingban-vc-deck.html')).href);await page.waitForFunction(()=>Array.from(document.images).every(i=>i.complete&&i.naturalWidth>0));
+const report={browser:await browser.version(),headless:true,tests:[]};
+async function check(name,expected){if(!expected)throw new Error(name);report.tests.push({name,pass:true});}
+await check('18 embedded images loaded',await page.locator('.slide img').count()===18);
+await check('initial slide',await page.locator('#count').textContent()==='1 / 18');
+await page.keyboard.press('ArrowRight');await check('ArrowRight next',await page.locator('#count').textContent()==='2 / 18');
+await page.keyboard.press('ArrowLeft');await check('ArrowLeft previous',await page.locator('#count').textContent()==='1 / 18');
+await page.keyboard.press('End');await check('End last',await page.locator('#count').textContent()==='18 / 18');
+await page.keyboard.press('Home');await check('Home first',await page.locator('#count').textContent()==='1 / 18');
+await page.getByRole('button',{name:'下一页',exact:true}).click();await check('next button',await page.locator('#count').textContent()==='2 / 18');
+await page.keyboard.press('n');await check('notes open and correct',await page.locator('#speaker').isVisible()&&(await page.locator('#speaker h2').textContent()).includes('工作中的下一步'));
+await page.keyboard.press('Escape');await check('Escape closes notes',await page.locator('#speaker').isHidden());
+await page.getByRole('button',{name:'全屏 F',exact:true}).click();await page.waitForFunction(()=>!!document.fullscreenElement);await check('fullscreen request',await page.evaluate(()=>!!document.fullscreenElement));await page.keyboard.press('f');await page.waitForFunction(()=>!document.fullscreenElement);
+await check('fullscreen exit',await page.evaluate(()=>!document.fullscreenElement));await page.keyboard.press('Home');
+await page.screenshot({path:path.join(dir,'html-desktop.png')});
+await page.emulateMedia({media:'print'});await check('print displays all slides',await page.locator('.slide:visible').count()===18);await page.pdf({path:path.join(dir,'html-print-check.pdf'),preferCSSPageSize:true,printBackground:true});await page.emulateMedia({media:'screen'});
+await page.setViewportSize({width:390,height:844});await check('mobile no horizontal overflow',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));await page.screenshot({path:path.join(dir,'html-mobile.png')});
+await check('no external requests',external.length===0);await check('no browser errors',errors.length===0);report.externalRequests=external;report.errors=errors;
+await fs.writeFile(path.join(dir,'html-qa.json'),JSON.stringify(report,null,2));await browser.close();console.log(JSON.stringify({tests:report.tests.length,status:'pass',browser:report.browser}));

@@ -1,0 +1,30 @@
+[
+  {
+    "path": "docs/business/business-plan.md",
+    "sha256": "623322f04f4062e74f85bafadc30842937becb48361ce3d97b9dcaa3fa7b6271"
+  },
+  {
+    "path": "docs/business/financial-summary.csv",
+    "sha256": "979b6613d4fd1374e88109e3fda8a0277a8503eb753451c027d08a0221e9e981"
+  },
+  {
+    "path": "docs/business/financial-monthly.csv",
+    "sha256": "9daf1a1b60f00649f0dbe7884fd399a5600051a4a5d3eee7a4e17c93874aafc0"
+  },
+  {
+    "path": "docs/business/financial-sku-economics.csv",
+    "sha256": "cd49ffb106fd861d113f1f840df01cf798ce21d1aebc62e24cbecd4bd9878eef"
+  },
+  {
+    "path": "docs/research/findings.md",
+    "sha256": "4fe57209c1444a28276bef5537d7112337351b3e4b830cfb4abf0ca7c188bb65"
+  },
+  {
+    "path": "docs/research/sources.json",
+    "sha256": "2755094ffb6b9b14958210071667b815bc5431d12856cf17fa43b62271138e6e"
+  },
+  {
+    "path": "hardware/renders/hero_raw.png",
+    "sha256": "49edf85a46836fd7dc4ef2727be45d9b33809cde3394cb563d5b1b2e6d84d97c"
+  }
+]

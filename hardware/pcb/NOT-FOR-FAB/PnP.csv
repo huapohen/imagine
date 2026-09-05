@@ -1,0 +1,12 @@
+Ref,Value,X_mm,Y_mm,Rotation_deg,Side,Fit
+R1,470R,14,18,0,bottom,yes
+R2,470R,14,23,0,bottom,yes
+R3,470R,14,28,0,bottom,yes
+R4,1k,14,33,0,bottom,yes
+R5,4.7k,18,39,0,bottom,yes
+R6,4.7k,18,44,0,bottom,yes
+R7,10k,14,49,0,bottom,yes
+C1,100nF_16V_X7R,23,18,0,bottom,yes
+C2,10uF_10V_X5R,23,24,0,bottom,yes
+C3,100nF_16V_X7R,23,30,0,bottom,yes
+D1,ESD_DNI_REVIEW,23,50,0,bottom,DNI

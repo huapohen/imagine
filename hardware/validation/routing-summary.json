@@ -1,0 +1,13 @@
+{
+  "segments": 511,
+  "vias": 17,
+  "connections_routed": 35,
+  "failed_connections": [],
+  "trace_width_mm": 0.25,
+  "via_mm": [
+    0.65,
+    0.3
+  ],
+  "grid_mm": 0.2,
+  "status": "NOT-FOR-FAB; run KiCad DRC/ERC"
+}

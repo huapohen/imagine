@@ -1,32 +1,40 @@
 {
-  "updated_at": "2026-09-05T17:12:51.639Z",
+  "updated_at": "2026-09-05T18:36:03.115Z",
   "groups": [
     {
       "name": "融资与比赛",
       "files": [
         {
-          "path": "pitch/deliverables/v3/lingban-vc-deck.pdf",
-          "bytes": 603987
+          "path": "pitch/business-plan/QA.html",
+          "bytes": 6455
         },
         {
-          "path": "pitch/deliverables/v3/lingban-vc-deck.pptx",
-          "bytes": 960086
+          "path": "pitch/business-plan/README.html",
+          "bytes": 6906
         },
         {
-          "path": "pitch/deliverables/v3/speaker-notes.html",
-          "bytes": 17214
+          "path": "pitch/business-plan/lingban-business-plan.pdf",
+          "bytes": 3503315
         },
         {
-          "path": "pitch/deliverables/v5/lingban-vc-deck.pdf",
-          "bytes": 1183189
+          "path": "pitch/deliverables/final-20260906/deck-content.html",
+          "bytes": 13701
         },
         {
-          "path": "pitch/deliverables/v5/lingban-vc-deck.pptx",
-          "bytes": 960168
+          "path": "pitch/deliverables/final-20260906/lingban-vc-deck.html",
+          "bytes": 4316174
         },
         {
-          "path": "pitch/deliverables/v5/speaker-notes.html",
-          "bytes": 17395
+          "path": "pitch/deliverables/final-20260906/lingban-vc-deck.pdf",
+          "bytes": 1336211
+        },
+        {
+          "path": "pitch/deliverables/final-20260906/lingban-vc-deck.pptx",
+          "bytes": 2235251
+        },
+        {
+          "path": "pitch/deliverables/final-20260906/speaker-notes.html",
+          "bytes": 18918
         },
         {
           "path": "docs/business/README.html",
@@ -34,7 +42,7 @@
         },
         {
           "path": "docs/business/business-plan.html",
-          "bytes": 17123
+          "bytes": 19372
         },
         {
           "path": "docs/business/ecosystem-and-exit.html",
@@ -50,7 +58,7 @@
         },
         {
           "path": "docs/business/financial-model.html",
-          "bytes": 12716
+          "bytes": 13550
         },
         {
           "path": "docs/business/financial-monthly.csv",
@@ -86,24 +94,36 @@
       "name": "鼠标与制造",
       "files": [
         {
+          "path": "hardware/delivery/lingban_evt_a_review.zip",
+          "bytes": 9506818
+        },
+        {
+          "path": "hardware/delivery/lingban_factory_review.zip",
+          "bytes": 9561690
+        },
+        {
+          "path": "hardware/cad/README.html",
+          "bytes": 5561
+        },
+        {
           "path": "hardware/cad/exports/01_base.step",
-          "bytes": 501267
+          "bytes": 541053
         },
         {
           "path": "hardware/cad/exports/01_base.stl",
-          "bytes": 856484
+          "bytes": 983184
         },
         {
           "path": "hardware/cad/exports/02_clear_canopy.step",
-          "bytes": 284817
+          "bytes": 616730
         },
         {
           "path": "hardware/cad/exports/02_clear_canopy.stl",
-          "bytes": 656584
+          "bytes": 535784
         },
         {
           "path": "hardware/cad/exports/03_button_left.step",
-          "bytes": 31885
+          "bytes": 31895
         },
         {
           "path": "hardware/cad/exports/03_button_left.stl",
@@ -111,7 +131,7 @@
         },
         {
           "path": "hardware/cad/exports/03_button_right.step",
-          "bytes": 31827
+          "bytes": 31837
         },
         {
           "path": "hardware/cad/exports/03_button_right.stl",
@@ -135,31 +155,31 @@
         },
         {
           "path": "hardware/cad/exports/06_devkit_placeholder.step",
-          "bytes": 15586
+          "bytes": 15559
         },
         {
           "path": "hardware/cad/exports/06_devkit_placeholder.stl",
           "bytes": 684
         },
         {
-          "path": "hardware/cad/exports/07_socket_-26.43.step",
+          "path": "hardware/cad/exports/07_socket_-21.43.step",
           "bytes": 15630
         },
         {
-          "path": "hardware/cad/exports/07_socket_-26.43.stl",
+          "path": "hardware/cad/exports/07_socket_-21.43.stl",
           "bytes": 684
         },
         {
-          "path": "hardware/cad/exports/07_socket_-3.57.step",
-          "bytes": 15604
+          "path": "hardware/cad/exports/07_socket_1.43.step",
+          "bytes": 15578
         },
         {
-          "path": "hardware/cad/exports/07_socket_-3.57.stl",
+          "path": "hardware/cad/exports/07_socket_1.43.stl",
           "bytes": 684
         },
         {
           "path": "hardware/cad/exports/08_esp_module_placeholder.step",
-          "bytes": 15537
+          "bytes": 15519
         },
         {
           "path": "hardware/cad/exports/08_esp_module_placeholder.stl",
@@ -167,7 +187,7 @@
         },
         {
           "path": "hardware/cad/exports/09_usb_uart_placeholder.step",
-          "bytes": 15521
+          "bytes": 15512
         },
         {
           "path": "hardware/cad/exports/09_usb_uart_placeholder.stl",
@@ -175,23 +195,23 @@
         },
         {
           "path": "hardware/cad/exports/10_oem_placeholder.step",
-          "bytes": 29970
+          "bytes": 43447
         },
         {
           "path": "hardware/cad/exports/10_oem_placeholder.stl",
-          "bytes": 1484
+          "bytes": 38284
         },
         {
           "path": "hardware/cad/exports/11_cloud_stair_castle.step",
-          "bytes": 254576
+          "bytes": 222191
         },
         {
           "path": "hardware/cad/exports/11_cloud_stair_castle.stl",
-          "bytes": 107484
+          "bytes": 106584
         },
         {
           "path": "hardware/cad/exports/12_snowflake.step",
-          "bytes": 335512
+          "bytes": 324714
         },
         {
           "path": "hardware/cad/exports/12_snowflake.stl",
@@ -199,15 +219,15 @@
         },
         {
           "path": "hardware/cad/exports/13_screen_frame.step",
-          "bytes": 44749
+          "bytes": 53408
         },
         {
           "path": "hardware/cad/exports/13_screen_frame.stl",
-          "bytes": 2484
+          "bytes": 65684
         },
         {
           "path": "hardware/cad/exports/14_display_placeholder.step",
-          "bytes": 15503
+          "bytes": 15494
         },
         {
           "path": "hardware/cad/exports/14_display_placeholder.stl",
@@ -215,7 +235,7 @@
         },
         {
           "path": "hardware/cad/exports/15_display_glass.step",
-          "bytes": 15602
+          "bytes": 15593
         },
         {
           "path": "hardware/cad/exports/15_display_glass.stl",
@@ -223,7 +243,7 @@
         },
         {
           "path": "hardware/cad/exports/16_castle_socket_sled.step",
-          "bytes": 41374
+          "bytes": 41327
         },
         {
           "path": "hardware/cad/exports/16_castle_socket_sled.stl",
@@ -247,15 +267,59 @@
         },
         {
           "path": "hardware/cad/exports/lingban_assembly.step",
-          "bytes": 1796796
+          "bytes": 2162975
+        },
+        {
+          "path": "hardware/cad/exports/lingban_exploded.step",
+          "bytes": 2138986
+        },
+        {
+          "path": "hardware/pcb/NOT-FOR-FAB/BOM.csv",
+          "bytes": 1706
+        },
+        {
+          "path": "hardware/pcb/NOT-FOR-FAB/PnP-kicad.csv",
+          "bytes": 598
+        },
+        {
+          "path": "hardware/pcb/NOT-FOR-FAB/PnP.csv",
+          "bytes": 384
+        },
+        {
+          "path": "hardware/pcb/NOT-FOR-FAB/lingban_carrier.kicad_pcb",
+          "bytes": 101504
+        },
+        {
+          "path": "hardware/pcb/NOT-FOR-FAB/lingban_carrier.kicad_sch",
+          "bytes": 44852
+        },
+        {
+          "path": "hardware/pcb/NOT-FOR-FAB/plots/pcb-routed.png",
+          "bytes": 67515
+        },
+        {
+          "path": "hardware/pcb/README.html",
+          "bytes": 6503
         },
         {
           "path": "hardware/specs/architecture.html",
-          "bytes": 8568
+          "bytes": 10600
         },
         {
           "path": "hardware/specs/pin-map.html",
-          "bytes": 6530
+          "bytes": 8398
+        },
+        {
+          "path": "docs/hardware/README.html",
+          "bytes": 5196
+        },
+        {
+          "path": "docs/hardware/engineering-and-manufacturing.html",
+          "bytes": 24350
+        },
+        {
+          "path": "docs/manufacturing-commercial/FACTORY_START_HERE.html",
+          "bytes": 7194
         },
         {
           "path": "docs/manufacturing-commercial/acceptance-and-schedule.html",
@@ -279,8 +343,84 @@
       "name": "软件与证据",
       "files": [
         {
+          "path": "docs/software/INTEGRATION_NOTES.html",
+          "bytes": 9662
+        },
+        {
+          "path": "docs/software/MODEL_INTEGRATION.html",
+          "bytes": 10382
+        },
+        {
+          "path": "docs/software/README.html",
+          "bytes": 10609
+        },
+        {
+          "path": "docs/software/deployment.html",
+          "bytes": 7112
+        },
+        {
+          "path": "docs/software/http-examples.html",
+          "bytes": 11482
+        },
+        {
+          "path": "docs/software/protocols.html",
+          "bytes": 9494
+        },
+        {
+          "path": "docs/software/serial-protocol.html",
+          "bytes": 14979
+        },
+        {
+          "path": "docs/verification/BUSINESS_RELEASE_REVIEW.html",
+          "bytes": 8607
+        },
+        {
+          "path": "docs/verification/HARDWARE_REVIEW.html",
+          "bytes": 20095
+        },
+        {
+          "path": "docs/verification/RELEASE_READINESS.html",
+          "bytes": 9856
+        },
+        {
           "path": "docs/verification/REVIEW_FINDINGS.html",
-          "bytes": 12455
+          "bytes": 14383
+        },
+        {
+          "path": "docs/verification/browser/employee-desktop.png",
+          "bytes": 401878
+        },
+        {
+          "path": "docs/verification/browser/employee-mobile.png",
+          "bytes": 354850
+        },
+        {
+          "path": "docs/verification/browser/employee-privacy.png",
+          "bytes": 520240
+        },
+        {
+          "path": "docs/verification/browser/enterprise-authorized.png",
+          "bytes": 125373
+        },
+        {
+          "path": "docs/verification/browser/enterprise-revoked.png",
+          "bytes": 127052
+        },
+        {
+          "path": "docs/verification/browser/failure.png",
+          "bytes": 28926
+        },
+        {
+          "path": "docs/verification/browser/model-offline.png",
+          "bytes": 530530
+        },
+        {
+          "path": "docs/verification/portal-desktop.png",
+          "bytes": 329590
+        },
+        {
+          "path": "docs/verification/portal-mobile.png",
+          "bytes": 149158
         },
         {
           "path": "docs/operations/ASSISTANT_STATUS.html",
@@ -288,23 +428,87 @@
         },
         {
           "path": "docs/operations/PROGRESS.html",
-          "bytes": 5577
+          "bytes": 6347
+        },
+        {
+          "path": "docs/operations/RELEASE_ASSETS.html",
+          "bytes": 7171
+        },
+        {
+          "path": "docs/operations/RUNNING.html",
+          "bytes": 6098
         },
         {
           "path": "docs/operations/SESSIONS.html",
-          "bytes": 5308
+          "bytes": 6618
         },
         {
           "path": "docs/operations/USAGE_CHECK.html",
-          "bytes": 4920
+          "bytes": 4805
         },
         {
           "path": "docs/product/DECISIONS.html",
-          "bytes": 8631
+          "bytes": 8813
         },
         {
           "path": "docs/research/findings.html",
-          "bytes": 9584
+          "bytes": 9582
+        },
+        {
+          "path": "media/demo/README.html",
+          "bytes": 7647
+        },
+        {
+          "path": "media/demo/employee_0.4.png",
+          "bytes": 292994
+        },
+        {
+          "path": "media/demo/employee_1.8.png",
+          "bytes": 216821
+        },
+        {
+          "path": "media/demo/employee_10.4.png",
+          "bytes": 178063
+        },
+        {
+          "path": "media/demo/employee_12.4.png",
+          "bytes": 181305
+        },
+        {
+          "path": "media/demo/employee_8.2.png",
+          "bytes": 174669
+        },
+        {
+          "path": "media/demo/enterprise_0.2.png",
+          "bytes": 200117
+        },
+        {
+          "path": "media/demo/enterprise_1.2.png",
+          "bytes": 221177
+        },
+        {
+          "path": "media/demo/enterprise_1.6.png",
+          "bytes": 230847
+        },
+        {
+          "path": "media/demo/enterprise_2.0.png",
+          "bytes": 234148
+        },
+        {
+          "path": "media/demo/enterprise_2.4.png",
+          "bytes": 237998
+        },
+        {
+          "path": "media/demo/enterprise_revoked_verified.png",
+          "bytes": 127052
+        },
+        {
+          "path": "media/demo/final_n225.png",
+          "bytes": 201558
+        },
+        {
+          "path": "media/demo/source_n205.png",
+          "bytes": 174669
         }
       ]
     }

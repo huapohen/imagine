@@ -1,0 +1,68 @@
+{
+  "browser": "152.0.7977.77",
+  "headless": true,
+  "tests": [
+    {
+      "name": "18 embedded images loaded",
+      "pass": true
+    },
+    {
+      "name": "initial slide",
+      "pass": true
+    },
+    {
+      "name": "ArrowRight next",
+      "pass": true
+    },
+    {
+      "name": "ArrowLeft previous",
+      "pass": true
+    },
+    {
+      "name": "End last",
+      "pass": true
+    },
+    {
+      "name": "Home first",
+      "pass": true
+    },
+    {
+      "name": "next button",
+      "pass": true
+    },
+    {
+      "name": "notes open and correct",
+      "pass": true
+    },
+    {
+      "name": "Escape closes notes",
+      "pass": true
+    },
+    {
+      "name": "fullscreen request",
+      "pass": true
+    },
+    {
+      "name": "fullscreen exit",
+      "pass": true
+    },
+    {
+      "name": "print displays all slides",
+      "pass": true
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "no external requests",
+      "pass": true
+    },
+    {
+      "name": "no browser errors",
+      "pass": true
+    }
+  ],
+  "externalRequests": [],
+  "errors": []
+}

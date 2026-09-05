@@ -1,0 +1,33 @@
+{
+  "verifiedAt": "2026-09-05T18:13:38.030132+00:00",
+  "validated_build": "pitch/.build/final-20260906-r5",
+  "validated_output_archive": "pitch/.build/archived-deliverables/final-20260906-r5",
+  "stable_delivery": "pitch/deliverables/final-20260906",
+  "files": [
+    {
+      "file": "deck-content.md",
+      "sha256": "4f3c234d69a37a151bcfeb215ee6798421f868795fe1227476d778a9202480cd",
+      "byte_identical": true
+    },
+    {
+      "file": "lingban-vc-deck.html",
+      "sha256": "606ad94b300f26b89096d69c66ae82f30dd5ed8f90eff2e94abce10a837dbc92",
+      "byte_identical": true
+    },
+    {
+      "file": "lingban-vc-deck.pdf",
+      "sha256": "20fc938d085bf6f1ff022dec1bfa8d22ef12728ac3bf05f5a94ecc6fc40d369f",
+      "byte_identical": true
+    },
+    {
+      "file": "lingban-vc-deck.pptx",
+      "sha256": "00a4af6ac8e5119b718e4b439cdb53b006903f28545be7cd69603b033c5e3d59",
+      "byte_identical": true
+    },
+    {
+      "file": "speaker-notes.md",
+      "sha256": "18ac937001e7fdc78ab9ddd1332843db36fbde2284d8e3a3f6e19e0869489ed2",
+      "byte_identical": true
+    }
+  ]
+}

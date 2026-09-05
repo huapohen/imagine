@@ -1,0 +1,32 @@
+[
+  [
+    "https://mirrors.tuna.tsinghua.edu.cn/blender/release/Blender4.5/blender-4.5.3-macos-arm64.dmg",
+    "206 2419284 https://mirrors.tuna.tsinghua.edu.cn/blender/release/Blender4.5/blender-4.5.3-macos-arm64.dmg",
+    ""
+  ],
+  [
+    "https://mirrors.aliyun.com/blender/release/Blender4.5/blender-4.5.3-macos-arm64.dmg",
+    "206 2642480 https://mirrors.aliyun.com/blender/release/Blender4.5/blender-4.5.3-macos-arm64.dmg",
+    ""
+  ],
+  [
+    "https://mirrors.tuna.tsinghua.edu.cn/kicad/osx/stable/kicad-unified-universal-9.0.7.dmg",
+    "206 2462995 https://mirrors.tuna.tsinghua.edu.cn/kicad/osx/stable/kicad-unified-universal-9.0.7.dmg",
+    ""
+  ],
+  [
+    "https://mirrors.ustc.edu.cn/kicad/osx/stable/kicad-unified-universal-9.0.7.dmg",
+    "404 669 https://mirrors.ustc.edu.cn/kicad/osx/stable/kicad-unified-universal-9.0.7.dmg",
+    ""
+  ],
+  [
+    "https://mirror.clarkson.edu/blender/release/Blender4.5/blender-4.5.3-macos-arm64.dmg",
+    "206 55651 https://mirror.clarkson.edu/blender/release/Blender4.5/blender-4.5.3-macos-arm64.dmg",
+    "curl: (28) Operation timed out after 10004 milliseconds with 556761 out of 1048576 bytes r"
+  ],
+  [
+    "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html",
+    "206 32730 https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide_v1.1.html",
+    ""
+  ]
+]

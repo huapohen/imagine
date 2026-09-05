@@ -1,0 +1,18 @@
+Reference,Value,Footprint,Qty,Assembly,Qualification
+J1,DevKitC1_LEFT_1x22,LINGBAN:J1,1,fit,unqualified engineering estimate; verify exact supplier drawing
+J3,DevKitC1_RIGHT_1x22,LINGBAN:J3,1,fit,unqualified engineering estimate; verify exact supplier drawing
+R1,470R,LINGBAN:R1,1,fit,unqualified engineering estimate; verify exact supplier drawing
+R2,470R,LINGBAN:R2,1,fit,unqualified engineering estimate; verify exact supplier drawing
+R3,470R,LINGBAN:R3,1,fit,unqualified engineering estimate; verify exact supplier drawing
+R4,1k,LINGBAN:R4,1,fit,unqualified engineering estimate; verify exact supplier drawing
+R5,4.7k,LINGBAN:R5,1,fit,unqualified engineering estimate; verify exact supplier drawing
+R6,4.7k,LINGBAN:R6,1,fit,unqualified engineering estimate; verify exact supplier drawing
+R7,10k,LINGBAN:R7,1,fit,unqualified engineering estimate; verify exact supplier drawing
+C1,100nF_16V_X7R,LINGBAN:C1,1,fit,unqualified engineering estimate; verify exact supplier drawing
+C2,10uF_10V_X5R,LINGBAN:C2,1,fit,unqualified engineering estimate; verify exact supplier drawing
+C3,100nF_16V_X7R,LINGBAN:C3,1,fit,unqualified engineering estimate; verify exact supplier drawing
+D1,ESD_DNI_REVIEW,LINGBAN:D1,1,DNI,unqualified engineering estimate; verify exact supplier drawing
+J4,OLED_GND_VCC_SCL_SDA,LINGBAN:J4,1,fit,unqualified engineering estimate; verify exact supplier drawing
+J5,REMOTE_RGB_COMMON_ANODE,LINGBAN:J5,1,fit,unqualified engineering estimate; verify exact supplier drawing
+J6,TOUCH_ELECTRODE_GND,LINGBAN:J6,1,fit,unqualified engineering estimate; verify exact supplier drawing
+J7,DPDT_HARNESS_6,LINGBAN:J7,1,fit,unqualified engineering estimate; verify exact supplier drawing

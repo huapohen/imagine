@@ -1,0 +1,16 @@
+{
+  "ordered_sources": [
+    "01_crystal_mouse_focus.mp4",
+    "02_crystal_mouse_workday.mp4",
+    "03_keyboard_sidecar.mp4",
+    "04_desktop_orb.mp4",
+    "05_monitor_charm.mp4",
+    "06_meeting_puck.mp4",
+    "07_deskmat_module.mp4",
+    "08_robot_extension.mp4"
+  ],
+  "duration_seconds": 120.0,
+  "sha256": "87099a8cbafa54e5a59c09257832914341a8396a00abc053e6a93229a356a98b",
+  "labels": "All source segments retain burned AI concept and non-production hardware disclosures.",
+  "audio_edit": "AAC concatenation preroll compensated by video start offset; audio reencoded and trimmed to 120.000s. Both audio and video start 0.000s and last 120.000s."
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "expected": 200,
+    "pass": true
+  },
+  {
+    "path": "/software/README.html",
+    "status": 200,
+    "expected": 200,
+    "pass": true
+  },
+  {
+    "path": "/firmware/README.html",
+    "status": 200,
+    "expected": 200,
+    "pass": true
+  },
+  {
+    "path": "/hardware/specs/architecture.html",
+    "status": 200,
+    "expected": 200,
+    "pass": true
+  },
+  {
+    "path": "/.env",
+    "status": 404,
+    "expected": 404,
+    "pass": true
+  },
+  {
+    "path": "/.local/demo-server.log",
+    "status": 404,
+    "expected": 404,
+    "pass": true
+  },
+  {
+    "path": "/media/video_ledger.json",
+    "status": 404,
+    "expected": 404,
+    "pass": true
+  },
+  {
+    "path": "/media/test.response.json",
+    "status": 404,
+    "expected": 404,
+    "pass": true
+  },
+  {
+    "path": "/software/data/model-budget.sqlite3",
+    "status": 404,
+    "expected": 404,
+    "pass": true
+  },
+  {
+    "path": "/hardware/tools/README.md",
+    "status": 404,
+    "expected": 404,
+    "pass": true
+  },
+  {
+    "path": "/firmware/tools/README.md",
+    "status": 404,
+    "expected": 404,
+    "pass": true
+  },
+  {
+    "path": "/../.env",
+    "status": 404,
+    "expected": 404,
+    "pass": true
+  },
+  {
+    "path": "/%2e%2e/.env",
+    "status": 404,
+    "expected": 404,
+    "pass": true
+  },
+  {
+    "path": "/media/task-list-private.json",
+    "status": 404,
+    "expected": 404,
+    "pass": true
+  }
+]

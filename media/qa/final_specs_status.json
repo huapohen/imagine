@@ -1,0 +1,210 @@
+[
+  {
+    "id": "01_crystal_mouse_focus",
+    "api_status": "succeeded",
+    "reserved_cny": "12.00",
+    "usage": {
+      "total_seconds": 15,
+      "input_seconds": 0,
+      "output_seconds": 15,
+      "input_image_count": 1,
+      "total_tokens": 794190,
+      "prompt_tokens": 13020,
+      "completion_tokens": 781170
+    },
+    "final_duration": "15.000000",
+    "size": [
+      2560,
+      1440
+    ],
+    "audio": {
+      "codec": "aac",
+      "sample_rate": "48000",
+      "channels": 1
+    },
+    "loudness_lufs": "-16.00",
+    "true_peak_dbtp": "-1.50"
+  },
+  {
+    "id": "02_crystal_mouse_workday",
+    "api_status": "succeeded",
+    "reserved_cny": "12.00",
+    "usage": {
+      "total_seconds": 15,
+      "input_seconds": 0,
+      "output_seconds": 15,
+      "input_image_count": 1,
+      "total_tokens": 794190,
+      "prompt_tokens": 13020,
+      "completion_tokens": 781170
+    },
+    "final_duration": "15.000000",
+    "size": [
+      2560,
+      1440
+    ],
+    "audio": {
+      "codec": "aac",
+      "sample_rate": "48000",
+      "channels": 1
+    },
+    "loudness_lufs": "-16.09",
+    "true_peak_dbtp": "-1.51"
+  },
+  {
+    "id": "03_keyboard_sidecar",
+    "api_status": "succeeded",
+    "reserved_cny": "12.00",
+    "usage": {
+      "total_seconds": 15,
+      "input_seconds": 0,
+      "output_seconds": 15,
+      "input_image_count": 0,
+      "total_tokens": 781170,
+      "prompt_tokens": 0,
+      "completion_tokens": 781170
+    },
+    "final_duration": "15.000000",
+    "size": [
+      2560,
+      1440
+    ],
+    "audio": {
+      "codec": "aac",
+      "sample_rate": "48000",
+      "channels": 1
+    },
+    "loudness_lufs": "-16.06",
+    "true_peak_dbtp": "-1.50"
+  },
+  {
+    "id": "04_desktop_orb",
+    "api_status": "succeeded",
+    "reserved_cny": "12.00",
+    "usage": {
+      "total_seconds": 15,
+      "input_seconds": 0,
+      "output_seconds": 15,
+      "input_image_count": 0,
+      "total_tokens": 781170,
+      "prompt_tokens": 0,
+      "completion_tokens": 781170
+    },
+    "final_duration": "15.000000",
+    "size": [
+      2560,
+      1440
+    ],
+    "audio": {
+      "codec": "aac",
+      "sample_rate": "48000",
+      "channels": 1
+    },
+    "loudness_lufs": "-16.27",
+    "true_peak_dbtp": "-1.50"
+  },
+  {
+    "id": "05_monitor_charm",
+    "api_status": "succeeded",
+    "reserved_cny": "12.00",
+    "usage": {
+      "total_seconds": 15,
+      "input_seconds": 0,
+      "output_seconds": 15,
+      "input_image_count": 0,
+      "total_tokens": 781170,
+      "prompt_tokens": 0,
+      "completion_tokens": 781170
+    },
+    "final_duration": "15.000000",
+    "size": [
+      2560,
+      1440
+    ],
+    "audio": {
+      "codec": "aac",
+      "sample_rate": "48000",
+      "channels": 1
+    },
+    "loudness_lufs": "-16.04",
+    "true_peak_dbtp": "-1.51"
+  },
+  {
+    "id": "06_meeting_puck",
+    "api_status": "succeeded",
+    "reserved_cny": "12.00",
+    "usage": {
+      "total_seconds": 15,
+      "input_seconds": 0,
+      "output_seconds": 15,
+      "input_image_count": 0,
+      "total_tokens": 781170,
+      "prompt_tokens": 0,
+      "completion_tokens": 781170
+    },
+    "final_duration": "15.000000",
+    "size": [
+      2560,
+      1440
+    ],
+    "audio": {
+      "codec": "aac",
+      "sample_rate": "48000",
+      "channels": 1
+    },
+    "loudness_lufs": "-16.17",
+    "true_peak_dbtp": "-1.51"
+  },
+  {
+    "id": "07_deskmat_module",
+    "api_status": "succeeded",
+    "reserved_cny": "12.00",
+    "usage": {
+      "total_seconds": 15,
+      "input_seconds": 0,
+      "output_seconds": 15,
+      "input_image_count": 0,
+      "total_tokens": 781170,
+      "prompt_tokens": 0,
+      "completion_tokens": 781170
+    },
+    "final_duration": "15.000000",
+    "size": [
+      2560,
+      1440
+    ],
+    "audio": {
+      "codec": "aac",
+      "sample_rate": "48000",
+      "channels": 1
+    },
+    "loudness_lufs": "-15.89",
+    "true_peak_dbtp": "-1.51"
+  },
+  {
+    "id": "08_robot_extension",
+    "api_status": "succeeded",
+    "reserved_cny": "12.00",
+    "usage": {
+      "total_seconds": 15,
+      "input_seconds": 0,
+      "output_seconds": 15,
+      "input_image_count": 0,
+      "total_tokens": 781170,
+      "prompt_tokens": 0,
+      "completion_tokens": 781170
+    },
+    "final_duration": "15.000000",
+    "size": [
+      2560,
+      1440
+    ],
+    "audio": {
+      "codec": "aac",
+      "sample_rate": "48000",
+      "channels": 1
+    },
+    "loudness_lufs": "-16.40",
+    "true_peak_dbtp": "-1.50"
+  }
+]

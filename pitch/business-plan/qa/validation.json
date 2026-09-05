@@ -1,0 +1,17 @@
+{
+  "pdf_sha256": "85253bbf3c1c69c0079d93a5e9b4ade2c1d5eb3ce4a1e2c4227f83a64216a3f2",
+  "pages": 16,
+  "rendered_pages": 16,
+  "render_dpi": 110,
+  "embedded_fonts": [
+    "/AAAAAA+ArialUnicodeMS",
+    "/AAAAAB+ArialUnicodeMS",
+    "/AAAAAC+ArialUnicodeMS",
+    "/AAAAAD+ArialUnicodeMS"
+  ],
+  "missing_font_glyphs": [],
+  "out_of_page_glyphs": [],
+  "financing_allocation_total_wan": 500,
+  "visual_review_required": true,
+  "note": "Automated checks do not replace visual review; see QA.md for inspection performed."
+}

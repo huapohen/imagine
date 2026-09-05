@@ -1,0 +1,248 @@
+{
+  "pin_checks": [
+    {
+      "ref": "J1",
+      "pin": "1",
+      "expected": "/3V3",
+      "actual": "/3V3",
+      "pass": true
+    },
+    {
+      "ref": "J1",
+      "pin": "2",
+      "expected": "/3V3",
+      "actual": "/3V3",
+      "pass": true
+    },
+    {
+      "ref": "J1",
+      "pin": "4",
+      "expected": "/PWM_R",
+      "actual": "/PWM_R",
+      "pass": true
+    },
+    {
+      "ref": "J1",
+      "pin": "5",
+      "expected": "/PWM_G",
+      "actual": "/PWM_G",
+      "pass": true
+    },
+    {
+      "ref": "J1",
+      "pin": "6",
+      "expected": "/PWM_B",
+      "actual": "/PWM_B",
+      "pass": true
+    },
+    {
+      "ref": "J1",
+      "pin": "7",
+      "expected": "/TOUCH_IN",
+      "actual": "/TOUCH_IN",
+      "pass": true
+    },
+    {
+      "ref": "J1",
+      "pin": "12",
+      "expected": "/SDA",
+      "actual": "/SDA",
+      "pass": true
+    },
+    {
+      "ref": "J1",
+      "pin": "15",
+      "expected": "/SCL",
+      "actual": "/SCL",
+      "pass": true
+    },
+    {
+      "ref": "J1",
+      "pin": "16",
+      "expected": "/PRIVACY_N",
+      "actual": "/PRIVACY_N",
+      "pass": true
+    },
+    {
+      "ref": "J1",
+      "pin": "22",
+      "expected": "/GND",
+      "actual": "/GND",
+      "pass": true
+    },
+    {
+      "ref": "J3",
+      "pin": "1",
+      "expected": "/GND",
+      "actual": "/GND",
+      "pass": true
+    },
+    {
+      "ref": "J3",
+      "pin": "21",
+      "expected": "/GND",
+      "actual": "/GND",
+      "pass": true
+    },
+    {
+      "ref": "J3",
+      "pin": "22",
+      "expected": "/GND",
+      "actual": "/GND",
+      "pass": true
+    },
+    {
+      "ref": "J4",
+      "pin": "1",
+      "expected": "/GND",
+      "actual": "/GND",
+      "pass": true
+    },
+    {
+      "ref": "J4",
+      "pin": "2",
+      "expected": "/SW3V3",
+      "actual": "/SW3V3",
+      "pass": true
+    },
+    {
+      "ref": "J4",
+      "pin": "3",
+      "expected": "/SCL",
+      "actual": "/SCL",
+      "pass": true
+    },
+    {
+      "ref": "J4",
+      "pin": "4",
+      "expected": "/SDA",
+      "actual": "/SDA",
+      "pass": true
+    },
+    {
+      "ref": "J7",
+      "pin": "1",
+      "expected": "/SW3V3",
+      "actual": "/SW3V3",
+      "pass": true
+    },
+    {
+      "ref": "J7",
+      "pin": "2",
+      "expected": "/3V3",
+      "actual": "/3V3",
+      "pass": true
+    },
+    {
+      "ref": "J7",
+      "pin": "4",
+      "expected": "/PRIVACY_N",
+      "actual": "/PRIVACY_N",
+      "pass": true
+    },
+    {
+      "ref": "J7",
+      "pin": "5",
+      "expected": "/GND",
+      "actual": "/GND",
+      "pass": true
+    },
+    {
+      "ref": "J1",
+      "pin": "3",
+      "expected": "unconnected",
+      "pass": true
+    },
+    {
+      "ref": "J1",
+      "pin": "13",
+      "expected": "unconnected",
+      "pass": true
+    },
+    {
+      "ref": "J1",
+      "pin": "14",
+      "expected": "unconnected",
+      "pass": true
+    },
+    {
+      "ref": "J1",
+      "pin": "21",
+      "expected": "unconnected",
+      "pass": true
+    },
+    {
+      "ref": "J3",
+      "pin": "2",
+      "expected": "unconnected",
+      "pass": true
+    },
+    {
+      "ref": "J3",
+      "pin": "3",
+      "expected": "unconnected",
+      "pass": true
+    },
+    {
+      "ref": "J3",
+      "pin": "10",
+      "expected": "unconnected",
+      "pass": true
+    },
+    {
+      "ref": "J3",
+      "pin": "11",
+      "expected": "unconnected",
+      "pass": true
+    },
+    {
+      "ref": "J3",
+      "pin": "12",
+      "expected": "unconnected",
+      "pass": true
+    },
+    {
+      "ref": "J3",
+      "pin": "13",
+      "expected": "unconnected",
+      "pass": true
+    },
+    {
+      "ref": "J3",
+      "pin": "14",
+      "expected": "unconnected",
+      "pass": true
+    },
+    {
+      "ref": "J3",
+      "pin": "15",
+      "expected": "unconnected",
+      "pass": true
+    },
+    {
+      "ref": "J3",
+      "pin": "16",
+      "expected": "unconnected",
+      "pass": true
+    },
+    {
+      "ref": "J3",
+      "pin": "19",
+      "expected": "unconnected",
+      "pass": true
+    },
+    {
+      "ref": "J3",
+      "pin": "20",
+      "expected": "unconnected",
+      "pass": true
+    }
+  ],
+  "board_to_schematic_mismatches": [],
+  "compared_connected_pads": 49,
+  "compared_explicit_nc_pads": 33,
+  "compared_all_pads": 82,
+  "nc_singleton_without_copper": true,
+  "exact_names_no_prefix_normalization": true,
+  "source": "Espressif v1.1 user guide J1/J3 pin tables; cached references/esp32-official-text.txt"
+}

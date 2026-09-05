@@ -1,0 +1,27 @@
+[
+  {
+    "file": "deliverables/final-20260906/deck-content.md",
+    "bytes": 9079,
+    "sha256": "4f3c234d69a37a151bcfeb215ee6798421f868795fe1227476d778a9202480cd"
+  },
+  {
+    "file": "deliverables/final-20260906/lingban-vc-deck.html",
+    "bytes": 4316174,
+    "sha256": "606ad94b300f26b89096d69c66ae82f30dd5ed8f90eff2e94abce10a837dbc92"
+  },
+  {
+    "file": "deliverables/final-20260906/lingban-vc-deck.pdf",
+    "bytes": 1336211,
+    "sha256": "20fc938d085bf6f1ff022dec1bfa8d22ef12728ac3bf05f5a94ecc6fc40d369f"
+  },
+  {
+    "file": "deliverables/final-20260906/lingban-vc-deck.pptx",
+    "bytes": 2235251,
+    "sha256": "00a4af6ac8e5119b718e4b439cdb53b006903f28545be7cd69603b033c5e3d59"
+  },
+  {
+    "file": "deliverables/final-20260906/speaker-notes.md",
+    "bytes": 14047,
+    "sha256": "18ac937001e7fdc78ab9ddd1332843db36fbde2284d8e3a3f6e19e0869489ed2"
+  }
+]

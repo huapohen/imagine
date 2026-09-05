@@ -1,0 +1,3035 @@
+{
+  "status": "pass",
+  "page_count": 18,
+  "checks": [
+    {
+      "slide": 1,
+      "native_text_runs": 7,
+      "missing_runs": [],
+      "pdf_fonts": [
+        {
+          "name": "/BAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/GAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/OAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/PAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/QAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/RAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/SAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/TAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/UAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/VAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/WAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/XAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/YAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ZAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ABAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/BBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/GBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/OBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        }
+      ],
+      "pdf_text_characters": 79
+    },
+    {
+      "slide": 2,
+      "native_text_runs": 12,
+      "missing_runs": [],
+      "pdf_fonts": [
+        {
+          "name": "/BAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/GAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/OAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/PAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/QAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/RAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/SAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/TAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/UAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/VAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/WAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/XAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/YAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ZAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ABAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/BBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/GBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/OBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        }
+      ],
+      "pdf_text_characters": 122
+    },
+    {
+      "slide": 3,
+      "native_text_runs": 18,
+      "missing_runs": [],
+      "pdf_fonts": [
+        {
+          "name": "/BAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/GAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/OAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/PAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/QAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/RAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/SAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/TAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/UAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/VAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/WAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/XAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/YAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ZAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ABAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/BBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/GBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/OBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        }
+      ],
+      "pdf_text_characters": 167
+    },
+    {
+      "slide": 4,
+      "native_text_runs": 13,
+      "missing_runs": [],
+      "pdf_fonts": [
+        {
+          "name": "/BAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/GAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/OAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/PAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/QAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/RAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/SAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/TAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/UAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/VAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/WAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/XAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/YAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ZAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ABAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/BBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/GBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/OBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        }
+      ],
+      "pdf_text_characters": 159
+    },
+    {
+      "slide": 5,
+      "native_text_runs": 10,
+      "missing_runs": [],
+      "pdf_fonts": [
+        {
+          "name": "/BAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/GAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/OAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/PAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/QAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/RAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/SAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/TAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/UAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/VAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/WAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/XAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/YAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ZAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ABAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/BBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/GBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/OBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        }
+      ],
+      "pdf_text_characters": 156
+    },
+    {
+      "slide": 6,
+      "native_text_runs": 24,
+      "missing_runs": [],
+      "pdf_fonts": [
+        {
+          "name": "/BAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/GAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/OAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/PAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/QAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/RAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/SAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/TAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/UAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/VAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/WAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/XAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/YAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ZAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ABAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/BBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/GBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/OBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        }
+      ],
+      "pdf_text_characters": 456
+    },
+    {
+      "slide": 7,
+      "native_text_runs": 12,
+      "missing_runs": [],
+      "pdf_fonts": [
+        {
+          "name": "/BAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/GAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/OAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/PAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/QAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/RAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/SAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/TAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/UAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/VAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/WAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/XAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/YAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ZAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ABAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/BBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/GBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/OBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        }
+      ],
+      "pdf_text_characters": 178
+    },
+    {
+      "slide": 8,
+      "native_text_runs": 21,
+      "missing_runs": [],
+      "pdf_fonts": [
+        {
+          "name": "/BAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/GAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/OAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/PAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/QAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/RAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/SAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/TAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/UAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/VAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/WAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/XAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/YAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ZAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ABAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/BBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/GBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/OBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        }
+      ],
+      "pdf_text_characters": 250
+    },
+    {
+      "slide": 9,
+      "native_text_runs": 21,
+      "missing_runs": [],
+      "pdf_fonts": [
+        {
+          "name": "/BAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/GAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/OAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/PAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/QAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/RAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/SAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/TAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/UAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/VAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/WAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/XAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/YAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ZAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ABAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/BBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/GBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/OBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        }
+      ],
+      "pdf_text_characters": 299
+    },
+    {
+      "slide": 10,
+      "native_text_runs": 10,
+      "missing_runs": [],
+      "pdf_fonts": [
+        {
+          "name": "/BAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/GAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/OAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/PAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/QAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/RAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/SAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/TAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/UAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/VAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/WAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/XAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/YAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ZAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ABAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/BBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/GBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/OBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        }
+      ],
+      "pdf_text_characters": 162
+    },
+    {
+      "slide": 11,
+      "native_text_runs": 13,
+      "missing_runs": [],
+      "pdf_fonts": [
+        {
+          "name": "/BAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/GAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/OAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/PAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/QAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/RAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/SAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/TAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/UAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/VAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/WAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/XAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/YAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ZAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ABAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/BBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/GBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/OBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        }
+      ],
+      "pdf_text_characters": 190
+    },
+    {
+      "slide": 12,
+      "native_text_runs": 23,
+      "missing_runs": [],
+      "pdf_fonts": [
+        {
+          "name": "/BAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/GAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/OAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/PAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/QAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/RAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/SAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/TAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/UAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/VAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/WAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/XAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/YAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ZAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ABAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/BBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/GBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/OBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        }
+      ],
+      "pdf_text_characters": 245
+    },
+    {
+      "slide": 13,
+      "native_text_runs": 16,
+      "missing_runs": [],
+      "pdf_fonts": [
+        {
+          "name": "/BAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/GAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/OAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/PAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/QAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/RAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/SAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/TAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/UAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/VAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/WAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/XAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/YAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ZAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ABAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/BBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/GBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/OBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        }
+      ],
+      "pdf_text_characters": 241
+    },
+    {
+      "slide": 14,
+      "native_text_runs": 21,
+      "missing_runs": [],
+      "pdf_fonts": [
+        {
+          "name": "/BAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/GAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/OAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/PAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/QAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/RAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/SAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/TAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/UAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/VAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/WAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/XAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/YAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ZAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ABAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/BBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/GBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/OBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        }
+      ],
+      "pdf_text_characters": 169
+    },
+    {
+      "slide": 15,
+      "native_text_runs": 14,
+      "missing_runs": [],
+      "pdf_fonts": [
+        {
+          "name": "/BAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/GAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/OAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/PAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/QAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/RAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/SAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/TAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/UAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/VAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/WAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/XAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/YAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ZAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ABAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/BBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/GBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/OBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        }
+      ],
+      "pdf_text_characters": 209
+    },
+    {
+      "slide": 16,
+      "native_text_runs": 30,
+      "missing_runs": [],
+      "pdf_fonts": [
+        {
+          "name": "/BAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/GAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/OAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/PAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/QAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/RAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/SAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/TAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/UAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/VAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/WAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/XAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/YAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ZAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ABAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/BBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/GBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/OBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        }
+      ],
+      "pdf_text_characters": 256
+    },
+    {
+      "slide": 17,
+      "native_text_runs": 14,
+      "missing_runs": [],
+      "pdf_fonts": [
+        {
+          "name": "/BAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/GAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/OAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/PAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/QAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/RAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/SAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/TAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/UAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/VAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/WAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/XAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/YAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ZAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ABAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/BBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/GBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/OBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        }
+      ],
+      "pdf_text_characters": 216
+    },
+    {
+      "slide": 18,
+      "native_text_runs": 7,
+      "missing_runs": [],
+      "pdf_fonts": [
+        {
+          "name": "/BAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/GAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/OAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/PAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/QAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/RAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/SAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/TAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/UAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/VAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/WAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/XAAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/YAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ZAAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/ABAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/BBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/CBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/DBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/EBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/FBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/GBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/HBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/IBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/JBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/KBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/LBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/MBAAAA+HiraginoSansGB-W6",
+          "embedded": true
+        },
+        {
+          "name": "/NBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        },
+        {
+          "name": "/OBAAAA+HiraginoSansGB-W3",
+          "embedded": true
+        }
+      ],
+      "pdf_text_characters": 130
+    }
+  ],
+  "arithmetic": {
+    "funding_wan": 500,
+    "funding_percent": 100,
+    "unit_contribution": 66.51
+  }
+}

@@ -1,0 +1,85 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>最终交付验收矩阵 · 灵伴资料</title><style>:root{--ink:#142a32;--muted:#63777b;--mint:#007e78;--paper:#f4f5ef;--line:#dce2d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft Yahei',sans-serif}a{color:var(--mint);text-decoration:none}a:hover{text-decoration:underline}nav{background:#142a32;color:white;padding:18px 5%;display:flex;justify-content:space-between;gap:20px}nav a{color:#b2e3d4}main{max-width:1180px;margin:auto;padding:46px 26px 80px}h1,h2,h3{line-height:1.2;letter-spacing:-.035em}h1{font-size:clamp(36px,5vw,68px);margin:14px 0 24px}h2{font-size:30px;margin:60px 0 22px}h3{font-size:21px}p{max-width:75ch}small,.muted{color:var(--muted)}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:650;color:var(--mint)}.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:42px;align-items:center;min-height:410px}.hero-art{min-height:340px;background:linear-gradient(140deg,#dce6e3,#fff 55%,#e1ded4);border-radius:38px;overflow:hidden;display:grid;place-items:center;position:relative}.hero-art img{width:100%;height:100%;max-height:410px;object-fit:contain}.badge{display:inline-block;border:1px solid #b5cbc4;border-radius:100px;padding:5px 12px;font-size:12px;line-height:1.5;color:#31544f;background:#f7faf6}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.button{padding:12px 20px;border-radius:10px;background:var(--mint);color:white;display:inline-block;font-weight:600}.button.secondary{color:var(--ink);background:#e1e8df}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;min-width:0}.card h3{margin:12px 0}.card p{font-size:14px;color:var(--muted)}.card ul{list-style:none;padding:0;font-size:14px}.card li{border-top:1px solid #e9ece6;padding:9px 0}.number{font:600 12px/1 monospace;color:var(--mint)}.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:42px 0}.strip>div{background:white;padding:22px}.strip b{display:block;font-size:26px;line-height:1.2}.strip small{font-size:12px}.flow{display:flex;gap:12px;align-items:stretch;flex-wrap:wrap}.flow>div{flex:1;min-width:145px;background:#e5eee6;padding:19px;border-radius:14px;font-size:14px}.flow b{display:block;margin:5px 0}.flow span{font-size:12px;color:var(--muted)}details{border:1px solid var(--line);padding:14px 20px;border-radius:12px;margin:10px 0;background:#fff}summary{cursor:pointer;font-weight:600}.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.gallery video,.gallery img{width:100%;border-radius:14px;background:#142a32}.gallery figcaption{font-size:13px;margin-top:8px}.note{padding:16px 20px;border-left:3px solid var(--mint);background:#e7ede6;font-size:14px}.document{max-width:940px;background:white;padding:45px 55px;border-radius:20px;margin:0 auto}.document h1{font-size:36px}.document h2{font-size:25px;margin-top:40px}.document h3{font-size:21px;margin-top:30px}table{border-collapse:collapse;width:100%;font-size:13px;display:block;overflow:auto}th,td{padding:10px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf2eb}pre{overflow:auto;background:#132c31;color:#e6f3ee;padding:18px;border-radius:12px;font-size:12px}code{font-size:.86em}blockquote{border-left:3px solid #9ecabd;padding-left:20px;color:var(--muted)}footer{border-top:1px solid var(--line);padding-top:25px;margin-top:55px;font-size:12px;color:var(--muted)}@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-art{min-height:250px}.grid{grid-template-columns:1fr}.strip{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr}.document{padding:24px 18px}main{padding:24px 18px}.hero h1{font-size:42px}}@media print{nav,.actions{display:none}body{background:white}main{padding:0}.document{padding:0}h2,h3{break-after:avoid}table,pre{break-inside:avoid}}</style><nav><a href="../../index.html">← 灵伴资料中心</a><a href="RELEASE_READINESS.md">Markdown 源文件</a></nav><main><article class="document"><h1>最终交付验收矩阵</h1>
+<p>2026-09-06，主控集成。此版本可用于本地产品演示、项目/投资评审和深圳工厂技术讨论。制造状态保持 <strong>NOT-FOR-FAB</strong>；下表严格区分已执行的数字验证与尚无实物证据的项目。</p>
+<table>
+<thead>
+<tr>
+<th>交付</th>
+<th>实际验证与结果</th>
+<th>证据</th>
+<th>未验证边界</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>软件/权限</td>
+<td>59项自动测试；服务端角色隔离、并发审批仅一次、撤销共享与A2A缓存、插件越权拒绝、规则提醒、持久化</td>
+<td><code>./software/test.sh</code>、<code>software/tests/</code></td>
+<td>生产部署、真实企业连接器、多用户负载</td>
+</tr>
+<tr>
+<td>真实模型</td>
+<td>WanAPI Responses，gpt-6-astra / medium；会议、阻塞、休息三个HTTP场景成功，均pending；重复幂等不增加调用，未批准outbox为空</td>
+<td><a href="../software/MODEL_INTEGRATION.html">模型验收</a></td>
+<td>总预留19/20含诊断；成功三次1980 tokens并非全程用量；不能独立认证提供方模型别名或保留策略</td>
+</tr>
+<tr>
+<td>员工/企业网页</td>
+<td>隔离Chrome 152，14项场景回归+9项模型入口/离线回退/同意检查；桌面与390px移动布局，未见前端异常</td>
+<td><a href="browser/report.json">场景报告</a>、<a href="browser/model-ui.json">模型UI</a>、同目录截图</td>
+<td>用户既有Chrome配置访问8765曾返回ERR_BLOCKED_BY_CLIENT，未关闭其保护；无实机硬件</td>
+</tr>
+<tr>
+<td>固件/设备协议</td>
+<td>LB1 Python/C++共用104行golden；独立75条CRC核验；Mock HAL隐私高阻、共阳反相、5秒离线、去抖/回绕；safe/EVT-A两目标实际编译</td>
+<td><a href="../../firmware/README.html">固件</a>、<a href="hal_independent.cpp">独立HAL源</a>、<a href="HARDWARE_REVIEW.html">硬件评审</a></td>
+<td>未烧录、未接线、触摸阈值未标定、OLED为候选</td>
+</tr>
+<tr>
+<td>CAD</td>
+<td>20件有效STEP/BREP、20件水密STL；完整生成报告无&gt;0.05mm³正体积干涉；独立STEP回读与关键部件求交通过</td>
+<td><code>hardware/validation/</code>、<code>hardware/cad/exports/</code></td>
+<td>OEM/器件仍有占位；壁厚、公差、人体工学、装配、止拉与强度须实测</td>
+</tr>
+<tr>
+<td>KiCad</td>
+<td>官方9.0.7 ERC0、几何DRC0、未连线0、schematic parity0；82个针脚精确网名一致，4个机械孔声明board-only</td>
+<td><a href="HARDWARE_REVIEW.html">独立复核</a>、<code>hardware/validation/pcb-drc.json</code></td>
+<td>ESD料号/模块针序/电源峰值/反灌/EMC/DFM签字未完成</td>
+</tr>
+<tr>
+<td>商业资料</td>
+<td>16页BP PDF，财务CSV可重算；299核心目标、108批量估算、66.51贡献；500万元融资建议与60万元经营模型分开</td>
+<td><a href="../../pitch/business-plan/QA.html">BP验收</a>、<a href="BUSINESS_RELEASE_REVIEW.html">商业复核</a></td>
+<td>非报价、收入、融资或订单实绩；本次未验证真实留存与购买</td>
+</tr>
+<tr>
+<td>路演</td>
+<td>18页可编辑PPTX、PDF、离线HTML及讲稿；286段正文一致、中文渲染检查、HTML15项检查</td>
+<td><a href="../../pitch/qa/QA-report.md">PPT验收</a></td>
+<td>未验证Microsoft PowerPoint/Google Slides原生编辑保存及放映机字体</td>
+</tr>
+<tr>
+<td>AI影片</td>
+<td>8条各15.000秒、2560×1440；合集120.000秒；中文旁白/字幕/概念标签；原片及来源哈希保留</td>
+<td><a href="../../media/FINAL_REPORT.html">媒体验收</a></td>
+<td>生成形态与CAD存在差异，不能证明功能、实物或运动安全</td>
+</tr>
+<tr>
+<td>软件录屏</td>
+<td>28.000秒真实隔离浏览器录屏与同次验证定格截图；明确合成数据/设备模拟/离线规则</td>
+<td><a href="../../media/demo/README.html">录屏来源与QA</a></td>
+<td>早期已通过规则界面快照，不展示新增模型按钮，不是硬件录像</td>
+</tr>
+<tr>
+<td>资料服务</td>
+<td>14项公开/私有路径验证；.env、.local、私有API账本、下载与工具目录均拒绝访问</td>
+<td><a href="portal-access.json">路由检查</a></td>
+<td>仅回环服务，无公网部署</td>
+</tr>
+</tbody></table>
+<h2>交接后的下一步</h2>
+<p>按<a href="../manufacturing-commercial/FACTORY_START_HERE.html">工厂入口</a>取得OEM/模块真实图纸和拆项报价，完成电子机械复核后再形成可下单版本。七天目标是五台样机；30天试销取决于器件到货、合规与小批验收。没有对外发送采购/投资消息，没有下单、开模、租GPU或生产发布。</p>
+<h2>安全与费用记录</h2>
+<p>临时模型<code>.env</code>为当前用户0600文件，Git忽略；镜像和工厂包不包含它。真实模型只处理固定合成文本，默认程序离线。本人同意、权限、审批和预算均由本地程序验证，模型文本不能触发外部执行。</p>
+<p>八条MiniMax-H3生成API全部成功，120输出秒按官方刊例预占96元，低于用户100元上限；不是账户最终扣款证明。模型接入人民币成本未从不完整usage推算。没有额外付费生成、付费语音或GPU租赁。</p>
+<p>源码、文档及审查证据存于私有仓库；大体积附件、哈希与恢复方法见<a href="../operations/RELEASE_ASSETS.html">Release附件</a>。用户可以复现检查，也可以直接从本地资料中心打开已生成交付物。</p>
+</article></main></html>

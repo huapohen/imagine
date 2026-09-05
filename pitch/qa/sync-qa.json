@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "notes_and_html_pages": 18,
+  "html_image_sha_matches": 18,
+  "canonical_build_source_matches": true,
+  "changed_source_after_build": [],
+  "visually_affected_pages": [
+    5,
+    6,
+    16
+  ],
+  "software_tests": "read source completion/log only; not rerun by pitch task",
+  "software_test_log_sha256": "24d4c4331032a23b55f9000b912ee31ecf6436726f817e8ae5a7e85efd0cdd0f",
+  "verifiedAt": "2026-09-05T18:14:11.917735+00:00",
+  "final_build": "final-20260906-r5",
+  "slides_5_and_16_pixel_identical_to_full_size_review_r2": true
+}

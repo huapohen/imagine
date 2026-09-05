@@ -1,0 +1,16 @@
+{
+  "tested_at": "2026-09-05T16:53:32Z",
+  "routes": [
+    {
+      "route": "direct",
+      "returncode": 0,
+      "result": "200 0.379542"
+    },
+    {
+      "route": "system_proxy",
+      "returncode": 0,
+      "result": "200 0.571294"
+    }
+  ],
+  "chosen": "direct"
+}

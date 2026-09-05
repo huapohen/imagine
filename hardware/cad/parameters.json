@@ -1,0 +1,31 @@
+{
+  "units": "mm",
+  "length": 126,
+  "width": 80,
+  "base_thickness": 3,
+  "wall_target": 2.0,
+  "fit_per_side": 0.35,
+  "screw_clearance": 2.3,
+  "insert_pilot": 3.2,
+  "post_outer_diameter": 6.4,
+  "carrier_width": 36,
+  "carrier_length": 76,
+  "carrier_thickness": 1.6,
+  "devkit_width": 25.4,
+  "devkit_length": 62.74,
+  "oem_envelope": [
+    50,
+    80,
+    9
+  ],
+  "optical_aperture": [
+    14,
+    18
+  ],
+  "screen_module": [
+    27,
+    27,
+    4
+  ],
+  "status": "EVT-A provisional; confirm OEM, module and insert drawings"
+}

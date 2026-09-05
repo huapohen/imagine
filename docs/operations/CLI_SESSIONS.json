@@ -18,10 +18,25 @@
     "effort": "high",
     "pid": 46306,
     "started_at": "2026-09-06T00:51:50.843651+08:00",
-    "state": "running",
+    "state": "completed",
     "thread_id": "01a0727b-cbe3-7931-8d31-374ce90a032f",
     "attempt": 1,
-    "child_pid": 46308
+    "child_pid": 46308,
+    "exit_code": 0,
+    "updated_at": "2026-09-06T02:07:01.565542+08:00"
+  },
+  {
+    "role": "hardware_fix",
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "pid": 53915,
+    "started_at": "2026-09-06T02:08:09.058707+08:00",
+    "state": "completed",
+    "thread_id": "01a0727b-cbe3-7931-8d31-374ce90a032f",
+    "attempt": 1,
+    "child_pid": 53918,
+    "exit_code": 0,
+    "updated_at": "2026-09-06T02:30:16.634767+08:00"
   },
   {
     "role": "pitch",
@@ -29,10 +44,25 @@
     "effort": "high",
     "pid": 46481,
     "started_at": "2026-09-06T00:51:52.023630+08:00",
-    "state": "running",
+    "state": "completed",
     "thread_id": "01a0727b-d084-79c1-8074-8b08c55c0373",
     "attempt": 1,
-    "child_pid": 46483
+    "child_pid": 46483,
+    "exit_code": 0,
+    "updated_at": "2026-09-06T01:29:09.517778+08:00"
+  },
+  {
+    "role": "pitch_fix",
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "pid": 51704,
+    "started_at": "2026-09-06T01:53:01.963952+08:00",
+    "state": "completed",
+    "thread_id": "01a0727b-d084-79c1-8074-8b08c55c0373",
+    "attempt": 1,
+    "child_pid": 51706,
+    "exit_code": 0,
+    "updated_at": "2026-09-06T02:14:43.265664+08:00"
   },
   {
     "role": "software",
@@ -40,9 +70,24 @@
     "effort": "high",
     "pid": 46144,
     "started_at": "2026-09-06T00:51:49.689792+08:00",
-    "state": "running",
+    "state": "completed",
     "thread_id": "01a0727b-c769-70e0-81e9-ea5e04341f48",
     "attempt": 1,
-    "child_pid": 46146
+    "child_pid": 46146,
+    "exit_code": 0,
+    "updated_at": "2026-09-06T01:51:14.819032+08:00"
+  },
+  {
+    "role": "software_fix",
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "pid": 51584,
+    "started_at": "2026-09-06T01:53:00.820265+08:00",
+    "state": "completed",
+    "thread_id": "01a0727b-c769-70e0-81e9-ea5e04341f48",
+    "attempt": 1,
+    "child_pid": 51586,
+    "exit_code": 0,
+    "updated_at": "2026-09-06T02:14:06.094507+08:00"
   }
 ]

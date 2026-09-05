@@ -1,0 +1,73 @@
+{
+  "capturedAt": "2026-09-05T18:12:51.746Z",
+  "sources": [
+    {
+      "path": "docs/business/business-plan.md",
+      "sha256": "623322f04f4062e74f85bafadc30842937becb48361ce3d97b9dcaa3fa7b6271"
+    },
+    {
+      "path": "docs/business/outline.md",
+      "sha256": "69f29f5812278c7246525d69ab0be125cf6d26694e04d73bec6342fb69cca657"
+    },
+    {
+      "path": "docs/business/financial-sku-economics.csv",
+      "sha256": "cd49ffb106fd861d113f1f840df01cf798ce21d1aebc62e24cbecd4bd9878eef"
+    },
+    {
+      "path": "docs/business/financial-summary.csv",
+      "sha256": "979b6613d4fd1374e88109e3fda8a0277a8503eb753451c027d08a0221e9e981"
+    },
+    {
+      "path": "docs/business/financial-assumptions.csv",
+      "sha256": "48d1901670adce336c5d0e1c38924ab536fdd1cd094c200f3650815c03c36307"
+    },
+    {
+      "path": "docs/business/financial-model.md",
+      "sha256": "f62a0f012ea362bcf23d4ad3702e478785af388b68eab4d9225096463ad70dde"
+    },
+    {
+      "path": "docs/business/financial-scenarios.csv",
+      "sha256": "f5fde2380c4a1fc2a940b8567b51c490902eb036b372fa398631dae0d663127e"
+    },
+    {
+      "path": "docs/research/findings.md",
+      "sha256": "4fe57209c1444a28276bef5537d7112337351b3e4b830cfb4abf0ca7c188bb65"
+    },
+    {
+      "path": "docs/research/sources.json",
+      "sha256": "2755094ffb6b9b14958210071667b815bc5431d12856cf17fa43b62271138e6e"
+    },
+    {
+      "path": "software/COMPLETION.md",
+      "sha256": "69f3347117662ae048d3a08ba6cf04f8eb1012985692a52bab0fa0cf69d3622c"
+    },
+    {
+      "path": "docs/software/README.md",
+      "sha256": "a9679c2b698fc28a9b4e7dfe7b678df98347f54d847153657743b0d5d4a2e915"
+    },
+    {
+      "path": "docs/software/protocols.md",
+      "sha256": "94b88c005876bcb94d30878e57e7a5a4a5485f1c381bd6e70e7a24012990fdc3"
+    },
+    {
+      "path": "software/lingban/protocols.py",
+      "sha256": "d1f325d3ff029cd0e0f94038940c2cbf5110e77aef255139dc28dd9aad77c6b9"
+    },
+    {
+      "path": "software/lingban/mcp.py",
+      "sha256": "640d7a599bb339b3f6e1cb9032127d3ecb44ca67b2132c0d6530bf76eec912e4"
+    },
+    {
+      "path": "software/test-output/latest-tests.txt",
+      "sha256": "24d4c4331032a23b55f9000b912ee31ecf6436726f817e8ae5a7e85efd0cdd0f"
+    },
+    {
+      "path": "hardware/renders/hero_raw.png",
+      "sha256": "58afedeaf7feb0902f208821d3fc46f22eb9b6546ced6d123d4ba0e620e1b8a6"
+    },
+    {
+      "path": "hardware/renders/README.md",
+      "sha256": "33bfb9690292eb25acf31e4d481a3972d2dc72ee6f3a441ad671f080f9eff760"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "preserved_cad_render_file_count": 118,
+  "changed_cad_render_files": [],
+  "pcb_geometry_unchanged": true,
+  "mechanical_board_only": [
+    "H1",
+    "H2",
+    "H3",
+    "H4"
+  ],
+  "parity_issues": 0,
+  "drc_violations": 0,
+  "unconnected_items": 0,
+  "geometric_drc_violations": 0,
+  "erc_violations": 0,
+  "cad_intersections": [],
+  "source_read_only_hashes": {
+    "docs/software/serial-protocol.md": "9921375e4a2481d52ff75ada2a1f8505086d23cde68dcb680bfbb2eb33608a10",
+    "firmware/serial-protocol.md": "f9dbad67b4418488feaf36c658a1c2fe7f97100d1d3afb0062673ae57208d04a",
+    "firmware/platformio.ini": "f930b06b69703e2cb1d2a5e992939adb22743156d1a9d929a389b6e4b05be800",
+    "firmware/include/board_config.hpp": "ef6f615b7919cb4958474206fa706a82127b7b38dc2a6369c8a2c4360bf3a3ea",
+    "firmware/include/controller.hpp": "69e791f7e32ec48096a2d30fd1518506d945cde2052be0984ed2e167b449e4bf",
+    "software/lingban/serial_protocol.py": "2a646f813df42d6dc1271c2e195e3738941cc2c8d50ab7be16562005ec0164c3",
+    "docs/product/DECISIONS.md": "50608be711854227e18a613af89098cc564386840ad6ad05e8b80447f73e992b",
+    "docs/manufacturing-commercial/bom-cost-estimate.csv": "4dffbe648c15a0b8e6cbb012a3c8076b53143d363149b2aa9995ae5b27721407",
+    "docs/manufacturing-commercial/acceptance-and-schedule.md": "2afdae60d0ced8f4c8789d9e57d11c424163f48ae4fa734858d67c689a641d54"
+  },
+  "pin_profile_protocol_alignment": "PASS",
+  "firmware_tests": "Master reports two-target compile and mock HAL pass; not rerun by hardware session",
+  "render_reference_sha256": {
+    "lingban_hero.png": "adeead7cde190894932491f9590219d0d00f18fff4529852b75372358981da14",
+    "lingban_exploded.png": "3de0309557845cf286faffe42534c161ad9314e2eec6d427bea8f966ed24994f",
+    "lingban_turntable_concept.mp4": "0674f5a90e6985fbe3d95312a42793ca3117efaafe62da44e9f4af5eea43e93f"
+  }
+}

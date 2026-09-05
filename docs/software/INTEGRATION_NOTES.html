@@ -1,0 +1,64 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>主控集成修复记录 · 灵伴资料</title><style>:root{--ink:#142a32;--muted:#63777b;--mint:#007e78;--paper:#f4f5ef;--line:#dce2d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft Yahei',sans-serif}a{color:var(--mint);text-decoration:none}a:hover{text-decoration:underline}nav{background:#142a32;color:white;padding:18px 5%;display:flex;justify-content:space-between;gap:20px}nav a{color:#b2e3d4}main{max-width:1180px;margin:auto;padding:46px 26px 80px}h1,h2,h3{line-height:1.2;letter-spacing:-.035em}h1{font-size:clamp(36px,5vw,68px);margin:14px 0 24px}h2{font-size:30px;margin:60px 0 22px}h3{font-size:21px}p{max-width:75ch}small,.muted{color:var(--muted)}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:650;color:var(--mint)}.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:42px;align-items:center;min-height:410px}.hero-art{min-height:340px;background:linear-gradient(140deg,#dce6e3,#fff 55%,#e1ded4);border-radius:38px;overflow:hidden;display:grid;place-items:center;position:relative}.hero-art img{width:100%;height:100%;max-height:410px;object-fit:contain}.badge{display:inline-block;border:1px solid #b5cbc4;border-radius:100px;padding:5px 12px;font-size:12px;line-height:1.5;color:#31544f;background:#f7faf6}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.button{padding:12px 20px;border-radius:10px;background:var(--mint);color:white;display:inline-block;font-weight:600}.button.secondary{color:var(--ink);background:#e1e8df}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;min-width:0}.card h3{margin:12px 0}.card p{font-size:14px;color:var(--muted)}.card ul{list-style:none;padding:0;font-size:14px}.card li{border-top:1px solid #e9ece6;padding:9px 0}.number{font:600 12px/1 monospace;color:var(--mint)}.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:42px 0}.strip>div{background:white;padding:22px}.strip b{display:block;font-size:26px;line-height:1.2}.strip small{font-size:12px}.flow{display:flex;gap:12px;align-items:stretch;flex-wrap:wrap}.flow>div{flex:1;min-width:145px;background:#e5eee6;padding:19px;border-radius:14px;font-size:14px}.flow b{display:block;margin:5px 0}.flow span{font-size:12px;color:var(--muted)}details{border:1px solid var(--line);padding:14px 20px;border-radius:12px;margin:10px 0;background:#fff}summary{cursor:pointer;font-weight:600}.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.gallery video,.gallery img{width:100%;border-radius:14px;background:#142a32}.gallery figcaption{font-size:13px;margin-top:8px}.note{padding:16px 20px;border-left:3px solid var(--mint);background:#e7ede6;font-size:14px}.document{max-width:940px;background:white;padding:45px 55px;border-radius:20px;margin:0 auto}.document h1{font-size:36px}.document h2{font-size:25px;margin-top:40px}.document h3{font-size:21px;margin-top:30px}table{border-collapse:collapse;width:100%;font-size:13px;display:block;overflow:auto}th,td{padding:10px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#edf2eb}pre{overflow:auto;background:#132c31;color:#e6f3ee;padding:18px;border-radius:12px;font-size:12px}code{font-size:.86em}blockquote{border-left:3px solid #9ecabd;padding-left:20px;color:var(--muted)}footer{border-top:1px solid var(--line);padding-top:25px;margin-top:55px;font-size:12px;color:var(--muted)}@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-art{min-height:250px}.grid{grid-template-columns:1fr}.strip{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr}.document{padding:24px 18px}main{padding:24px 18px}.hero h1{font-size:42px}}@media print{nav,.actions{display:none}body{background:white}main{padding:0}.document{padding:0}h2,h3{break-after:avoid}table,pre{break-inside:avoid}}</style><nav><a href="../../index.html">← 灵伴资料中心</a><a href="INTEGRATION_NOTES.md">Markdown 源文件</a></nav><main><article class="document"><h1>主控集成修复记录</h1>
+<p>日期：2026-09-06。已阅读 <code>docs/verification/HARDWARE_REVIEW.md</code>、<code>REVIEW_FINDINGS.md</code>、<code>hardware/specs/architecture.md</code>、<code>pin-map.md</code> 及主控独立浏览器 report.json。只修改 software/firmware/docs/software，不操作 Git，不付费、不外发、未读取凭据或原始需求。</p>
+<h2>已修复与接口合同</h2>
+<table>
+<thead>
+<tr>
+<th>评审项</th>
+<th>本轮实现</th>
+<th>验证</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>P1 共阳 RGB 输出反相</td>
+<td>GPIO4/5/6 sink，off=HIGH/255；attach 前预装255，亮度反相</td>
+<td>共用控制器 mock 验证 prepare→HIGH→attach 和各通道 duty；两个 PlatformIO 目标实际编译</td>
+</tr>
+<tr>
+<td>P1 隐私断电反灌风险</td>
+<td>首次隐私读取早于外设初始化；检测 HIGH 立刻 detach PWM / Wire.end / 六个外设引脚 INPUT；不向断电屏幕写隐私画面、不点断电隐私灯；LOW稳定40ms且online后恢复</td>
+<td>实际固件调用的同一 Controller 模板经 mock HAL 核对顺序、恢复、抖动、中途掉电与无屏ACK；不等于反灌板测</td>
+</tr>
+<tr>
+<td>协议冲突</td>
+<td>LB1 ASCII+CRC16 唯一；增加精确规范、104行Python/C++共用golden、GET/PING5秒失效、安全offline；无ttl_ms</td>
+<td>双方逐字节通过同一fixture；mock验证超时断开外设</td>
+</tr>
+<tr>
+<td>板/USB配置</td>
+<td>safe全-1；EVT-A GPIO4/5/6、7、8/9、10和0x3C；N8R8内存覆盖；Serial UART0 RX44/TX43，CDC_ON_BOOT=0，115200</td>
+<td>两个目标实际编译；触摸阈值0禁用；未实际枚举USB或使用串口</td>
+</tr>
+<tr>
+<td>R1 初次任务INSERT</td>
+<td>保持已有9列修复，未改业务实现</td>
+<td>全新Store/seed、事件与幂等原有测试继续通过</td>
+</tr>
+<tr>
+<td>R2 撤销后A2A历史泄漏</td>
+<td>保持已有缓存删除修复；新增同messageId重放、三个派生字段均重新受聚合门槛控制的回归</td>
+<td>旧tasks/get不可读，重放artifacts/history/status.message全部available=false</td>
+</tr>
+<tr>
+<td>R3 snooze口径</td>
+<td>沿用已修UI“安静10分钟”，明确不承诺同证据到期再通知</td>
+<td>新增同证据601秒后不重发、新证据正常提醒回归</td>
+</tr>
+<tr>
+<td>R4 A2A错误码</td>
+<td>当前源仍为-32003，本轮改为官方0.3.0的-32005</td>
+<td>直接从官方schema常量复核file/data/不支持输出MIME错误</td>
+</tr>
+</tbody></table>
+<h2>请主控协调的文档边界</h2>
+<p>本轮初读快照中，<code>hardware/specs/architecture.md</code> 仍含旧 LBP/0.1 NDJSON、512-byte/uint32、ttl_ms、RGB数组及首发499元文字。主控已指定硬件会话更新；软件会话不越界改 hardware。本文及 <code>docs/software/serial-protocol.md</code> 是本轮实现合同，主控最终应确认硬件/产品文档不再将旧协议视为现行方案。</p>
+<p><code>pin-map.md</code> 的 GPIO、共阳/470Ω、SW3V3断电与高阻约束已在 EVT-A 对齐。保留 NOT-FOR-FAB，不能据编译解除硬件门槛。KiCad parity、CAD相交、售价口径属于硬件/主控范围，不由本次软件修复证明关闭。</p>
+<p>CAPS.screen=1 只代表候选驱动已配置，不证明实际显示器存在。若0x3C无ACK，控制器结束Wire并释放I2C，引脚仍需实物核对。触摸阈值没有实测，不启用；N8R8 PSRAM按官方内存配置编译，未做内存实测。</p>
+<p>物理隐私不等于暂停电脑Agent：外设禁用、触摸不批准任何动作；电脑仍可保存个人任务和生成提醒，本原型所有审批只写本地outbox、无自动外发。若产品希望物理开关也暂停主机提醒，需主控单独定义用户可见合同，不能宣称硬断电能切断电脑数据处理。</p>
+<h2>浏览器验收的两种证据</h2>
+<p>主控提供的 <code>docs/verification/browser/report.json</code>：隔离 headless Chrome <strong>152.0.7977.66</strong>，14/14检查通过、errors=[]，包括实际HTTP会议/阻塞/审批/专注/撤销链路、移动端无横向溢出及无前端异常。该验证由主控完成，本轮只读取证据，未重复运行浏览器。</p>
+<p>用户现有 Chrome profile 打开本地地址仍 <code>ERR_BLOCKED_BY_CLIENT</code>，保护未关闭。应写“独立浏览器验证通过；用户Chrome打开受阻”，不能写成视觉完全未验证或用户浏览器已修复。本轮未改变前端页面实现。</p>
+<p>完整实际命令与结果见 <code>software/COMPLETION.md</code>。服务启动和最终推送交还主控。</p>
+<h2>并行改动隔离</h2>
+<p>收尾观察到主控正在加入 <code>software/lingban/model.py</code>、<code>live_model_test.py</code>、<code>tests/test_model.py</code> 及README模型入口；本会话不修改这些文件、不读取其配置、不执行真实模型或会读.env的测试。新增 <code>software/test-integration.sh</code> 固定只运行 core/HTTP/protocols 三个回归模块和固件mock/golden，避免无意包含并行工作。本文的48项结果只覆盖该范围，不冒充主控的全仓最终验收。观察时README新链接 <code>docs/software/MODEL_INTEGRATION.md</code> 尚未落盘，交由主控完成，不删除其在制链接。</p>
+</article></main></html>

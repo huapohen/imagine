@@ -1,0 +1,58 @@
+[
+  {
+    "id": "llms.txt",
+    "url": "https://platform.minimaxi.com/docs/llms.txt",
+    "retrieved_at": "2026-09-05T16:55:31.141607+00:00",
+    "local_file": "llms.txt",
+    "sha256": "12855480106cccabd0b2dff22b80d3123fe2e25e86532cbabe29580693eade4a",
+    "kind": "official_documentation"
+  },
+  {
+    "id": "video-generation.md",
+    "url": "https://platform.minimaxi.com/docs/guides/video-generation.md",
+    "retrieved_at": "2026-09-05T16:55:31.141753+00:00",
+    "local_file": "video-generation.md",
+    "sha256": "7d84d3ae5d28c4afa03bc3e0e66721f60d032ba4250b19f9944f384f78317ebe",
+    "kind": "official_documentation"
+  },
+  {
+    "id": "pricing-paygo.md",
+    "url": "https://platform.minimaxi.com/docs/guides/pricing-paygo.md",
+    "retrieved_at": "2026-09-05T16:55:31.141791+00:00",
+    "local_file": "pricing-paygo.md",
+    "sha256": "a10736649093846c42d3b7ed206782d1d60c05f7a9ce608bbf711e70b31d08dd",
+    "kind": "official_documentation"
+  },
+  {
+    "id": "video-generation-v2-create.md",
+    "url": "https://platform.minimaxi.com/docs/api-reference/video-generation-v2-create.md",
+    "retrieved_at": "2026-09-05T16:55:31.141827+00:00",
+    "local_file": "video-generation-v2-create.md",
+    "sha256": "61b38ced569151351a88582a5069d305fe2fc452cf3cb6c67a01442d3fd04767",
+    "kind": "official_documentation"
+  },
+  {
+    "id": "video-generation-v2-query.md",
+    "url": "https://platform.minimaxi.com/docs/api-reference/video-generation-v2-query.md",
+    "retrieved_at": "2026-09-05T16:55:31.141859+00:00",
+    "local_file": "video-generation-v2-query.md",
+    "sha256": "d5214f79031289761a5a7140f8a13d32438cd736688b79d1633f7e484da11945",
+    "kind": "official_documentation"
+  },
+  {
+    "id": "video-generation-v2-list.md",
+    "url": "https://platform.minimaxi.com/docs/api-reference/video-generation-v2-list.md",
+    "retrieved_at": "2026-09-05T16:55:31.141892+00:00",
+    "local_file": "video-generation-v2-list.md",
+    "sha256": "8d8f77003d439f52f78a2968d9af211bb78244e43d94e982c3e615edd1d7d08f",
+    "kind": "official_documentation"
+  },
+  {
+    "id": "v2-video-generation.json",
+    "url": "https://platform.minimaxi.com/docs/api-reference/video/generation/api/v2-video-generation.json",
+    "retrieved_at": "2026-09-05T16:55:31.141920+00:00",
+    "local_file": "v2-video-generation.json",
+    "sha256": "ac33ac37af7800b1450746d3369760a7126a777f9d1e6ab27bfebb49d3c47f88",
+    "kind": "official_documentation"
+  }
+]

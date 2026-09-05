@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://pypi.org/simple/cadquery/",
+    "route": "direct",
+    "result": "200 26055 0.691408",
+    "error": ""
+  },
+  {
+    "url": "https://pypi.org/simple/cadquery/",
+    "route": "system-proxy",
+    "result": "200 10111 1.781569",
+    "error": ""
+  },
+  {
+    "url": "https://pypi.tuna.tsinghua.edu.cn/simple/cadquery/",
+    "route": "direct",
+    "result": "200 52589 0.256418",
+    "error": ""
+  },
+  {
+    "url": "https://pypi.tuna.tsinghua.edu.cn/simple/cadquery/",
+    "route": "system-proxy",
+    "result": "200 71998 0.187295",
+    "error": ""
+  },
+  {
+    "url": "https://download.blender.org/release/Blender4.5/",
+    "route": "direct",
+    "result": "403 66130 0.929826",
+    "error": ""
+  },
+  {
+    "url": "https://download.blender.org/release/Blender4.5/",
+    "route": "system-proxy",
+    "result": "200 5917 3.490666",
+    "error": ""
+  },
+  {
+    "url": "https://downloads.kicad.org/kicad/macos/explore/stable",
+    "route": "direct",
+    "result": "200 83964 1.765432",
+    "error": ""
+  },
+  {
+    "url": "https://downloads.kicad.org/kicad/macos/explore/stable",
+    "route": "system-proxy",
+    "result": "200 682 12.004923",
+    "error": "curl: (28) Operation timed out after 12004 milliseconds with 8196 bytes received\n"
+  },
+  {
+    "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide.html",
+    "route": "direct",
+    "result": "404 2676 5.245520",
+    "error": ""
+  },
+  {
+    "url": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide.html",
+    "route": "system-proxy",
+    "result": "404 7963 1.763202",
+    "error": ""
+  }
+]

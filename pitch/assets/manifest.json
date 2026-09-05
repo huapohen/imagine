@@ -1,0 +1,36 @@
+{
+  "original_svg": {
+    "authoring": "本会话按用户要求原创自绘SVG",
+    "real_hardware_claim": false
+  },
+  "hardware_render": {
+    "source": "hardware/renders/hero_raw.png",
+    "retained_source_copy": "pitch/assets/hardware-hero-source.png",
+    "crop": {
+      "left": 220,
+      "top": 280,
+      "width": 1260,
+      "height": 1140
+    },
+    "real_hardware_claim": false,
+    "slide_disclosure": "第5页标注原创概念示意，尚无实物打样、板级验证、量产或认证完成证据"
+  },
+  "assets": [
+    {
+      "file": "crystal-mouse.svg",
+      "sha256": "b6d3ebb7fce6f4b344515c7b998d0fa0abefb87dab1919119276e5b20668b936"
+    },
+    {
+      "file": "crystal-mouse.png",
+      "sha256": "8d6f4d307b1623825ac3d308c85b28e85d70cc1a910f712b80ea26aac57de4ba"
+    },
+    {
+      "file": "hardware-hero-source.png",
+      "sha256": "58afedeaf7feb0902f208821d3fc46f22eb9b6546ced6d123d4ba0e620e1b8a6"
+    },
+    {
+      "file": "hardware-product.png",
+      "sha256": "97f7d073856c0381c819d22de3398499b380d115a8ad4573ecf524514932d0f4"
+    }
+  ]
+}
