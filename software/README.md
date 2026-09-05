@@ -14,7 +14,7 @@ Python 3.9+，仅标准库，无需 pip。默认 `http://127.0.0.1:8765`，数�
 ./software/start.sh --port 8766 --db data/custom.sqlite3
 ```
 
-注意脚本工作目录为 software，因此自定义数据库建议使用绝对路径或 `--db data/custom.sqlite3`。板级与可选模型集成当前共通过 58 项离线回归测试；完整接口、测试及限制见 `COMPLETION.md` 和 `../docs/software/README.md`。
+注意脚本工作目录为 software，因此自定义数据库建议使用绝对路径或 `--db data/custom.sqlite3`。板级与可选模型集成当前共通过 59 项离线回归测试；完整接口、测试及限制见 `COMPLETION.md` 和 `../docs/software/README.md`。
 
 ## 快速体验
 

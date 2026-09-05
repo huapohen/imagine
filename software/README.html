@@ -6,7 +6,7 @@
 <p>Python 3.9+，仅标准库，无需 pip。默认 <code>http://127.0.0.1:8765</code>，数据库在 <code>software/data/lingban.sqlite3</code>。终端显示员工和企业两个带片段令牌的链接；打开后令牌从地址栏清除，仅在页面内存持有。重启会轮换令牌，不恢复撤销的授权。链接持有者拥有对应角色权限，请勿分享。</p>
 <pre><code class="language-sh">./software/start.sh --port 8766 --db data/custom.sqlite3
 </code></pre>
-<p>注意脚本工作目录为 software，因此自定义数据库建议使用绝对路径或 <code>--db data/custom.sqlite3</code>。板级与可选模型集成当前共通过 58 项离线回归测试；完整接口、测试及限制见 <code>COMPLETION.md</code> 和 <code>../docs/software/README.md</code>。</p>
+<p>注意脚本工作目录为 software，因此自定义数据库建议使用绝对路径或 <code>--db data/custom.sqlite3</code>。板级与可选模型集成当前共通过 59 项离线回归测试；完整接口、测试及限制见 <code>COMPLETION.md</code> 和 <code>../docs/software/README.md</code>。</p>
 <h2>快速体验</h2>
 <ol>
 <li>员工工作台点击「会议将近」或「项目阻塞」，查看提醒及判断依据。</li>

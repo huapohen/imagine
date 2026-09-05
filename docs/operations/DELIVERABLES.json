@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-05T18:36:03.115Z",
+  "updated_at": "2026-09-05T18:48:53.517Z",
   "groups": [
     {
       "name": "融资与比赛",
@@ -348,7 +348,7 @@
         },
         {
           "path": "docs/software/MODEL_INTEGRATION.html",
-          "bytes": 10382
+          "bytes": 10662
         },
         {
           "path": "docs/software/README.html",
@@ -380,7 +380,7 @@
         },
         {
           "path": "docs/verification/RELEASE_READINESS.html",
-          "bytes": 9856
+          "bytes": 10198
         },
         {
           "path": "docs/verification/REVIEW_FINDINGS.html",
@@ -428,7 +428,7 @@
         },
         {
           "path": "docs/operations/PROGRESS.html",
-          "bytes": 6347
+          "bytes": 6779
         },
         {
           "path": "docs/operations/RELEASE_ASSETS.html",
@@ -436,7 +436,7 @@
         },
         {
           "path": "docs/operations/RUNNING.html",
-          "bytes": 6098
+          "bytes": 6286
         },
         {
           "path": "docs/operations/SESSIONS.html",

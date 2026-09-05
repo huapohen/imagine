@@ -1,0 +1,95 @@
+{
+  "release": {
+    "isDraft": false,
+    "tagName": "v0.1.0-evt-a-20260906",
+    "targetCommitish": "5c4de598698949c652809cd4b7987b8d8f200e82",
+    "url": "https://github.com/huapohen/imagine/releases/tag/v0.1.0-evt-a-20260906"
+  },
+  "verified_asset_count": 14,
+  "asset_checks": [
+    {
+      "name": "01_crystal_mouse_focus.mp4",
+      "bytes": 19847766,
+      "server_digest": "sha256:1dd6561842f37f7bdbad53d3563bd597d637cb855fc098fbe4143d0122a126a6",
+      "matches_local": true
+    },
+    {
+      "name": "02_crystal_mouse_workday.mp4",
+      "bytes": 11037121,
+      "server_digest": "sha256:a5ef67e1a49f67ef7bf8901b86be931d7e1ede9d589262ef10b6d94654350610",
+      "matches_local": true
+    },
+    {
+      "name": "03_keyboard_sidecar.mp4",
+      "bytes": 13019643,
+      "server_digest": "sha256:7f84330811512bce5b3597d7214a39cd7f427e8094892e05ef6e245e2dd98506",
+      "matches_local": true
+    },
+    {
+      "name": "04_desktop_orb.mp4",
+      "bytes": 10521600,
+      "server_digest": "sha256:f883fc8241a57e4978c95cb716e97cc7204b85942b7691745cee1203e0c5d809",
+      "matches_local": true
+    },
+    {
+      "name": "05_monitor_charm.mp4",
+      "bytes": 11160541,
+      "server_digest": "sha256:871d3fb2e6df99fc4128841deb68078a6fdcdc21bd09a7ddb01ae5c0e0b3d089",
+      "matches_local": true
+    },
+    {
+      "name": "06_meeting_puck.mp4",
+      "bytes": 13250796,
+      "server_digest": "sha256:56e25ae88ad1def0aa6729bd69767de338fd367f0ce6f20b1bb6c6eadc24cc08",
+      "matches_local": true
+    },
+    {
+      "name": "07_deskmat_module.mp4",
+      "bytes": 15537670,
+      "server_digest": "sha256:bb5b6a35e6e72de690f3bb08236769659bbacd09e0942ee9168c64368ced96ba",
+      "matches_local": true
+    },
+    {
+      "name": "08_robot_extension.mp4",
+      "bytes": 12694341,
+      "server_digest": "sha256:efe42d77661803aa226be86af50922ee26a484211ae75379781de64a4fcd798e",
+      "matches_local": true
+    },
+    {
+      "name": "LINGBAN_8_concepts_2min.mp4",
+      "bytes": 107038729,
+      "server_digest": "sha256:87099a8cbafa54e5a59c09257832914341a8396a00abc053e6a93229a356a98b",
+      "matches_local": true
+    },
+    {
+      "name": "lingban-software-demo.mp4",
+      "bytes": 1993478,
+      "server_digest": "sha256:e9e5423e4379a0a527497ac8ef369452d94b95fcc116430d43469b23519363a3",
+      "matches_local": true
+    },
+    {
+      "name": "lingban_evt_a_review.zip",
+      "bytes": 9506818,
+      "server_digest": "sha256:2a02a3fb65a133cbe8588dfbe7cbc21e85575ba6641ddfa344aafc39d5b70eaa",
+      "matches_local": true
+    },
+    {
+      "name": "lingban_factory_review.zip",
+      "bytes": 9561690,
+      "server_digest": "sha256:f34bd7bbf1cb452e7db341178dca0930b9bc8ec2720ec2bfbab5a1e79b5309aa",
+      "matches_local": true
+    },
+    {
+      "name": "lingban_minimax_originals.zip",
+      "bytes": 61448826,
+      "server_digest": "sha256:93704309bbc960c52e4ef882539a5559b8acb9c0dc3d10aa5d316f2f3809adf1",
+      "matches_local": true
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 1179,
+      "server_digest": "sha256:3e72258a3248a4654d6001f9eb2abf36b153bfc86fb1d674e64bc37dc4aae885",
+      "matches_local": true
+    }
+  ]
+}

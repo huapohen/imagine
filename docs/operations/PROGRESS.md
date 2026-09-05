@@ -2,7 +2,7 @@
 
 更新时间：2026-09-06T02:30:12.526156+08:00
 
-本地交付及验证完成；最后执行私有GitHub推送与Release附件校验。状态以仓库提交及Release附件清单为准。
+交付及验证完成，已推送私有GitHub并发布Release。14个附件（13个交付物+SHA清单）的服务器大小、上传状态和SHA-256均与本机一致。
 
 |工作流|本地完成结果|
 |---|---|
@@ -21,3 +21,7 @@
 尚无实物样机/通电/烧录/认证/量产证据，没有外发连接器、厂家联系、采购下单或生产部署。299元与1000台108元成本是目标/模型，DevKit五台样机的工程估价单列。模型提供方响应不能独立认证其模型别名；失败诊断缺少完整usage，不编造全程模型费用。
 
 入口：[总README](../../README.md)、[验收矩阵](../verification/RELEASE_READINESS.md)、[附件](RELEASE_ASSETS.md)。
+
+发布地址：https://github.com/huapohen/imagine/releases/tag/v0.1.0-evt-a-20260906
+
+发布校验：[GitHub附件证据](../verification/github-release.json)。源码发布基准：`5c4de598698949c652809cd4b7987b8d8f200e82`；后续主控提交仅补充发布状态与报告。

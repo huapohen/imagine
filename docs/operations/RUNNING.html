@@ -9,4 +9,5 @@
 </ul>
 <p>应用和资料中心为本机进程，重启电脑后需要重新执行启动命令。不改系统开机启动、代理或用户浏览器保护。当前Chrome配置对8765的拦截曾存在；可直接查看真实软件录屏与测试证据，未为此关闭保护。</p>
 <p>复现浏览器验收：先执行<code>python3 scripts/browser_qa_server.py</code>，再执行<code>scripts/verify_browser.mjs</code>与<code>scripts/verify_model_ui.mjs</code>（Node+Playwright环境定位见脚本）；这两项不调用第三方模型。模型实时测试另有显式开关，当前剩余1/20调用，不自动补充。</p>
+<p>最终发布完成：私有仓库Release可访问，14附件校验一致。主控停止临时监视后，保留上述两项本地服务；不再自动消耗模型或视频预算。</p>
 </article></main></html>
