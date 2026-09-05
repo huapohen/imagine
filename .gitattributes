@@ -13,3 +13,4 @@ hardware/pcb/NOT-FOR-FAB/plots/** -text -diff
 hardware/pcb/NOT-FOR-FAB/gerber-review-only/*.svg -text -diff
 hardware/pcb/NOT-FOR-FAB/*.csv -text whitespace=cr-at-eol
 pitch/business-plan/qa/extracted-text.txt -diff
+software/reference/a2a-v0.3.0.json whitespace=-blank-at-eof

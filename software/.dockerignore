@@ -1,0 +1,5 @@
+**
+!lingban/
+!lingban/*.py
+!web/
+!web/*

@@ -1,0 +1,33 @@
+{
+  "probes": [
+    {
+      "target": "https://api.github.com/",
+      "route": "direct",
+      "exit": 0,
+      "http_status": "200",
+      "seconds": 0.348792
+    },
+    {
+      "target": "https://uploads.github.com/",
+      "route": "direct",
+      "exit": 0,
+      "http_status": "302",
+      "seconds": 0.572475
+    },
+    {
+      "target": "https://api.github.com/",
+      "route": "system-proxy",
+      "exit": 0,
+      "http_status": "200",
+      "seconds": 0.320731
+    },
+    {
+      "target": "https://uploads.github.com/",
+      "route": "system-proxy",
+      "exit": 0,
+      "http_status": "302",
+      "seconds": 0.434728
+    }
+  ],
+  "selected": "system-proxy"
+}
