@@ -1,0 +1,15 @@
+# Local secrets and runtime state
+.env
+.env.*
+!.env.example
+.local/
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+*.sqlite*
+*.db
+.DS_Store
+.playwright-cli/
+.tmp/
+*.log
